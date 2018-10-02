@@ -1,0 +1,12 @@
+{
+    "id": 130,
+    "name": "gyarados",
+    "types": [
+        "water",
+        "flying"
+    ],
+    "image_path": {
+        "small": "./130.jpg",
+        "large": "./130.jpg"
+    }
+}

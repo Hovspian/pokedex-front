@@ -1,0 +1,28 @@
+{
+    "pokemon" : [
+        {
+            "id": 1,
+            "name": "bulbasaur",
+            "types": [
+                "grass",
+                "poison"
+            ],
+            "image_path": {
+                "small": "./130.jpg",
+                "large": "./130.jpg"
+            }
+        },
+        {
+            "id": 2,
+            "name": "icysaur",
+            "types": [
+                "grass",
+                "poison"
+            ],
+            "image_path": {
+                "small": "./130.jpg",
+                "large": "./130.jpg"
+            }
+        }
+    ]
+}
