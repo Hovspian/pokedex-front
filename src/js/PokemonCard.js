@@ -1,15 +1,18 @@
 import React from 'react';
+
+import PokemonType from './PokemonType.js';
+
 import '../styles/PokemonCard.css';
-import GyaradosJPG from '../local_data/130.jpg';
+import Sprite from '../local_data/130.jpg';
 
 class PokemonCard extends React.Component {
     render () {
         return (
             <div className='card' >
-                <img src={GyaradosJPG /*this.props.image_path.large*/} alt={this.props.name + ' Sprite'} />
-                <div className="container">
+                <img src={Sprite /*'https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/130.png' this.props.image_path.small*/} alt={this.props.name + ' Sprite'} />
+                <div>
                     <h4><b>{this.props.name}</b></h4>
-                    <p>{this.props.types}</p>
+                    <PokemonType id={this.props.id} types= {this.props.types} />
                 </div>
             </div>
         );
