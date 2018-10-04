@@ -3,7 +3,7 @@ import React from 'react';
 import PokemonType from './PokemonType.js';
 
 import '../styles/PokemonCard.css';
-import Sprite from '../local_data/130.jpg';
+import Sprite from '../local_data/130_large.png';
 
 class PokemonCard extends React.Component {
 
@@ -33,8 +33,9 @@ class PokemonCard extends React.Component {
         return (
             <div className='card' >
                 <img src={Sprite /*'https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/130.png' this.props.image_path.small*/} alt={this.props.name + ' sprite'} />
-                <div align="center">
-                    <h4><b>{this.capitalizeName(this.props.name)}</b></h4>
+                <div className="textarea" align="center" >
+                    <h5 className="pokemon-id" align="left">{'#' + this.props.id}</h5>
+                    <h3><b>{this.capitalizeName(this.props.name)}</b></h3>
                     <PokemonType id={this.props.id} types= {this.props.types} />
                 </div>
             </div>
