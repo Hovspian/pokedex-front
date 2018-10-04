@@ -8,7 +8,7 @@ class PokemonType extends React.Component {
         return (
             <div>
                 {this.props.types.map(function(type) {
-                    return <Badge key={self.props.id + '-' + type} color="primary" pill>{type}</Badge>
+                    return <Badge className={'type ' + type} key={self.props.id + '-' + type} color="primary" pill>{type}</Badge>
                 })}
             </div>
         );
