@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/PokemonType.css';
+import '../../styles/components/PokemonType/PokemonType.css';
 import {Badge} from 'reactstrap';
 
 class PokemonType extends React.Component {
