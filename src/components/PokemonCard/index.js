@@ -1,5 +1,6 @@
 import React from 'react';
 import PokemonType from '../PokemonType';
+import PropTypes from 'prop-types';
 import '../../styles/components/PokemonCard/PokemonCard.css';
 
 const baseURL = 'https://pokedex-backend-server.herokuapp.com';
@@ -40,6 +41,13 @@ class PokemonCard extends React.Component {
             </div>
         );
     }
+}
+
+PokemonCard.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.String,
+  types: PropTypes.arrayOf(PropTypes.String),
+  image_path: PropTypes.arrayOf(PropTypes.String)
 }
 
 export default PokemonCard;
