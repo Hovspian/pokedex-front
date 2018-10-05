@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from './components/Home';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<Home />, document.getElementById('root'));
-registerServiceWorker();
+
+// Commented out server worker while working on file locally to
+// keep from caching changes.
+// registerServiceWorker();
