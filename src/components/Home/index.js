@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header';
 import PokemonCard from '../PokemonCard';
-import LocalJSON from '../../local_data/example_single.json';
+import NoPokemon from '../NoPokemon';
 import { getRangeOfPokemon } from '../PokemonAPI';
 
 class Home extends Component {
@@ -32,11 +32,20 @@ class Home extends Component {
     });
   }
 
+  displayPokemonCards() {
+    if (this.state.pokemon.length === 0) {
+      return <NoPokemon />
+    }
+    return this.state.pokemon.map(pokemon => {
+       return <PokemonCard {...pokemon} key={pokemon.id}/>
+    });
+  }
+
   render() {
     return (
       <div>
         <Header />
-        <PokemonCard {...LocalJSON} />
+        { this.displayPokemonCards()}
       </div>
     )
   }
