@@ -1,8 +1,9 @@
 import React from 'react';
-import PokemonType from '../PokemonType';
 
-import '../../styles/components/PokemonCard/PokemonCard.css';
-import Sprite from '../../local_data/130_large.png';
+import PokemonType from '../PokemonType/index.js';
+
+import '../styles/PokemonCard.css';
+import Sprite from '../local_data/130_large.png';
 
 class PokemonCard extends React.Component {
 
