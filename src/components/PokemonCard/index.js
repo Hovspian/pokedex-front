@@ -45,9 +45,12 @@ class PokemonCard extends React.Component {
 
 PokemonCard.propTypes = {
   id: PropTypes.number,
-  name: PropTypes.String,
-  types: PropTypes.arrayOf(PropTypes.String),
-  image_path: PropTypes.arrayOf(PropTypes.String)
+  name: PropTypes.string,
+  types: PropTypes.arrayOf(PropTypes.string),
+  image_path: PropTypes.shape({
+    small: PropTypes.string,
+    large: PropTypes.string
+  })
 }
 
 export default PokemonCard;

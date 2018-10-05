@@ -4,6 +4,8 @@ import PokemonCard from '../PokemonCard';
 import NoPokemon from '../NoPokemon';
 import { getRangeOfPokemon } from '../PokemonAPI';
 
+import '../../styles/components/Home/Home.css'
+
 class Home extends Component {
 
   constructor() {
@@ -19,17 +21,17 @@ class Home extends Component {
 
   fetchPokemon(id, range) {
     getRangeOfPokemon(id, range)
-    .then(newPokemon => {
-      const oldPokemon = this.state.pokemon.slice();
-      this.setState({
-        pokemon: [...oldPokemon, ...newPokemon]
-      });
-    })
+      .then(newPokemon => {
+        const oldPokemon = this.state.pokemon.slice();
+        this.setState({
+          pokemon: [...oldPokemon, ...newPokemon]
+        });
+      })
 
-    // TODO: Need to do something if error on fetch from server
-    .catch(error => {
-      window.console.log(error);
-    });
+      // TODO: Need to do something if error on fetch from server
+      .catch(error => {
+        window.console.log(error);
+      });
   }
 
   displayPokemonCards() {
@@ -37,7 +39,7 @@ class Home extends Component {
       return <NoPokemon />
     }
     return this.state.pokemon.map(pokemon => {
-       return <PokemonCard {...pokemon} key={pokemon.id}/>
+      return <PokemonCard {...pokemon} key={pokemon.id} />
     });
   }
 
@@ -45,7 +47,9 @@ class Home extends Component {
     return (
       <div>
         <Header />
-        { this.displayPokemonCards()}
+        <div className="cardContainer">
+          {this.displayPokemonCards()}
+        </div>
       </div>
     )
   }
