@@ -38,7 +38,7 @@ class Home extends Component {
 
       // TODO: Need to do something if error on fetch from server
       .catch(error => {
-        window.console.log('Unable to fetch Pokeon data from server with error: ' + error);
+        window.console.log(error);
       });
   }
 
