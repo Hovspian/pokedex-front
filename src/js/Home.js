@@ -20,7 +20,6 @@ class Home extends Component {
 
 
   fetchPokemon(page) {
-    debugger;
     const id = (page - 1) * 20 + 1;
     let range;
     if (page === 41) {
