@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import { getRangeOfPokemon } from './PokemonAPI.js';
-import Header from './Header.js';
-import PokemonCard from './PokemonCard.js';
-import NoPokemon from './NoPokemon.js';
+import { getRangeOfPokemon } from './PokemonAPI';
+import Header from './Header';
+import PokemonCard from './PokemonCard';
+import NoPokemon from './NoPokemon';
 
 import '../styles/Home.css'
 
