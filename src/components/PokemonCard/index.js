@@ -23,7 +23,7 @@ class PokemonCard extends React.Component {
         while (i > -1) {
             capitalizedLetter = name.charAt(i).toUpperCase();
             capitalizedName = capitalizedName.slice(0, i) + capitalizedLetter + capitalizedName.slice(i + 1);
-            i = name.substring(i).search(/[- ]/);
+            i = name.substring(i+1).search(/[- ]/);
         }
 
         return capitalizedName;
