@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Header from '../Header';
-import PokemonCard from '../PokemonCard';
-import NoPokemon from '../NoPokemon';
-import { getRangeOfPokemon } from '../PokemonAPI';
 
-import '../../styles/components/Home/Home.css'
+import { getRangeOfPokemon } from './PokemonAPI.js';
+import Header from './Header.js';
+import PokemonCard from './PokemonCard.js';
+import NoPokemon from './NoPokemon.js';
+
+import '../styles/Home.css'
 
 class Home extends Component {
 
