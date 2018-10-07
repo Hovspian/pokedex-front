@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "test:nowatch": "cross-env CI=true react-scripts test --env=jsdom --outputFile=resuls.json --json",
+    "test:nowatch": "cross-env CI=true react-scripts test --env=jsdom --outputFile=results.json --json",
     "coverage": "react-scripts test --env=jsdom --coverage"
   }
 }
