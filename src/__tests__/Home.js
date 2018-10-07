@@ -13,11 +13,4 @@ describe('Test Home Component', () => {
     const wrapper = shallow(<Home />);
     expect(wrapper).toMatchSnapshot();
   });
-
-  it('should fetch pokemon at beginning', () => {
-    const spy = jest.spyOn(Home.prototype, 'fetchPokemon');
-    const wrapper = mount(<Home />);
-    expect(spy).toHaveBeenCalledWith(1, 20);
-  });
-
 })
