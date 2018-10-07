@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+
 import Home from '../js/Home.js';
 
 describe('Test Home Component', () => {
