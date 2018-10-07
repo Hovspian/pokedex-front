@@ -5,6 +5,7 @@
     transition: 0.3s;
     width: 300px;
     height: 400px;
+    margin-bottom: 20px;
 }
 
 /* On mouse-over, add a deeper shadow */
