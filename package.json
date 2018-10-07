@@ -4,17 +4,18 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5",
     "reactstrap": "^6.4.0"
   },
   "devDependencies": {
-    "chai": "*",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "eslint": "^5.6.0",
     "eslint-config-google": "^0.10.0",
-    "mocha": "*",
-    "sinon": "*"
+    "eslint-plugin-react": "^7.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
