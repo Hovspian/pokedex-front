@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import PokemonType from './PokemonType.js';
+import PokemonType from './PokemonType';
 
 import '../styles/PokemonCard.css';
 

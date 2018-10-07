@@ -11,12 +11,14 @@
     "reactstrap": "^6.4.0"
   },
   "devDependencies": {
-    "chai": "*",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "eslint": "^5.6.0",
     "eslint-config-google": "^0.10.0",
     "eslint-plugin-react": "^7.11.1",
-    "mocha": "*",
-    "sinon": "*"
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0",
+    "sinon": "^6.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
