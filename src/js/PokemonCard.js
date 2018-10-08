@@ -7,6 +7,16 @@ import '../styles/PokemonCard.css';
 
 const baseURL = 'https://pokedex-backend-server.herokuapp.com';
 
+const propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  types: PropTypes.arrayOf(PropTypes.string).isRequired,
+  image_path: PropTypes.shape({
+  small: PropTypes.string.isRequired,
+  large: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
 class PokemonCard extends React.Component {
 
   /**
@@ -23,9 +33,11 @@ class PokemonCard extends React.Component {
     // Capitalize other letters that should be capitalized.
     let i = capitalizedName.search(/[- ]/);
     while (i > -1) {
-      capitalizedLetter = name.charAt(i + 1).toUpperCase();
+      capitalizedLetter = capitalizedName.charAt(i + 1).toUpperCase();
       capitalizedName = capitalizedName.slice(0, i + 1) + capitalizedLetter + capitalizedName.slice(i + 2);
-      i = name.substring(i + 1).search(/[- ]/);
+
+      let next = capitalizedName.substring(i + 1).search(/[- ]/);
+      i = next > -1 ? i + 1 + next : -1;
     }
 
     return capitalizedName;
@@ -45,14 +57,6 @@ class PokemonCard extends React.Component {
   }
 }
 
-PokemonCard.propTypes = {
-  id: PropTypes.number,
-  name: PropTypes.string,
-  types: PropTypes.arrayOf(PropTypes.string),
-  image_path: PropTypes.shape({
-  small: PropTypes.string,
-  large: PropTypes.string
-  })
-}
+PokemonCard.propTypes = propTypes;
 
 export default PokemonCard;
