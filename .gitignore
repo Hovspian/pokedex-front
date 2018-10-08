@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# Remove test results from being indexed
+results.json
+
 # dependencies
 /node_modules
 
