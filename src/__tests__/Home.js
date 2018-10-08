@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
-import Home from '../js/Home.js';
+import Home from '../js/Home';
 
-describe('Test Home Component', () => {
+describe('Home Component', () => {
 
   it('should render Home component without crashing', () => {
     shallow(<Home />);

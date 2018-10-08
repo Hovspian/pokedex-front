@@ -18,6 +18,9 @@ class Home extends Component {
     }
   }
 
+  componentDidMount() {
+    this.fetchPokemon(1, 20);
+  }
 
   fetchPokemon(page) {
     const id = (page - 1) * 20 + 1;
@@ -54,7 +57,7 @@ class Home extends Component {
       <div>
         <Header />
         <InfiniteScroll
-          initialLoad={true}
+          initialLoad={false}
           pageStart={0}
           loadMore={this.fetchPokemon.bind(this)}
           hasMore={this.state.hasMore}
