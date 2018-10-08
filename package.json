@@ -12,17 +12,22 @@
     "reactstrap": "^6.4.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "eslint": "^5.6.0",
     "eslint-config-google": "^0.10.0",
     "eslint-plugin-react": "^7.11.1",
     "mocha": "^5.2.0",
-    "chai": "^4.2.0",
     "sinon": "^6.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:nowatch": "cross-env CI=true react-scripts test --env=jsdom --outputFile=results.json --json",
+    "coverage": "react-scripts test --env=jsdom --coverage"
   }
 }
