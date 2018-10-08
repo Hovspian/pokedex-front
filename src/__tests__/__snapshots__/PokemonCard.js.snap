@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonCard should match Card component snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PokemonCard
+    id={130}
+    image_path={
+        Object {
+            "large": "./130.jpg",
+            "small": "./130.jpg",
+          }
+    }
+    name="gyarados"
+    types={
+        Array [
+            "water",
+            "flying",
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="gyarados sprite"
+          src="https://pokedex-backend-server.herokuapp.com./130.jpg"
+/>,
+        <div
+          align="center"
+          className="textarea"
+>
+          <h5
+                    align="left"
+                    className="pokemon-id"
+          >
+                    #130
+          </h5>
+          <h3>
+                    <b>
+                              Gyarados
+                    </b>
+          </h3>
+          <PokemonType
+                    id={130}
+                    types={
+                              Array [
+                                        "water",
+                                        "flying",
+                                      ]
+                    }
+          />
+</div>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "gyarados sprite",
+          "src": "https://pokedex-backend-server.herokuapp.com./130.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "align": "center",
+          "children": Array [
+            <h5
+              align="left"
+              className="pokemon-id"
+>
+              #130
+</h5>,
+            <h3>
+              <b>
+                            Gyarados
+              </b>
+</h3>,
+            <PokemonType
+              id={130}
+              types={
+                            Array [
+                                          "water",
+                                          "flying",
+                                        ]
+              }
+/>,
+          ],
+          "className": "textarea",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "align": "left",
+              "children": "#130",
+              "className": "pokemon-id",
+            },
+            "ref": null,
+            "rendered": "#130",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <b>
+                Gyarados
+</b>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Gyarados",
+              },
+              "ref": null,
+              "rendered": "Gyarados",
+              "type": "b",
+            },
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "id": 130,
+              "types": Array [
+                "water",
+                "flying",
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="gyarados sprite"
+            src="https://pokedex-backend-server.herokuapp.com./130.jpg"
+/>,
+          <div
+            align="center"
+            className="textarea"
+>
+            <h5
+                        align="left"
+                        className="pokemon-id"
+            >
+                        #130
+            </h5>
+            <h3>
+                        <b>
+                                    Gyarados
+                        </b>
+            </h3>
+            <PokemonType
+                        id={130}
+                        types={
+                                    Array [
+                                                "water",
+                                                "flying",
+                                              ]
+                        }
+            />
+</div>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "gyarados sprite",
+            "src": "https://pokedex-backend-server.herokuapp.com./130.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "align": "center",
+            "children": Array [
+              <h5
+                align="left"
+                className="pokemon-id"
+>
+                #130
+</h5>,
+              <h3>
+                <b>
+                                Gyarados
+                </b>
+</h3>,
+              <PokemonType
+                id={130}
+                types={
+                                Array [
+                                                "water",
+                                                "flying",
+                                              ]
+                }
+/>,
+            ],
+            "className": "textarea",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "align": "left",
+                "children": "#130",
+                "className": "pokemon-id",
+              },
+              "ref": null,
+              "rendered": "#130",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <b>
+                  Gyarados
+</b>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Gyarados",
+                },
+                "ref": null,
+                "rendered": "Gyarados",
+                "type": "b",
+              },
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "id": 130,
+                "types": Array [
+                  "water",
+                  "flying",
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
