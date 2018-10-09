@@ -12,8 +12,8 @@ const propTypes = {
   name: PropTypes.string.isRequired,
   types: PropTypes.arrayOf(PropTypes.string).isRequired,
   image_path: PropTypes.shape({
-  small: PropTypes.string.isRequired,
-  large: PropTypes.string.isRequired,
+    small: PropTypes.string.isRequired,
+    large: PropTypes.string.isRequired,
   }).isRequired,
 };
 

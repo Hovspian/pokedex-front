@@ -1,7 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Badge } from 'reactstrap';
 
 import '../styles/PokemonType.css';
+
+const propTypes = {
+    id: PropTypes.number.isRequired,
+    types: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 class PokemonType extends React.Component {
   render () {
@@ -16,4 +22,6 @@ class PokemonType extends React.Component {
   }
 }
 
-export default PokemonType
+PokemonType.propTypes = propTypes;
+
+export default PokemonType;
