@@ -16,7 +16,7 @@ class Home extends React.Component {
     this.state = {
       pokemon: [],
       hasMore: true,
-      error: false,
+      error: '',
       shouldInfiniteScroll: false,
     };
 

@@ -20,20 +20,21 @@ ShallowWrapper {
       "children": Array [
         <Header />,
         <InfiniteScroll
+          align="center"
           element="div"
           hasMore={true}
           initialLoad={false}
           isReverse={false}
           loadMore={[Function]}
-          loader={<NoPokemon />}
-          pageStart={0}
+          loader={<Loader />}
+          pageStart={1}
           ref={null}
           threshold={250}
           useCapture={false}
           useWindow={true}
 >
           <div
-                    className="cardContainer"
+                    className="card-container"
           >
                     
           </div>
@@ -45,7 +46,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -56,8 +57,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "align": "center",
           "children": <div
-            className="cardContainer"
+            className="card-container"
 >
             
 </div>,
@@ -66,8 +68,8 @@ ShallowWrapper {
           "initialLoad": false,
           "isReverse": false,
           "loadMore": [Function],
-          "loader": <NoPokemon />,
-          "pageStart": 0,
+          "loader": <Loader />,
+          "pageStart": 1,
           "ref": null,
           "threshold": 250,
           "useCapture": false,
@@ -79,11 +81,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [],
-            "className": "cardContainer",
+            "children": Array [
+              Array [],
+              null,
+            ],
+            "className": "card-container",
           },
           "ref": null,
-          "rendered": Array [],
+          "rendered": Array [
+            null,
+          ],
           "type": "div",
         },
         "type": [Function],
@@ -100,20 +107,21 @@ ShallowWrapper {
         "children": Array [
           <Header />,
           <InfiniteScroll
+            align="center"
             element="div"
             hasMore={true}
             initialLoad={false}
             isReverse={false}
             loadMore={[Function]}
-            loader={<NoPokemon />}
-            pageStart={0}
+            loader={<Loader />}
+            pageStart={1}
             ref={null}
             threshold={250}
             useCapture={false}
             useWindow={true}
 >
             <div
-                        className="cardContainer"
+                        className="card-container"
             >
                         
             </div>
@@ -125,7 +133,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {},
           "ref": null,
           "rendered": null,
@@ -136,8 +144,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "align": "center",
             "children": <div
-              className="cardContainer"
+              className="card-container"
 >
               
 </div>,
@@ -146,8 +155,8 @@ ShallowWrapper {
             "initialLoad": false,
             "isReverse": false,
             "loadMore": [Function],
-            "loader": <NoPokemon />,
-            "pageStart": 0,
+            "loader": <Loader />,
+            "pageStart": 1,
             "ref": null,
             "threshold": 250,
             "useCapture": false,
@@ -159,11 +168,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [],
-              "className": "cardContainer",
+              "children": Array [
+                Array [],
+                null,
+              ],
+              "className": "card-container",
             },
             "ref": null,
-            "rendered": Array [],
+            "rendered": Array [
+              null,
+            ],
             "type": "div",
           },
           "type": [Function],
