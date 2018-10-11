@@ -1,6 +1,7 @@
-.cardContainer {
+.card-container {
   width: 100%;
-  justify-content: space-between;
+  max-width: 1300px; /* 4 cards with some spacing */
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;

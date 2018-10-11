@@ -1,7 +1,15 @@
 import React from 'react';
 
-const Header = () => (
-  <h1>This is the Pokemon header</h1>
-)
+import '../styles/Header.css';
+
+class Header extends React.Component {
+  render () {
+    return (
+      <div className="header" align="center">
+        <h1> Pokedex </h1>
+      </div>
+    );
+  }
+}
 
 export default Header;

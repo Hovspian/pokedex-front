@@ -1,35 +1,43 @@
-import React, { Component } from 'react';
+import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 
 import { getRangeOfPokemon } from './PokemonAPI';
 import Header from './Header';
 import PokemonCard from './PokemonCard';
-import NoPokemon from './NoPokemon';
+import Loader from './Loader';
+import LoadingError from './LoadingError';
 
-import '../styles/Home.css'
+import '../styles/Home.css';
 
-class Home extends Component {
+class Home extends React.Component {
 
   constructor() {
     super();
     this.state = {
       pokemon: [],
-      hasMore: true
-    }
+      hasMore: true,
+      error: false,
+      shouldInfiniteScroll: false,
+    };
+
+    this.perPage = 20;
   }
 
   componentDidMount() {
-    this.fetchPokemon(1, 20);
+    this.fetchPokemon(1, this.perPage);
   }
 
   fetchPokemon(page) {
-    const id = (page - 1) * 20 + 1;
+    if (this.state.error)
+        return;
+
+    const id = (page - 1) * this.perPage + 1;
     let range;
     if (page === 41) {
       this.setState({hasMore: false})
       range = 6
     } else {
-      range = 20;
+      range = this.perPage;
     }
     getRangeOfPokemon(id, range)
       .then(newPokemon => {
@@ -39,13 +47,15 @@ class Home extends Component {
         });
       })
 
-      // TODO: Need to do something if error on fetch from server
       .catch(error => {
-        window.console.log(error);
+        this.setState({
+            error: error,
+            hasMore: false,
+        });
       });
   }
 
-  displayPokemonCards() {
+  displayPokemonCards () {
     return this.state.pokemon.map(pokemon => {
       return <PokemonCard {...pokemon} key={pokemon.id} />
     });
@@ -58,13 +68,15 @@ class Home extends Component {
         <Header />
         <InfiniteScroll
           initialLoad={false}
-          pageStart={0}
+          pageStart={1}
           loadMore={this.fetchPokemon.bind(this)}
           hasMore={this.state.hasMore}
-          loader={<NoPokemon key={0} />}
+          loader={<Loader key="loader" />}
+          align="center"
         >
-          <div className="cardContainer">
+          <div className="card-container">
             {cards}
+            {this.state.error ? <LoadingError error={this.state.error} /> : null}
           </div>
         </InfiniteScroll>
       </div>
