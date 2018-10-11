@@ -22,14 +22,17 @@ class Home extends React.Component {
       shouldInfiniteScroll: false,
     };
     this.perPage = 20;
-
-    this.enableInfiniteScroll = this.enableInfiniteScroll.bind(this);
   }
 
   componentDidMount() {
     this.fetchPokemon(1, this.perPage);
   }
 
+  /**
+   * Fetches a page of pokemon from the server and adds them to the current state
+   * @param  {int} page - the page to fetch (1 indexed)
+   * @return {void}
+   */
   fetchPokemon(page) {
     if (this.state.error)
         return;
@@ -67,7 +70,7 @@ class Home extends React.Component {
   renderLoadButton () {
     return (
       <div>
-        <Button color="primary" size="lg" onClick={this.enableInfiniteScroll}> Load more Pokemon </Button>
+        <Button color="primary" size="lg" onClick={this.enableInfiniteScroll.bind(this)}> Load more Pokemon </Button>
       </div>
     );
   }
@@ -79,23 +82,26 @@ class Home extends React.Component {
 
   render () {
     let cards = this.displayPokemonCards();
+    let loadMoreButton = this.state.hasMore && !this.state.shouldInfiniteScroll && !this.state.error ?
+      this.renderLoadButton() : null;
+    let error = this.state.error ? <LoadingError error={this.state.error} /> : null;
+
     return (
-      <div className="main">
+      <div className="main" align="center">
         <Header />
         <InfiniteScroll
           initialLoad={false}
           pageStart={1}
           loadMore={this.fetchPokemon.bind(this)}
-          hasMore={this.state.hasMore && this.state.shouldInfiniteScroll}
+          hasMore={this.state.shouldInfiniteScroll && this.state.hasMore}
           loader={<Loader key="loader" />}
-          align="center"
         >
           <div className="card-container">
             {cards}
           </div>
-          {this.state.hasMore && !this.state.shouldInfiniteScroll && !this.state.error ? this.renderLoadButton() : null}
-          {this.state.error ? <LoadingError error={this.state.error} /> : null}
         </InfiniteScroll>
+        {loadMoreButton}
+        {error}
       </div>
     )
   }
