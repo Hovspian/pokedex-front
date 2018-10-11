@@ -1,5 +1,6 @@
 import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
+import { Button } from 'reactstrap';
 
 import { getRangeOfPokemon } from './PokemonAPI';
 import Header from './Header';
@@ -11,16 +12,18 @@ import '../styles/Home.css';
 
 class Home extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
     this.state = {
       pokemon: [],
       hasMore: true,
       error: '',
       shouldInfiniteScroll: false,
     };
-
     this.perPage = 20;
+
+    this.enableInfiniteScroll = this.enableInfiniteScroll.bind(this);
   }
 
   componentDidMount() {
@@ -61,23 +64,37 @@ class Home extends React.Component {
     });
   }
 
-  render() {
-    let cards = this.displayPokemonCards();
+  renderLoadButton () {
     return (
       <div>
+        <Button color="primary" size="lg" onClick={this.enableInfiniteScroll}> Load more Pokemon </Button>
+      </div>
+    );
+  }
+
+  enableInfiniteScroll (evt) {
+    evt.preventDefault();
+    this.setState({ shouldInfiniteScroll: true });
+  }
+
+  render () {
+    let cards = this.displayPokemonCards();
+    return (
+      <div className="main">
         <Header />
         <InfiniteScroll
           initialLoad={false}
           pageStart={1}
           loadMore={this.fetchPokemon.bind(this)}
-          hasMore={this.state.hasMore}
+          hasMore={this.state.hasMore && this.state.shouldInfiniteScroll}
           loader={<Loader key="loader" />}
           align="center"
         >
           <div className="card-container">
             {cards}
-            {this.state.error ? <LoadingError error={this.state.error} /> : null}
           </div>
+          {this.state.hasMore && !this.state.shouldInfiniteScroll && !this.state.error ? this.renderLoadButton() : null}
+          {this.state.error ? <LoadingError error={this.state.error} /> : null}
         </InfiniteScroll>
       </div>
     )

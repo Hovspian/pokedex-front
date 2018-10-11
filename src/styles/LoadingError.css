@@ -1,9 +1,8 @@
 /*From https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link*/
 .show-error-button {
-     background: none!important;
+     background: none ! important;
      color: inherit;
      border: none;
-     padding: 0!important;
      font: inherit;
      text-decoration: underline;
      cursor: pointer;

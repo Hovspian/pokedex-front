@@ -1,3 +1,7 @@
+.main {
+  margin: 20px;
+}
+
 .card-container {
   width: 100%;
   max-width: 1300px; /* 4 cards with some spacing */
