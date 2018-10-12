@@ -5,8 +5,5 @@
         "water",
         "flying"
     ],
-    "image_path": {
-        "small": "./130.jpg",
-        "large": "./130.jpg"
-    }
+    "image_path": "./130.jpg"
 }

@@ -5,12 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PokemonCard
     id={130}
-    image_path={
-        Object {
-            "large": "./130.jpg",
-            "small": "./130.jpg",
-          }
-    }
+    image_path="./130.jpg"
     name="gyarados"
     types={
         Array [

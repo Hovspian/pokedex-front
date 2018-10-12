@@ -10,10 +10,7 @@ const propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   types: PropTypes.arrayOf(PropTypes.string).isRequired,
-  image_path: PropTypes.shape({
-    small: PropTypes.string.isRequired,
-    large: PropTypes.string.isRequired,
-  }).isRequired,
+  image_path: PropTypes.string.isRequired
 };
 
 class PokemonCard extends React.Component {
@@ -45,7 +42,7 @@ class PokemonCard extends React.Component {
   render () {
     return (
       <div className='card' >
-        <img src={getPokemonSprite(this.props.image_path.large)} alt={`${this.props.name} sprite`} />
+        <img src={getPokemonSprite(this.props.image_path)} alt={`${this.props.name} sprite`} />
         <div className="textarea" align="center" >
           <h5 className="pokemon-id" align="left">{`#${this.props.id}`}</h5>
           <h3><b>{this.capitalizeName(this.props.name)}</b></h3>
