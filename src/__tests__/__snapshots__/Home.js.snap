@@ -17,17 +17,17 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "align": "center",
       "children": Array [
         <Header />,
         <InfiniteScroll
-          align="center"
           element="div"
           hasMore={true}
-          initialLoad={false}
+          initialLoad={true}
           isReverse={false}
           loadMore={[Function]}
           loader={<Loader />}
-          pageStart={1}
+          pageStart={0}
           ref={null}
           threshold={250}
           useCapture={false}
@@ -39,7 +39,19 @@ ShallowWrapper {
                     
           </div>
 </InfiniteScroll>,
+        <div>
+          <Button
+                    color="primary"
+                    onClick={[Function]}
+                    size="lg"
+                    tag="button"
+          >
+                     Load more Pokemon 
+          </Button>
+</div>,
+        null,
       ],
+      "className": "main",
     },
     "ref": null,
     "rendered": Array [
@@ -57,7 +69,6 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "align": "center",
           "children": <div
             className="card-container"
 >
@@ -65,11 +76,11 @@ ShallowWrapper {
 </div>,
           "element": "div",
           "hasMore": true,
-          "initialLoad": false,
+          "initialLoad": true,
           "isReverse": false,
           "loadMore": [Function],
           "loader": <Loader />,
-          "pageStart": 1,
+          "pageStart": 0,
           "ref": null,
           "threshold": 250,
           "useCapture": false,
@@ -81,20 +92,48 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              Array [],
-              null,
-            ],
+            "children": Array [],
             "className": "card-container",
           },
           "ref": null,
-          "rendered": Array [
-            null,
-          ],
+          "rendered": Array [],
           "type": "div",
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Button
+            color="primary"
+            onClick={[Function]}
+            size="lg"
+            tag="button"
+>
+             Load more Pokemon 
+</Button>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": " Load more Pokemon ",
+            "color": "primary",
+            "onClick": [Function],
+            "size": "lg",
+            "tag": "button",
+          },
+          "ref": null,
+          "rendered": " Load more Pokemon ",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      null,
     ],
     "type": "div",
   },
@@ -104,17 +143,17 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "align": "center",
         "children": Array [
           <Header />,
           <InfiniteScroll
-            align="center"
             element="div"
             hasMore={true}
-            initialLoad={false}
+            initialLoad={true}
             isReverse={false}
             loadMore={[Function]}
             loader={<Loader />}
-            pageStart={1}
+            pageStart={0}
             ref={null}
             threshold={250}
             useCapture={false}
@@ -126,7 +165,19 @@ ShallowWrapper {
                         
             </div>
 </InfiniteScroll>,
+          <div>
+            <Button
+                        color="primary"
+                        onClick={[Function]}
+                        size="lg"
+                        tag="button"
+            >
+                         Load more Pokemon 
+            </Button>
+</div>,
+          null,
         ],
+        "className": "main",
       },
       "ref": null,
       "rendered": Array [
@@ -144,7 +195,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "align": "center",
             "children": <div
               className="card-container"
 >
@@ -152,11 +202,11 @@ ShallowWrapper {
 </div>,
             "element": "div",
             "hasMore": true,
-            "initialLoad": false,
+            "initialLoad": true,
             "isReverse": false,
             "loadMore": [Function],
             "loader": <Loader />,
-            "pageStart": 1,
+            "pageStart": 0,
             "ref": null,
             "threshold": 250,
             "useCapture": false,
@@ -168,20 +218,48 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                Array [],
-                null,
-              ],
+              "children": Array [],
               "className": "card-container",
             },
             "ref": null,
-            "rendered": Array [
-              null,
-            ],
+            "rendered": Array [],
             "type": "div",
           },
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Button
+              color="primary"
+              onClick={[Function]}
+              size="lg"
+              tag="button"
+>
+               Load more Pokemon 
+</Button>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": " Load more Pokemon ",
+              "color": "primary",
+              "onClick": [Function],
+              "size": "lg",
+              "tag": "button",
+            },
+            "ref": null,
+            "rendered": " Load more Pokemon ",
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        null,
       ],
       "type": "div",
     },

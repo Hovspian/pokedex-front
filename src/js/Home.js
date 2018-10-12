@@ -17,15 +17,11 @@ class Home extends React.Component {
 
     this.state = {
       pokemon: [],
-      hasMore: true,
       error: '',
       shouldInfiniteScroll: false,
+      initialLoad: true,
     };
     this.perPage = 20;
-  }
-
-  componentDidMount() {
-    this.fetchPokemon(1, this.perPage);
   }
 
   /**
@@ -40,7 +36,7 @@ class Home extends React.Component {
     const id = (page - 1) * this.perPage + 1;
     let range;
     if (page === 41) {
-      this.setState({hasMore: false})
+      this.setState({ shouldInfiniteScroll: false })
       range = 6
     } else {
       range = this.perPage;
@@ -50,13 +46,14 @@ class Home extends React.Component {
         const oldPokemon = this.state.pokemon.slice();
         this.setState({
           pokemon: [...oldPokemon, ...newPokemon],
+          initialLoad: false,
         });
       })
 
       .catch(error => {
         this.setState({
-            error: error,
-            hasMore: false,
+            error: error.message,
+            shouldInfiniteScroll: false,
         });
       });
   }
@@ -82,7 +79,7 @@ class Home extends React.Component {
 
   render () {
     let cards = this.displayPokemonCards();
-    let loadMoreButton = this.state.hasMore && !this.state.shouldInfiniteScroll && !this.state.error ?
+    let loadMoreButton = !this.state.shouldInfiniteScroll && !this.state.error ?
       this.renderLoadButton() : null;
     let error = this.state.error ? <LoadingError error={this.state.error} /> : null;
 
@@ -90,10 +87,10 @@ class Home extends React.Component {
       <div className="main" align="center">
         <Header />
         <InfiniteScroll
-          initialLoad={false}
-          pageStart={1}
+          initialLoad={true}
+          pageStart={0}
           loadMore={this.fetchPokemon.bind(this)}
-          hasMore={this.state.shouldInfiniteScroll && this.state.hasMore}
+          hasMore={this.state.shouldInfiniteScroll || this.state.initialLoad}
           loader={<Loader key="loader" />}
         >
           <div className="card-container">
