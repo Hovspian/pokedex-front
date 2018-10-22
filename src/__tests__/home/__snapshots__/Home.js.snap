@@ -19,6 +19,17 @@ ShallowWrapper {
     "props": Object {
       "align": "center",
       "children": Array [
+        <PokemonModal
+          open={true}
+>
+          <p>
+                    Modal
+          </p>
+          <p>
+                    Data
+          </p>
+           
+</PokemonModal>,
         <Header />,
         <InfiniteScroll
           element="div"
@@ -55,6 +66,50 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <p>
+              Modal
+</p>,
+            <p>
+              Data
+</p>,
+            " ",
+          ],
+          "open": true,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Modal",
+            },
+            "ref": null,
+            "rendered": "Modal",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Data",
+            },
+            "ref": null,
+            "rendered": "Data",
+            "type": "p",
+          },
+          " ",
+        ],
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -145,6 +200,17 @@ ShallowWrapper {
       "props": Object {
         "align": "center",
         "children": Array [
+          <PokemonModal
+            open={true}
+>
+            <p>
+                        Modal
+            </p>
+            <p>
+                        Data
+            </p>
+             
+</PokemonModal>,
           <Header />,
           <InfiniteScroll
             element="div"
@@ -181,6 +247,50 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <p>
+                Modal
+</p>,
+              <p>
+                Data
+</p>,
+              " ",
+            ],
+            "open": true,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Modal",
+              },
+              "ref": null,
+              "rendered": "Modal",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Data",
+              },
+              "ref": null,
+              "rendered": "Data",
+              "type": "p",
+            },
+            " ",
+          ],
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,

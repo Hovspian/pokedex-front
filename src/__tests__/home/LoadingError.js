@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import LoadingError from '../js/LoadingError';
+import LoadingError from '../../js/home/LoadingError';
 
 describe('LoadingError Component', () => {
 

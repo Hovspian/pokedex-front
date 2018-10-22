@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Loader from '../js/Loader';
+import Loader from '../../js/home/Loader';
 
 describe('Loader Component', () => {
 

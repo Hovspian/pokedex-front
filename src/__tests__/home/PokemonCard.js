@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import PokemonCard from '../js/PokemonCard';
-import ExampleJSON from '../../local_data/example_single.json';
+import PokemonCard from '../../js/home/PokemonCard';
+import ExampleJSON from '../../../local_data/example_single.json';
 
 describe('PokemonCard', () => {
   it('should render Card component without crashing', () => {
