@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+
+import '../../styles/modal/Modal.css'
 
 const propTypes = {
-  isOpen: PropTypes.bool.isRequired,
+  open: PropTypes.bool.isRequired,
   id: PropTypes.number,
   name: PropTypes.string,
   description: PropTypes.string,
@@ -69,20 +71,29 @@ class PokemonModal extends React.Component {
     this.state = {
       modal: true
     }
+
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
   }
 
   render () {
-    const externalCloseBtn = <button className="close" style={{ position: 'absolute', top: '15px', right: '15px' }}>&times;</button>;
+    const externalCloseBtn = <button className="close" style={{ position: 'absolute', top: '15px', right: '15px' }} onClick={this.toggle}>&times;</button>;
     return (
-      <Modal isOpen={this.state.modal} className={this.props.className} external={externalCloseBtn}>
-        <ModalHeader>Modal title</ModalHeader>
+      <Modal isOpen={this.state.modal} className="pokemodal" align="center" external={externalCloseBtn}>
+        <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
-          <b>Look at the top right of the page/viewport!</b><br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <b>Pokemon info coming soon&trade;</b><br />
         </ModalBody>
       </Modal>
     );
   }
 }
+
+PokemonModal.propTypes = propTypes
 
 export default PokemonModal;
