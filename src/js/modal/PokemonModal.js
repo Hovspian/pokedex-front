@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
-import '../../styles/modal/Modal.css'
+import CloseButton from './CloseButton';
+
+import '../../styles/modal/PokemonModal.css'
 
 const propTypes = {
   open: PropTypes.bool.isRequired,
@@ -82,12 +84,11 @@ class PokemonModal extends React.Component {
   }
 
   render () {
-    const externalCloseBtn = <button className="close" style={{ position: 'absolute', top: '15px', right: '15px' }} onClick={this.toggle}>&times;</button>;
     return (
-      <Modal isOpen={this.state.modal} className="pokemodal" align="center" external={externalCloseBtn}>
+      <Modal isOpen={this.state.modal} className="pokemodal" align="center" external={<CloseButton close={this.toggle} />}>
         <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
-          <b>Pokemon info coming soon&trade;</b><br />
+          <b>Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;Pokemon info coming soon&trade;</b>
         </ModalBody>
       </Modal>
     );
