@@ -3,40 +3,60 @@
 }
 
 /* Colors taken from https://bulbapedia.bulbagarden.net/wiki/Type */
-.normal {
-  background-color: #a8a878;
-}
-
-.fire {
-  background-color: #f08030;
-}
-
-.fighting {
-  background-color: #C03028;
-}
-
-.water {
-  background-color: #6890F0;
-}
-
-.flying {
-  background-color: #A890F0;
-}
-
-.grass {
-  background-color: #78C850;
-}
-
-.poison {
-  background-color: #A040A0;
+.bug {
+  background-color: #A8B820;
 }
 
 .electric {
   background-color: #F8D030;
 }
 
+.dark {
+  background-color: #705848;
+}
+
+.dragon {
+  background-color: #7038F8;
+}
+
+.fairy {
+  background-color: #EE99AC;
+}
+
+.fighting {
+  background-color: #C03028;
+}
+
+.fire {
+  background-color: #f08030;
+}
+
+.flying {
+  background-color: #A890F0;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.grass {
+  background-color: #78C850;
+}
+
 .ground {
   background-color: #E0C068;
+}
+
+.ice {
+  background-color: #98D8D8;
+}
+
+.normal {
+  background-color: #a8a878;
+}
+
+.poison {
+  background-color: #A040A0;
 }
 
 .psychic {
@@ -47,34 +67,10 @@
   background-color: #B8A038;
 }
 
-.ice {
-  background-color: #98D8D8;
-}
-
-.bug {
-  background-color: #A8B820;
-}
-
-.dragon {
-  background-color: #7038F8;
-}
-
-.ghost {
-  background-color: #705898;
-}
-
-.dark {
-  background-color: #705848;
-}
-
 .steel {
   background-color: #B8B8D0;
 }
 
-.fairy {
-  background-color: #EE99AC;
-}
-
-.??? {
-  background-color: #68A090;
+.water {
+  background-color: #6890F0;
 }
