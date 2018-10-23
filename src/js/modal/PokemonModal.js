@@ -7,7 +7,7 @@ import CloseButton from './CloseButton';
 import '../../styles/modal/PokemonModal.css'
 
 const propTypes = {
-  open: PropTypes.bool.isRequired,
+  modal: PropTypes.bool.isRequired,
   id: PropTypes.number,
   name: PropTypes.string,
   description: PropTypes.string,

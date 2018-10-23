@@ -87,7 +87,7 @@ class Home extends React.Component {
 
     return (
       <div className="main" align="center">
-        {this.state.modal ? <PokemonModal open={true}>
+        {this.state.modal ? <PokemonModal modal={true}>
                   <p>Modal</p>
                   <p>Data</p> </PokemonModal>: null}
         <Header />

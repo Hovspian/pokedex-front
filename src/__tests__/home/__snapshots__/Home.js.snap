@@ -20,7 +20,7 @@ ShallowWrapper {
       "align": "center",
       "children": Array [
         <PokemonModal
-          open={true}
+          modal={true}
 >
           <p>
                     Modal
@@ -80,7 +80,7 @@ ShallowWrapper {
 </p>,
             " ",
           ],
-          "open": true,
+          "modal": true,
         },
         "ref": null,
         "rendered": Array [
@@ -201,7 +201,7 @@ ShallowWrapper {
         "align": "center",
         "children": Array [
           <PokemonModal
-            open={true}
+            modal={true}
 >
             <p>
                         Modal
@@ -261,7 +261,7 @@ ShallowWrapper {
 </p>,
               " ",
             ],
-            "open": true,
+            "modal": true,
           },
           "ref": null,
           "rendered": Array [
