@@ -98,6 +98,7 @@ class Home extends React.Component {
       .then(pokemonDetails => {
         this.setState({
           pokemonDetails,
+          modal: true
         });
       })
 
@@ -106,8 +107,6 @@ class Home extends React.Component {
             error: error.message,
         });
       });
-
-    this.setState({modal: true})
   }
 
   handleCloseModal() {
