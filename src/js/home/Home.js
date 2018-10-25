@@ -2,7 +2,7 @@ import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import { Button } from 'reactstrap';
 
-import { getRangeOfPokemon } from '../core/PokemonAPI';
+import { getRangeOfPokemon, getPokemonDetails } from '../core/PokemonAPI';
 import Header from './Header';
 import PokemonCard from './PokemonCard';
 import Loader from './Loader';
@@ -18,12 +18,16 @@ class Home extends React.Component {
 
     this.state = {
       pokemon: [],
+      pokemonDetails: null,
       error: '',
       shouldInfiniteScroll: false,
       initialLoad: true,
-      modal: true,
+      modal: false,
     };
     this.perPage = 20;
+
+    this.handlePokemonCardClick = this.handlePokemonCardClick.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
   /**
@@ -62,7 +66,7 @@ class Home extends React.Component {
 
   displayPokemonCards () {
     return this.state.pokemon.map(pokemon => {
-      return <PokemonCard {...pokemon} key={pokemon.id} />
+      return <PokemonCard {...pokemon} key={pokemon.id} handlePokemonCardClick={this.handlePokemonCardClick} />
     });
   }
 
@@ -79,6 +83,38 @@ class Home extends React.Component {
     this.setState({ shouldInfiniteScroll: true });
   }
 
+   /**
+   * Fetches a pokemon details from server and adds them to the current state
+   * @param  {int} id - the id of the pokemon to fetch
+   * @return {void}
+   */
+  handlePokemonCardClick (id) {
+    if (this.state.error ||
+      id < 0 ||
+      id > 806)
+      return;
+
+    getPokemonDetails(id)
+      .then(pokemonDetails => {
+        this.setState({
+          pokemonDetails,
+        });
+      })
+
+      .catch(error => {
+        this.setState({
+            error: error.message,
+            shouldInfiniteScroll: false,
+        });
+      });
+
+    this.setState({modal: true})
+  }
+
+  handleCloseModal() {
+    this.setState({modal: false})
+  }
+
   render () {
     let cards = this.displayPokemonCards();
     let loadMoreButton = !this.state.shouldInfiniteScroll && !this.state.error ?
@@ -87,9 +123,8 @@ class Home extends React.Component {
 
     return (
       <div className="main" align="center">
-        {this.state.modal ? <PokemonModal modal={true}>
-                  <p>Modal</p>
-                  <p>Data</p> </PokemonModal>: null}
+        <PokemonModal handleCloseModal={this.handleCloseModal}
+          modal={this.state.modal} {...this.state.pokemonDetails} />
         <Header />
         <InfiniteScroll
           initialLoad={true}

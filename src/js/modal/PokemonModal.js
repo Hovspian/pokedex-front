@@ -8,6 +8,7 @@ import '../../styles/modal/PokemonModal.css'
 
 const propTypes = {
   modal: PropTypes.bool.isRequired,
+  handleCloseModal: PropTypes.func.isRequired,
   id: PropTypes.number,
   name: PropTypes.string,
   description: PropTypes.string,
@@ -19,7 +20,7 @@ const propTypes = {
       weaknesses: PropTypes.arrayOf(
         PropTypes.shape({
           type: PropTypes.string,
-          multiplier: PropTypes.number,
+          multiplier: PropTypes.string,
         })
       ),
       ablities: PropTypes.arrayOf(
@@ -67,33 +68,17 @@ const propTypes = {
   }),
 }
 
-class PokemonModal extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: true
-    }
-
-    this.toggle = this.toggle.bind(this);
-  }
-
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
-  }
-
-  render () {
-    return (
-      <Modal isOpen={this.state.modal} className="pokemodal" align="center" external={<CloseButton close={this.toggle} />}>
-        <ModalHeader>Navigate to other Pokemon</ModalHeader>
-        <ModalBody>
-          <b>Pokemon info coming soon&trade;</b>
-        </ModalBody>
-      </Modal>
-    );
-  }
-}
+const PokemonModal = (props) => (
+  <Modal isOpen={props.modal} className="pokemodal" align="center" external={<CloseButton close={props.handleCloseModal} />}>
+    <ModalHeader>Navigate to other Pokemon</ModalHeader>
+    <ModalBody>
+      <p>Id: {props.id}</p>
+      <p>Name: {props.name}</p>
+      <p>Description: {props.description}</p>
+      <p>Species: {props.species}</p>
+    </ModalBody>
+  </Modal>
+);
 
 PokemonModal.propTypes = propTypes
 
