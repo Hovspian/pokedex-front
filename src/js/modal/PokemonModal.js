@@ -8,62 +8,64 @@ import '../../styles/modal/PokemonModal.css'
 
 const propTypes = {
   modal: PropTypes.bool.isRequired,
-  id: PropTypes.number,
-  name: PropTypes.string,
-  description: PropTypes.string,
-  species: PropTypes.string,
-  forms: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      types: PropTypes.arrayOf(PropTypes.string),
-      weaknesses: PropTypes.arrayOf(
+  data: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    species: PropTypes.string.isRequired,
+    forms: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        types: PropTypes.arrayOf(PropTypes.string).isRequired,
+        weaknesses: PropTypes.arrayOf(
+          PropTypes.shape({
+            type: PropTypes.string.isRequired,
+            multiplier: PropTypes.number.isRequired,
+          }).isRequired
+        ).isRequired,
+        ablities: PropTypes.arrayOf(
+          PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            hidden: PropTypes.bool.isRequired,
+          }).isRequired
+        ).isRequired,
+        stats: PropTypes.shape({
+          hp: PropTypes.number.isRequired,
+          attack: PropTypes.number.isRequired,
+          defense: PropTypes.number.isRequired,
+          'special-attack': PropTypes.number.isRequired,
+          'special-defense': PropTypes.number.isRequired,
+          speed: PropTypes.number.isRequired,
+        }).isRequired,
+        image_path: PropTypes.string.isRequired,
+      }).isRequired
+    ).isRequired,
+    evolutions: PropTypes.shape({
+      1: PropTypes.arrayOf(
         PropTypes.shape({
-          type: PropTypes.string,
-          multiplier: PropTypes.number,
-        })
-      ),
-      ablities: PropTypes.arrayOf(
+          id: PropTypes.number.isRequired,
+          name: PropTypes.string.isRequired,
+          types: PropTypes.arrayOf(PropTypes.string).isRequired,
+          image_path: PropTypes.string.isRequired,
+        }).isRequired
+      ).isRequired,
+      2: PropTypes.arrayOf(
         PropTypes.shape({
-          name: PropTypes.string,
-          hidden: PropTypes.bool,
-        })
-      ),
-      stats: PropTypes.shape({
-        hp: PropTypes.number,
-        attack: PropTypes.number,
-        defense: PropTypes.number,
-        'special-attack': PropTypes.number,
-        'special-defense': PropTypes.number,
-        speed: PropTypes.number,
-      }),
-      image_path: PropTypes.string,
-    })
-  ),
-  evolutions: PropTypes.shape({
-    1: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number,
-        name: PropTypes.string,
-        types: PropTypes.arrayOf(PropTypes.string),
-        image_path: PropTypes.string,
-      })
-    ),
-    2: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number,
-        name: PropTypes.string,
-        types: PropTypes.arrayOf(PropTypes.string),
-        image_path: PropTypes.string,
-      })
-    ),
-    3: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number,
-        name: PropTypes.string,
-        types: PropTypes.arrayOf(PropTypes.string),
-        image_path: PropTypes.string,
-      })
-    ),
+          id: PropTypes.number.isRequired,
+          name: PropTypes.string.isRequired,
+          types: PropTypes.arrayOf(PropTypes.string).isRequired,
+          image_path: PropTypes.string.isRequired,
+        }).isRequired
+      ).isRequired,
+      3: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number.isRequired,
+          name: PropTypes.string.isRequired,
+          types: PropTypes.arrayOf(PropTypes.string).isRequired,
+          image_path: PropTypes.string.isRequired,
+        }).isRequired
+      ).isRequired,
+    }).isRequired,
   }),
 }
 
