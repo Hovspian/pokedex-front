@@ -90,7 +90,7 @@ class Home extends React.Component {
    */
   handlePokemonCardClick (id) {
     if (this.state.error ||
-      id < 0 ||
+      id < 1 ||
       id > 806)
       return;
 
