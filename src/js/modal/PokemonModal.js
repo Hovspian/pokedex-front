@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import StatGraph from './StatGraph';
 
 import CloseButton from './CloseButton';
 
@@ -76,6 +77,8 @@ const PokemonModal = (props) => (
       <p>Name: {props.name}</p>
       <p>Description: {props.description}</p>
       <p>Species: {props.species}</p>
+      {/* {props.forms && console.log(props.forms[0].stats)} */}
+      {props.forms && <StatGraph stats={props.forms[0].stats}/>}
     </ModalBody>
   </Modal>
 );
