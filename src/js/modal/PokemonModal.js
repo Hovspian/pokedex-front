@@ -69,19 +69,23 @@ const propTypes = {
   }),
 }
 
-const PokemonModal = (props) => (
-  <Modal isOpen={props.modal} className="pokemodal" align="center" external={<CloseButton close={props.handleCloseModal} />}>
-    <ModalHeader>Navigate to other Pokemon</ModalHeader>
-    <ModalBody>
-      <p>Id: {props.id}</p>
-      <p>Name: {props.name}</p>
-      <p>Description: {props.description}</p>
-      <p>Species: {props.species}</p>
-      {/* {props.forms && console.log(props.forms[0].stats)} */}
-      {props.forms && <StatGraph stats={props.forms[0].stats}/>}
-    </ModalBody>
-  </Modal>
-);
+class PokemonModal extends React.Component {
+
+  render() {
+    return (
+      <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
+        <ModalHeader>Navigate to other Pokemon</ModalHeader>
+        <ModalBody>
+          <p>Id: {this.props.id}</p>
+          <p>Name: {this.props.name}</p>
+          <p>Description: {this.props.description}</p>
+          <p>Species: {this.props.species}</p>
+          {this.props.forms && <StatGraph stats={this.props.forms[0].stats} />}
+        </ModalBody>
+      </Modal>
+    )
+  }
+};
 
 PokemonModal.propTypes = propTypes
 
