@@ -94,7 +94,7 @@ class Home extends React.Component {
       id > 806)
       return;
 
-    getPokemonDetails(id)
+    return getPokemonDetails(id)
       .then(pokemonDetails => {
         this.setState({
           pokemonDetails,
