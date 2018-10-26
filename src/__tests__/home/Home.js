@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import Home from '../../js/home/Home';
 
 import * as PokemonAPI from '../../js/core/PokemonAPI';
-// const api = require('../../js/core/PokemonAPI');
 
 describe('Home Component', () => {
 
@@ -31,18 +30,53 @@ describe('Home Component', () => {
       instance.handleCloseModal();
       expect(wrapper.state('modal')).toBe(false);
     });
+  })
 
+  describe('Test API is being called', () => {
+    let wrapper, instance;
+    beforeEach(() => {
+      wrapper = shallow(<Home />);
+      instance = wrapper.instance();
+    });
     it('should call API if clicked on pokemon card', () => {
       PokemonAPI.getPokemonDetails = jest.fn();
-      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve({"name": "Venasaur"}))
+      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve({ "name": "Venasaur" }))
 
       return instance.handlePokemonCardClick(1)
         .then(() => {
           expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(1);
           expect(instance.state.modal).toBe(true);
-          expect(instance.state.pokemonDetails).toEqual({"name": "Venasaur"})
+          expect(instance.state.pokemonDetails).toEqual({ "name": "Venasaur" })
         });
 
     });
-  })
+
+    it('should call API when fetching pokemon', () => {
+      PokemonAPI.getRangeOfPokemon = jest.fn();
+      PokemonAPI.getRangeOfPokemon.mockImplementation(() => Promise.resolve([{
+        "id": 1,
+        "name": "Bulbasaur",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "image_path": "/sprites/pokemon/large/1.png"
+      }]
+      ));
+
+
+      return instance.fetchPokemon(1)
+        .then(() => {
+          expect(PokemonAPI.getRangeOfPokemon).toHaveBeenCalledTimes(1);
+          expect(instance.state.pokemon).toEqual(
+            expect.arrayContaining([
+              expect.objectContaining({
+                "id": 1
+              })
+            ])
+          )
+
+        });
+    });
+  });
 });
