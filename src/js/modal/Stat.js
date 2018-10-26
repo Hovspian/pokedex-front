@@ -1,6 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../../styles/modal/Stat.css'
+
+const propTypes = {
+  statAmount: PropTypes.number.isRequired,
+};
 
 class Stat extends React.Component {
 
@@ -17,5 +22,7 @@ class Stat extends React.Component {
     )
   }
 };
+
+Stat.propTypes = propTypes
 
 export default Stat;

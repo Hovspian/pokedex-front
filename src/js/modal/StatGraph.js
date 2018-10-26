@@ -1,7 +1,19 @@
 import React from 'react';
 import Stat from './Stat';
+import PropTypes from 'prop-types';
 
 import '../../styles/modal/StatGraph.css'
+
+const propTypes = {
+  stats: PropTypes.shape({
+    hp: PropTypes.number,
+    attack: PropTypes.number,
+    defense: PropTypes.number,
+    'special-attack': PropTypes.number,
+    'special-defense': PropTypes.number,
+    speed: PropTypes.number,
+  }),
+};
 
 class StatGraph extends React.Component {
 
@@ -29,5 +41,7 @@ class StatGraph extends React.Component {
     )
   }
 };
+
+StatGraph.propTypes = propTypes
 
 export default StatGraph;

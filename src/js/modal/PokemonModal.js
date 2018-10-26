@@ -76,6 +76,7 @@ class PokemonModal extends React.Component {
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
+          <p>Will need to be edited.</p>
           <p>Id: {this.props.id}</p>
           <p>Name: {this.props.name}</p>
           <p>Description: {this.props.description}</p>
