@@ -47,7 +47,7 @@ class Home extends React.Component {
     } else {
       range = this.perPage;
     }
-    getRangeOfPokemon(id, range)
+    return getRangeOfPokemon(id, range)
       .then(newPokemon => {
         const oldPokemon = this.state.pokemon.slice();
         this.setState({
