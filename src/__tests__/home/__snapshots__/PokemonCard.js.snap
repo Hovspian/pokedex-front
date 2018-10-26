@@ -4,6 +4,7 @@ exports[`PokemonCard should match Card component snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PokemonCard
+    handlePokemonCardClick={[Function]}
     id={130}
     image_path="./130.jpg"
     name="gyarados"
@@ -59,6 +60,7 @@ ShallowWrapper {
 </div>,
       ],
       "className": "card",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -201,6 +203,7 @@ ShallowWrapper {
 </div>,
         ],
         "className": "card",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [

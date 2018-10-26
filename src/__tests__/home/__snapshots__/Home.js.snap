@@ -20,16 +20,9 @@ ShallowWrapper {
       "align": "center",
       "children": Array [
         <PokemonModal
-          modal={true}
->
-          <p>
-                    Modal
-          </p>
-          <p>
-                    Data
-          </p>
-           
-</PokemonModal>,
+          handleCloseModal={[Function]}
+          modal={false}
+/>,
         <Header />,
         <InfiniteScroll
           element="div"
@@ -71,43 +64,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <p>
-              Modal
-</p>,
-            <p>
-              Data
-</p>,
-            " ",
-          ],
-          "modal": true,
+          "handleCloseModal": [Function],
+          "modal": false,
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Modal",
-            },
-            "ref": null,
-            "rendered": "Modal",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Data",
-            },
-            "ref": null,
-            "rendered": "Data",
-            "type": "p",
-          },
-          " ",
-        ],
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -201,16 +162,9 @@ ShallowWrapper {
         "align": "center",
         "children": Array [
           <PokemonModal
-            modal={true}
->
-            <p>
-                        Modal
-            </p>
-            <p>
-                        Data
-            </p>
-             
-</PokemonModal>,
+            handleCloseModal={[Function]}
+            modal={false}
+/>,
           <Header />,
           <InfiniteScroll
             element="div"
@@ -252,43 +206,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <p>
-                Modal
-</p>,
-              <p>
-                Data
-</p>,
-              " ",
-            ],
-            "modal": true,
+            "handleCloseModal": [Function],
+            "modal": false,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Modal",
-              },
-              "ref": null,
-              "rendered": "Modal",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Data",
-              },
-              "ref": null,
-              "rendered": "Data",
-              "type": "p",
-            },
-            " ",
-          ],
+          "rendered": null,
           "type": [Function],
         },
         Object {
