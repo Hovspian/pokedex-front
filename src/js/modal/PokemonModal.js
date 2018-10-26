@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import StatGraph from './StatGraph';
 
 import CloseButton from './CloseButton';
 
 import '../../styles/modal/PokemonModal.css'
 
 const propTypes = {
+  handleCloseModal: PropTypes.func.isRequired,
   modal: PropTypes.bool.isRequired,
   data: PropTypes.shape({
     id: PropTypes.number.isRequired,
@@ -70,32 +72,23 @@ const propTypes = {
 }
 
 class PokemonModal extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: true
-    }
 
-    this.toggle = this.toggle.bind(this);
-  }
-
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
-  }
-
-  render () {
+  render() {
     return (
-      <Modal isOpen={this.state.modal} className="pokemodal" align="center" external={<CloseButton close={this.toggle} />}>
+      <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
-          <b>Pokemon info coming soon&trade;</b>
+          <p>Will need to be edited.</p>
+          <p>Id: {this.props.id}</p>
+          <p>Name: {this.props.name}</p>
+          <p>Description: {this.props.description}</p>
+          <p>Species: {this.props.species}</p>
+          {this.props.forms && <StatGraph stats={this.props.forms[0].stats} />}
         </ModalBody>
       </Modal>
-    );
+    )
   }
-}
+};
 
 PokemonModal.propTypes = propTypes
 

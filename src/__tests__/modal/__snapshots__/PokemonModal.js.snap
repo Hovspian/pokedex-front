@@ -4,6 +4,7 @@ exports[`PokemonModal Component should match PokemonModal component snapshot 1`]
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PokemonModal
+    handleCloseModal={[Function]}
     modal={true}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -39,9 +40,21 @@ ShallowWrapper {
         <ModalBody
           tag="div"
 >
-          <b>
-                    Pokemon info coming soon™
-          </b>
+          <p>
+                    Will need to be edited.
+          </p>
+          <p>
+                    Id: 
+          </p>
+          <p>
+                    Name: 
+          </p>
+          <p>
+                    Description: 
+          </p>
+          <p>
+                    Species: 
+          </p>
 </ModalBody>,
       ],
       "className": "pokemodal",
@@ -81,23 +94,109 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": <b>
-            Pokemon info coming soon™
-</b>,
+          "children": Array [
+            <p>
+              Will need to be edited.
+</p>,
+            <p>
+              Id: 
+</p>,
+            <p>
+              Name: 
+</p>,
+            <p>
+              Description: 
+</p>,
+            <p>
+              Species: 
+</p>,
+            undefined,
+          ],
           "tag": "div",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Pokemon info coming soon™",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Will need to be edited.",
+            },
+            "ref": null,
+            "rendered": "Will need to be edited.",
+            "type": "p",
           },
-          "ref": null,
-          "rendered": "Pokemon info coming soon™",
-          "type": "b",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Id: ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Id: ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Name: ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Name: ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Description: ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Description: ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Species: ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Species: ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          undefined,
+        ],
         "type": [Function],
       },
     ],
@@ -129,9 +228,21 @@ ShallowWrapper {
           <ModalBody
             tag="div"
 >
-            <b>
-                        Pokemon info coming soon™
-            </b>
+            <p>
+                        Will need to be edited.
+            </p>
+            <p>
+                        Id: 
+            </p>
+            <p>
+                        Name: 
+            </p>
+            <p>
+                        Description: 
+            </p>
+            <p>
+                        Species: 
+            </p>
 </ModalBody>,
         ],
         "className": "pokemodal",
@@ -171,23 +282,109 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": <b>
-              Pokemon info coming soon™
-</b>,
+            "children": Array [
+              <p>
+                Will need to be edited.
+</p>,
+              <p>
+                Id: 
+</p>,
+              <p>
+                Name: 
+</p>,
+              <p>
+                Description: 
+</p>,
+              <p>
+                Species: 
+</p>,
+              undefined,
+            ],
             "tag": "div",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Pokemon info coming soon™",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Will need to be edited.",
+              },
+              "ref": null,
+              "rendered": "Will need to be edited.",
+              "type": "p",
             },
-            "ref": null,
-            "rendered": "Pokemon info coming soon™",
-            "type": "b",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Id: ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Id: ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Name: ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Name: ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Description: ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Description: ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Species: ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Species: ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            undefined,
+          ],
           "type": [Function],
         },
       ],
