@@ -3,16 +3,19 @@ import Stat from './Stat';
 
 import '../../styles/modal/StatGraph.css'
 
-class Stat extends React.Component {
-  
+class StatGraph extends React.Component {
+
   render() {
     return (
       <div className="statcontainer">
-        <div><p>Stats</p></div>
+        <div><h3 className="stattitle">Stats</h3></div>
         <div className="statgraph">
-          {Object.keys(props.stats).map((stat, index) => {
-            return <Stat key={index} statAmount={props.stats[stat]} />
-          })}
+          <Stat statAmount={this.props.stats['hp']} />
+          <Stat statAmount={this.props.stats['attack']} />
+          <Stat statAmount={this.props.stats['defense']} />
+          <Stat statAmount={this.props.stats['special-attack']} />
+          <Stat statAmount={this.props.stats['special-defense']} />
+          <Stat statAmount={this.props.stats['speed']} />
         </div>
         <div className="statnames">
           <p className="statname">Hp</p>
