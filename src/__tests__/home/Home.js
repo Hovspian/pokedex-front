@@ -71,11 +71,16 @@ describe('Home Component', () => {
           expect(instance.state.pokemon).toEqual(
             expect.arrayContaining([
               expect.objectContaining({
-                "id": 1
+                "id": 1,
+                "name": "Bulbasaur",
+                "types": [
+                  "grass",
+                  "poison"
+                ],
+                "image_path": "/sprites/pokemon/large/1.png"
               })
             ])
           )
-
         });
     });
   });
