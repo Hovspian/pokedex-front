@@ -2,3 +2,7 @@
   width: 1500px;
   max-width: 90%;
 }
+
+.stats-types {
+  display: flex;
+}
