@@ -50,6 +50,8 @@ ShallowWrapper {
           </h3>
           <PokemonType
                     id={130}
+                    isModal={false}
+                    isWeakness={false}
                     types={
                               Array [
                                         "water",
@@ -96,6 +98,8 @@ ShallowWrapper {
 </h3>,
             <PokemonType
               id={130}
+              isModal={false}
+              isWeakness={false}
               types={
                             Array [
                                           "water",
@@ -150,6 +154,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "id": 130,
+              "isModal": false,
+              "isWeakness": false,
               "types": Array [
                 "water",
                 "flying",
@@ -193,6 +199,8 @@ ShallowWrapper {
             </h3>
             <PokemonType
                         id={130}
+                        isModal={false}
+                        isWeakness={false}
                         types={
                                     Array [
                                                 "water",
@@ -239,6 +247,8 @@ ShallowWrapper {
 </h3>,
               <PokemonType
                 id={130}
+                isModal={false}
+                isWeakness={false}
                 types={
                                 Array [
                                                 "water",
@@ -293,6 +303,8 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "id": 130,
+                "isModal": false,
+                "isWeakness": false,
                 "types": Array [
                   "water",
                   "flying",
