@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+
 import StatGraph from './StatGraph';
 import TypeContainer from './TypeContainer';
 import CloseButton from './CloseButton';
+import Sprite from './Sprite';
 
 import '../../styles/modal/PokemonModal.css'
 
@@ -78,6 +80,7 @@ class PokemonModal extends React.Component {
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
+          {this.props.forms && <Sprite name={this.props.forms[0].name} image_path={this.props.forms[0].image_path} types={this.props.forms[0].types} />}
           <p>Will need to be edited.</p>
           <p>Id: {this.props.id}</p>
           <p>Name: {this.props.name}</p>

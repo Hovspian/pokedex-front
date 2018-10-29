@@ -1,0 +1,20 @@
+.sprite-border {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 20px;
+}
+
+.primary {
+  width: 330px;
+  height:330px;
+}
+
+.secondary {
+  width: 310px;
+  height: 310px;
+  transform: translateY(7px);
+}
+
+.single-type-img {
+  transform: translateY(12px);
+}

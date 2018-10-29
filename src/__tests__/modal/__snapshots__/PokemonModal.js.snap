@@ -55,6 +55,14 @@ ShallowWrapper {
           <p>
                     Species: 
           </p>
+          <div
+                    className="stats-types"
+          >
+                    
+          </div>
+          <div>
+                    Evolutions
+          </div>
 </ModalBody>,
       ],
       "className": "pokemodal",
@@ -95,6 +103,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
+            undefined,
             <p>
               Will need to be edited.
 </p>,
@@ -110,12 +119,20 @@ ShallowWrapper {
             <p>
               Species: 
 </p>,
-            undefined,
+            <div
+              className="stats-types"
+>
+              
+</div>,
+            <div>
+              Evolutions
+</div>,
           ],
           "tag": "div",
         },
         "ref": null,
         "rendered": Array [
+          undefined,
           Object {
             "instance": null,
             "key": undefined,
@@ -195,7 +212,35 @@ ShallowWrapper {
             ],
             "type": "p",
           },
-          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                undefined,
+              ],
+              "className": "stats-types",
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              undefined,
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Evolutions",
+            },
+            "ref": null,
+            "rendered": "Evolutions",
+            "type": "div",
+          },
         ],
         "type": [Function],
       },
@@ -243,6 +288,14 @@ ShallowWrapper {
             <p>
                         Species: 
             </p>
+            <div
+                        className="stats-types"
+            >
+                        
+            </div>
+            <div>
+                        Evolutions
+            </div>
 </ModalBody>,
         ],
         "className": "pokemodal",
@@ -283,6 +336,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": Array [
+              undefined,
               <p>
                 Will need to be edited.
 </p>,
@@ -298,12 +352,20 @@ ShallowWrapper {
               <p>
                 Species: 
 </p>,
-              undefined,
+              <div
+                className="stats-types"
+>
+                
+</div>,
+              <div>
+                Evolutions
+</div>,
             ],
             "tag": "div",
           },
           "ref": null,
           "rendered": Array [
+            undefined,
             Object {
               "instance": null,
               "key": undefined,
@@ -383,7 +445,35 @@ ShallowWrapper {
               ],
               "type": "p",
             },
-            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  undefined,
+                ],
+                "className": "stats-types",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                undefined,
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Evolutions",
+              },
+              "ref": null,
+              "rendered": "Evolutions",
+              "type": "div",
+            },
           ],
           "type": [Function],
         },

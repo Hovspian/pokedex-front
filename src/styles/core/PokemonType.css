@@ -74,3 +74,75 @@
 .water {
   background-color: #6890F0;
 }
+
+.bug-border {
+  color: #A8B820;
+}
+
+.electric-border {
+  color: #F8D030;
+}
+
+.dark-border {
+  color: #705848;
+}
+
+.dragon-border {
+  color: #7038F8;
+}
+
+.fairy-border {
+  color: #EE99AC;
+}
+
+.fighting-border {
+  color: #C03028;
+}
+
+.fire-border {
+  color: #f08030;
+}
+
+.flying-border {
+  color: #A890F0;
+}
+
+.ghost-border {
+  color: #705898;
+}
+
+.grass-border {
+  color: #78C850;
+}
+
+.ground-border {
+  color: #E0C068;
+}
+
+.ice-border {
+  color: #98D8D8;
+}
+
+.normal-border {
+  color: #a8a878;
+}
+
+.poison-border {
+  color: #A040A0;
+}
+
+.psychic-border {
+  color: #F85888;
+}
+
+.rock-border {
+  color: #B8A038;
+}
+
+.steel-border {
+  color: #B8B8D0;
+}
+
+.water-border {
+  color: #6890F0;
+}
