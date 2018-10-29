@@ -2,15 +2,6 @@
     width: 20%;
 }
 
-.extra-damage {
-    margin-left: 10px;
-    padding: 4px;
-    border-radius: 30px;
-    background-color: grey;
-    vertical-align: middle;
-    position: relative;
-}
-
 .extra-damage .extra-damage-tooltip {
     visibility: hidden;
     padding: 10px;
@@ -21,6 +12,18 @@
     z-index: 1;
     display: table-cell;
     vertical-align: center; 
+}
+
+.extra-damage {
+    margin-left: 10px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+    padding-bottom:0px; 
+    border-radius: 50%;
+    background-color: grey;
+    vertical-align: middle;
+    position: relative;
 }
 
 .extra-damage:hover .extra-damage-tooltip {
