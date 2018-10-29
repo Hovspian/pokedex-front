@@ -12,7 +12,7 @@ const propTypes = {
     'special-attack': PropTypes.number,
     'special-defense': PropTypes.number,
     speed: PropTypes.number,
-  }),
+  }).isRequired,
 };
 
 class StatGraph extends React.Component {
