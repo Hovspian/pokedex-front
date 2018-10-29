@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ModalTypes from './ModalTypes';
-import ModalWeakness from './ModalWeakness';
+import PokemonType from '../core/PokemonType';
 
 import '../../styles/modal/TypeContainer.css'
 
@@ -20,9 +19,9 @@ class TypeContainer extends React.Component {
     return (
       <div className="type-container">
         <h3>Type</h3>
-        <ModalTypes types={this.props.types} />
+        <PokemonType isModal types={this.props.types} isWeakness={false} />
         <h3>Weakness</h3>
-        <ModalWeakness weaknesses={this.props.weaknesses} />
+        <PokemonType isModal types={this.props.weaknesses} isWeakness />
       </div>
     )
   }

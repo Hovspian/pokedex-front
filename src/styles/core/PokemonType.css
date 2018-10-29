@@ -146,3 +146,36 @@
 .water-border {
   color: #6890F0;
 }
+
+.modal-type {
+  width: 20%;
+}
+
+.extra-damage .extra-damage-tooltip {
+  visibility: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: grey;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: center; 
+}
+
+.extra-damage {
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 50%;
+  background-color: grey;
+  vertical-align: sub;
+  line-height: 0;
+  position: relative;
+}
+
+.extra-damage:hover .extra-damage-tooltip {
+  visibility: visible;
+}
