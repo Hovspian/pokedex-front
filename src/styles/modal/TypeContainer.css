@@ -1,0 +1,9 @@
+.type-container {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+  justify-content: space-around;
+
+}

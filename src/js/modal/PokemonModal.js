@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import StatGraph from './StatGraph';
-
+import TypeContainer from './TypeContainer';
 import CloseButton from './CloseButton';
 
 import '../../styles/modal/PokemonModal.css'
@@ -83,7 +83,11 @@ class PokemonModal extends React.Component {
           <p>Name: {this.props.name}</p>
           <p>Description: {this.props.description}</p>
           <p>Species: {this.props.species}</p>
-          {this.props.forms && <StatGraph stats={this.props.forms[0].stats} />}
+          <div className="stats-types">
+            {this.props.forms && <StatGraph stats={this.props.forms[0].stats} />}
+            {this.props.forms && <TypeContainer types={this.props.forms[0].types} weaknesses={this.props.forms[0].weaknesses} />}
+          </div>
+          <div>Evolutions</div>
         </ModalBody>
       </Modal>
     )
