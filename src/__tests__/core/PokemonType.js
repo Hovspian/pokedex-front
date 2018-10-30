@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 import PokemonType from '../../js/core/PokemonType';
 import ExampleJSON from '../../../local_data/example_single.json';

@@ -14,14 +14,14 @@ class Stat extends React.Component {
     const maxHeight = 200;
     let height = Math.max(minHeight, this.props.statAmount);
     return Math.min(height, maxHeight);
-  } 
+  }
 
   render() {
     return (
       <div className="stat" style={{ "height": `${this.calculateHeight()}px` }}><span className="amount">{this.props.statAmount}</span></div>
     )
   }
-};
+}
 
 Stat.propTypes = propTypes
 

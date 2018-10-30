@@ -122,7 +122,7 @@ class Home extends React.Component {
     return (
       <div className="main" align="center">
         <PokemonModal handleCloseModal={this.handleCloseModal}
-          modal={this.state.modal} {...this.state.pokemonDetails} />
+          modal={this.state.modal} data={this.state.pokemonDetails} />
         <Header />
         <InfiniteScroll
           initialLoad={true}

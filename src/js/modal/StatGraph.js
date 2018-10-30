@@ -40,7 +40,7 @@ class StatGraph extends React.Component {
       </div>
     )
   }
-};
+}
 
 StatGraph.propTypes = propTypes
 
