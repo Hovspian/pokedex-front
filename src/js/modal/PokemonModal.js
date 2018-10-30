@@ -76,26 +76,27 @@ const propTypes = {
 class PokemonModal extends React.Component {
 
   render() {
-    return (
+    return this.props.modal && this.props.data ? (
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
-          {this.props.forms && <Sprite name={this.props.forms[0].name} image_path={this.props.forms[0].image_path} types={this.props.forms[0].types} />}
+          {<Sprite name={this.props.data.forms[0].name} image_path={this.props.data.forms[0].image_path} types={this.props.data.forms[0].types} />}
           <p>Will need to be edited.</p>
-          <p>Id: {this.props.id}</p>
-          <p>Name: {this.props.name}</p>
-          <p>Description: {this.props.description}</p>
-          <p>Species: {this.props.species}</p>
+          <p>Id: {this.props.data.id}</p>
+          <p>Name: {this.props.data.name}</p>
+          <p>Description: {this.props.data.description}</p>
+          <p>Species: {this.props.data.species}</p>
           <div className="stats-types">
-            {this.props.forms && <StatGraph stats={this.props.forms[0].stats} />}
-            {this.props.forms && <TypeContainer types={this.props.forms[0].types} weaknesses={this.props.forms[0].weaknesses} />}
+            <StatGraph stats={this.props.data.forms[0].stats} />
+            <TypeContainer types={this.props.data.forms[0].types} weaknesses={this.props.data.forms[0].weaknesses} />
           </div>
           <div>Evolutions</div>
         </ModalBody>
       </Modal>
-    )
+    ) : null;
+
   }
-};
+}
 
 PokemonModal.propTypes = propTypes
 
