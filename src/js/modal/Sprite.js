@@ -15,7 +15,7 @@ const propTypes = {
 class Sprite extends React.Component {
   render () {
     const inner = (
-      <img src={getPokemonSprite(this.props.image_path)} alt={`${this.props.name} sprite`} />
+      <img className="modal-sprite" src={getPokemonSprite(this.props.image_path)} alt={`${this.props.name} sprite`} />
     );
 
     return (

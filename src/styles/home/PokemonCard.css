@@ -23,7 +23,7 @@
 }
 
 /* Resize images to 300x300 */
-img {
+.card-sprite {
   max-width: 300px;
   max-height: 300px;
 }

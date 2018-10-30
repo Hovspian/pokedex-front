@@ -43,7 +43,7 @@ class PokemonCard extends React.Component {
   render () {
     return (
       <div className='card' onClick={() => {this.props.handlePokemonCardClick(this.props.id)}} >
-        <img src={getPokemonSprite(this.props.image_path)} alt={`${this.props.name} sprite`} />
+        <img className="card-sprite" src={getPokemonSprite(this.props.image_path)} alt={`${this.props.name} sprite`} />
         <div className="textarea" align="center" >
           <h5 className="pokemon-id" align="left">{`#${this.props.id}`}</h5>
           <h3><b>{this.capitalizeName(this.props.name)}</b></h3>

@@ -24,10 +24,10 @@ const propTypes = {
         weaknesses: PropTypes.arrayOf(
           PropTypes.shape({
             type: PropTypes.string.isRequired,
-            multiplier: PropTypes.number.isRequired,
+            multiplier: PropTypes.string.isRequired,
           }).isRequired
         ).isRequired,
-        ablities: PropTypes.arrayOf(
+        abilities: PropTypes.arrayOf(
           PropTypes.shape({
             name: PropTypes.string.isRequired,
             hidden: PropTypes.bool.isRequired,
@@ -80,7 +80,7 @@ class PokemonModal extends React.Component {
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
-          {<Sprite name={this.props.data.forms[0].name} image_path={this.props.data.forms[0].image_path} types={this.props.data.forms[0].types} />}
+          <Sprite name={this.props.data.forms[0].name} image_path={this.props.data.forms[0].image_path} types={this.props.data.forms[0].types} />
           <p>Will need to be edited.</p>
           <p>Id: {this.props.data.id}</p>
           <p>Name: {this.props.data.name}</p>

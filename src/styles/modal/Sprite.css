@@ -5,16 +5,21 @@
 }
 
 .primary {
-  width: 330px;
-  height:330px;
+  width: 380px;
+  height:380px;
 }
 
 .secondary {
-  width: 310px;
-  height: 310px;
+  width: 360px;
+  height: 360px;
   transform: translateY(7px);
 }
 
 .single-type-img {
   transform: translateY(12px);
+}
+
+.modal-sprite {
+  max-height: 350px;
+  max-width: 350px;
 }
