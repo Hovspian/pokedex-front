@@ -1,89 +1,99 @@
 {
-    "id": 12,
-    "name": "Butterfree",
-    "description": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
-    "species": "Butterfly",
-    "forms": [
+  "previous": {
+    "id": 11,
+    "name": "Metapod"
+  },
+  "next": {
+    "id": 13,
+    "name": "Weedle"
+  },
+  "id": 12,
+  "name": "Butterfree",
+  "description": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
+  "species": "Butterfly",
+  "forms": [
+    {
+      "name": "Butterfree",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "weaknesses": [
+        {
+          "type": "fire",
+          "multiplier": "2.000"
+        },
+        {
+          "type": "electric",
+          "multiplier": "2.000"
+        },
+        {
+          "type": "ice",
+          "multiplier": "2.000"
+        },
+        {
+          "type": "flying",
+          "multiplier": "2.000"
+        },
+        {
+          "type": "rock",
+          "multiplier": "4.000"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Compound Eyes",
+          "description": "Increases moves' accuracy to 1.3×.",
+          "hidden": false
+        },
+        {
+          "name": "Tinted Lens",
+          "description": "Doubles damage inflicted with not very effective moves.",
+          "hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 45,
+        "defense": 50,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 70
+      },
+      "image_path": "/sprites/pokemon/large/12.png"
+    }
+  ],
+  "evolutions": {
+    "1": [
       {
+        "id": 10,
+        "name": "Caterpie",
+        "types": [
+          "bug"
+        ],
+        "image_path": "/sprites/pokemon/small/10.png"
+      }
+    ],
+    "2": [
+      {
+        "id": 11,
+        "name": "Metapod",
+        "types": [
+          "bug"
+        ],
+        "image_path": "/sprites/pokemon/small/11.png"
+      }
+    ],
+    "3": [
+      {
+        "id": 12,
         "name": "Butterfree",
         "types": [
           "bug",
           "flying"
         ],
-        "weaknesses": [
-          {
-            "type": "fire",
-            "multiplier": "2.000"
-          },
-          {
-            "type": "electric",
-            "multiplier": "2.000"
-          },
-          {
-            "type": "ice",
-            "multiplier": "2.000"
-          },
-          {
-            "type": "flying",
-            "multiplier": "2.000"
-          },
-          {
-            "type": "rock",
-            "multiplier": "4.000"
-          }
-        ],
-        "abilities": [
-          {
-            "name": "Compound Eyes",
-            "hidden": false
-          },
-          {
-            "name": "Tinted Lens",
-            "hidden": true
-          }
-        ],
-        "stats": {
-          "hp": 60,
-          "attack": 45,
-          "defense": 50,
-          "special-attack": 90,
-          "special-defense": 80,
-          "speed": 70
-        },
-        "image_path": "/sprites/pokemon/large/12.png"
+        "image_path": "/sprites/pokemon/small/12.png"
       }
-    ],
-    "evolutions": {
-      "1": [
-        {
-          "id": 10,
-          "name": "Caterpie",
-          "types": [
-            "bug"
-          ],
-          "image_path": "/sprites/pokemon/small/10.png"
-        }
-      ],
-      "2": [
-        {
-          "id": 11,
-          "name": "Metapod",
-          "types": [
-            "bug"
-          ],
-          "image_path": "/sprites/pokemon/small/11.png"
-        }
-      ],
-      "3": [
-        {
-          "id": 12,
-          "name": "Butterfree",
-          "types": [
-            "bug",
-            "flying"
-          ],
-          "image_path": "/sprites/pokemon/small/12.png"
-        }
-      ]
-    }
+    ]
   }
+}
