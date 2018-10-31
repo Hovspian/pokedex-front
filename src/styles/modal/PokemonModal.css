@@ -1,9 +1,16 @@
 .pokemodal {
-  width: 1500px;
+  width: 1200px;
   max-width: 90%;
   min-width: 400px; /* Needs to fit sprite */
 }
 
 .stats-types {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flex-item {
+  /*max-width: 100%;*/
 }

@@ -19,7 +19,7 @@ class StatGraph extends React.Component {
 
   render() {
     return (
-      <div className="statcontainer">
+      <div className={`${this.props.className} statcontainer`}>
         <div><h3 className="stattitle">Stats</h3></div>
         <div className="statgraph">
           <Stat statAmount={this.props.stats['hp']} />
@@ -33,7 +33,7 @@ class StatGraph extends React.Component {
           <p className="statname">Hp</p>
           <p className="statname">Attack</p>
           <p className="statname">Defense</p>
-          <p className="statname">Special Aattack</p>
+          <p className="statname">Special Attack</p>
           <p className="statname">Special Defense</p>
           <p className="statname">Speed</p>
         </div>

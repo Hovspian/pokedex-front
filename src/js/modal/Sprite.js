@@ -19,7 +19,7 @@ class Sprite extends React.Component {
     );
 
     return (
-      <div>
+      <div className={this.props.className}>
         <div className={`sprite-border primary ${this.props.types[0]}-border`}>
           {this.props.types[1] ?
             <div className={`sprite-border secondary ${this.props.types[1]}-border`}>

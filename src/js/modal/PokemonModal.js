@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
+import BasicInfo from './BasicInfo';
 import StatGraph from './StatGraph';
 import TypeContainer from './TypeContainer';
 import CloseButton from './CloseButton';
@@ -13,6 +14,14 @@ const propTypes = {
   handleCloseModal: PropTypes.func.isRequired,
   modal: PropTypes.bool.isRequired,
   data: PropTypes.shape({
+    previous: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    }).isRequired,
+    next: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    }).isRequired,
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -30,8 +39,9 @@ const propTypes = {
         abilities: PropTypes.arrayOf(
           PropTypes.shape({
             name: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
             hidden: PropTypes.bool.isRequired,
-          }).isRequired
+          }).isRequired,
         ).isRequired,
         stats: PropTypes.shape({
           hp: PropTypes.number.isRequired,
@@ -80,15 +90,22 @@ class PokemonModal extends React.Component {
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalHeader>Navigate to other Pokemon</ModalHeader>
         <ModalBody>
-          <Sprite name={this.props.data.forms[0].name} image_path={this.props.data.forms[0].image_path} types={this.props.data.forms[0].types} />
-          <p>Will need to be edited.</p>
-          <p>Id: {this.props.data.id}</p>
-          <p>Name: {this.props.data.name}</p>
-          <p>Description: {this.props.data.description}</p>
-          <p>Species: {this.props.data.species}</p>
           <div className="stats-types">
-            <StatGraph stats={this.props.data.forms[0].stats} />
-            <TypeContainer types={this.props.data.forms[0].types} weaknesses={this.props.data.forms[0].weaknesses} />
+              <Sprite className="flex-item"
+                      name={this.props.data.forms[0].name}
+                      image_path={this.props.data.forms[0].image_path}
+                      types={this.props.data.forms[0].types}
+              />
+              <BasicInfo className="flex-item"
+                         id={this.props.data.id}
+                         name={this.props.data.name}
+                         description={this.props.data.description}
+                         species={this.props.data.species}
+                         abilities={this.props.data.forms[0].abilities}
+              />
+
+              <StatGraph className="flex-item" stats={this.props.data.forms[0].stats} />
+              <TypeContainer className="flex-item" types={this.props.data.forms[0].types} weaknesses={this.props.data.forms[0].weaknesses} />
           </div>
           <div>Evolutions</div>
         </ModalBody>
