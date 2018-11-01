@@ -17,9 +17,9 @@ class Abilities extends React.Component {
   render () {
     const abilityElements = this.props.abilities.map((ability, index) => { return (
       <span key={`container-${ability.name}`}>
-        <span className="ability" >
+        <span className="ability">
           {`${ability.name}${index < this.props.abilities.length - 1 ? ', ' : ''}`}
-          <span className="ability-tooltip"> {ability.description} </span>
+          <span className="ability-tooltip">{ability.description}</span>
         </span>
       </span>
     )});

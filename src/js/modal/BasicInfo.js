@@ -43,6 +43,7 @@ class BasicInfo extends React.Component {
           <h3>{`${this.props.species} Pokemon`}</h3>
           <br />
           <h4>{this.props.description}</h4>
+          <br />
           <Abilities abilities={this.props.abilities} />
         </div>
       </div>
