@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Abilities from './Abilities';
+
 import '../../styles/modal/BasicInfo.css';
 
 const propTypes = {
@@ -18,14 +20,31 @@ const propTypes = {
 };
 
 class BasicInfo extends React.Component {
+  /**
+   * Prepends the id with zeroes to make all ids have 3 digits
+   * @returns {string} - the 3 digit id
+   */
+  idWithZeros() {
+    let id = this.props.id;
+    if (id < 100) {
+      return `00${id}`;
+    }
+    else if (id < 10) {
+      return `0${id}`;
+    }
+    return id.toString();
+  }
+
   render () {
     return (
       <div className={`${this.props.className} basic-info`}>
-        <p>Will need to be edited.</p>
-        <p>Id: {this.props.id}</p>
-        <p>Name: {this.props.name}</p>
-        <p>Description: {this.props.description}</p>
-        <p>Species: {this.props.species}</p>
+        <div className="text-container">
+          <h1>{`${this.idWithZeros()} ${this.props.name}`}</h1>
+          <h3>{`${this.props.species} Pokemon`}</h3>
+          <br />
+          <h4>{this.props.description}</h4>
+          <Abilities abilities={this.props.abilities} />
+        </div>
       </div>
     )
   }

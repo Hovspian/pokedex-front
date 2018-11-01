@@ -1,0 +1,15 @@
+.ability-tooltip {
+  visibility: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: grey;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: center;
+}
+
+.ability:hover .ability-tooltip {
+  visibility: visible;
+}
