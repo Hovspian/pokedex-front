@@ -15,10 +15,11 @@ const propTypes = {
 
 class Abilities extends React.Component {
   render () {
-    const abilityElements = this.props.abilities.map((ability, index) => { return (
+    const abilityElements = this.props.abilities.map((ability, index) => { return  ability.hidden ? null : (
       <span key={`container-${ability.name}`}>
+        {index > 0 ? ', ' : ''}
         <span className="ability">
-          {`${ability.name}${index < this.props.abilities.length - 1 ? ', ' : ''}`}
+          {ability.name}
           <span className="ability-tooltip">{ability.description}</span>
         </span>
       </span>
