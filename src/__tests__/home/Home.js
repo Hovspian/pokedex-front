@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import Home from '../../js/home/Home';
 
 import * as PokemonAPI from '../../js/core/PokemonAPI';
+import ExampleJSON from '../../../local_data/example_detail.json';
 
 describe('Home Component', () => {
 
@@ -40,13 +41,13 @@ describe('Home Component', () => {
     });
     it('should call API if clicked on pokemon card', () => {
       PokemonAPI.getPokemonDetails = jest.fn();
-      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve({ "name": "Venasaur" }))
+      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON))
 
       return instance.handlePokemonCardClick(1)
         .then(() => {
           expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(1);
           expect(instance.state.modal).toBe(true);
-          expect(instance.state.pokemonDetails).toEqual({ "name": "Venasaur" })
+          expect(instance.state.pokemonDetails).toEqual(ExampleJSON)
         });
 
     });

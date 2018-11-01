@@ -17,7 +17,7 @@ const propTypes = {
     previous: PropTypes.shape({
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
-    }).isRequired,
+    }),
     next: PropTypes.shape({
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
@@ -41,7 +41,7 @@ const propTypes = {
             name: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
             hidden: PropTypes.bool.isRequired,
-          }).isRequired,
+          }).isRequired
         ).isRequired,
         stats: PropTypes.shape({
           hp: PropTypes.number.isRequired,

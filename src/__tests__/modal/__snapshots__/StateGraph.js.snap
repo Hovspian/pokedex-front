@@ -79,7 +79,7 @@ ShallowWrapper {
           <p
                     className="statname"
           >
-                    Special Aattack
+                    Special Attack
           </p>
           <p
                     className="statname"
@@ -93,7 +93,7 @@ ShallowWrapper {
           </p>
 </div>,
       ],
-      "className": "statcontainer",
+      "className": "undefined statcontainer",
     },
     "ref": null,
     "rendered": Array [
@@ -245,7 +245,7 @@ ShallowWrapper {
             <p
               className="statname"
 >
-              Special Aattack
+              Special Attack
 </p>,
             <p
               className="statname"
@@ -303,11 +303,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Special Aattack",
+              "children": "Special Attack",
               "className": "statname",
             },
             "ref": null,
-            "rendered": "Special Aattack",
+            "rendered": "Special Attack",
             "type": "p",
           },
           Object {
@@ -397,7 +397,7 @@ ShallowWrapper {
             <p
                         className="statname"
             >
-                        Special Aattack
+                        Special Attack
             </p>
             <p
                         className="statname"
@@ -411,7 +411,7 @@ ShallowWrapper {
             </p>
 </div>,
         ],
-        "className": "statcontainer",
+        "className": "undefined statcontainer",
       },
       "ref": null,
       "rendered": Array [
@@ -563,7 +563,7 @@ ShallowWrapper {
               <p
                 className="statname"
 >
-                Special Aattack
+                Special Attack
 </p>,
               <p
                 className="statname"
@@ -621,11 +621,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Special Aattack",
+                "children": "Special Attack",
                 "className": "statname",
               },
               "ref": null,
-              "rendered": "Special Aattack",
+              "rendered": "Special Attack",
               "type": "p",
             },
             Object {

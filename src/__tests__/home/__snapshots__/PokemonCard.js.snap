@@ -31,6 +31,7 @@ ShallowWrapper {
       "children": Array [
         <img
           alt="gyarados sprite"
+          className="card-sprite"
           src="https://pokedex-backend-server.herokuapp.com./130.jpg"
 />,
         <div
@@ -72,6 +73,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "alt": "gyarados sprite",
+          "className": "card-sprite",
           "src": "https://pokedex-backend-server.herokuapp.com./130.jpg",
         },
         "ref": null,
@@ -180,6 +182,7 @@ ShallowWrapper {
         "children": Array [
           <img
             alt="gyarados sprite"
+            className="card-sprite"
             src="https://pokedex-backend-server.herokuapp.com./130.jpg"
 />,
           <div
@@ -221,6 +224,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "gyarados sprite",
+            "className": "card-sprite",
             "src": "https://pokedex-backend-server.herokuapp.com./130.jpg",
           },
           "ref": null,
