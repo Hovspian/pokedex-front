@@ -20,6 +20,7 @@ ShallowWrapper {
       "align": "center",
       "children": Array [
         <PokemonModal
+          data={null}
           handleCloseModal={[Function]}
           modal={false}
 />,
@@ -64,6 +65,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "data": null,
           "handleCloseModal": [Function],
           "modal": false,
         },
@@ -162,6 +164,7 @@ ShallowWrapper {
         "align": "center",
         "children": Array [
           <PokemonModal
+            data={null}
             handleCloseModal={[Function]}
             modal={false}
 />,
@@ -206,6 +209,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "data": null,
             "handleCloseModal": [Function],
             "modal": false,
           },
