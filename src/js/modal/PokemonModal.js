@@ -62,7 +62,7 @@ const propTypes = {
           types: PropTypes.arrayOf(PropTypes.string).isRequired,
           image_path: PropTypes.string.isRequired,
         }).isRequired
-      ).isRequired,
+      ),
       2: PropTypes.arrayOf(
         PropTypes.shape({
           id: PropTypes.number.isRequired,
@@ -70,7 +70,7 @@ const propTypes = {
           types: PropTypes.arrayOf(PropTypes.string).isRequired,
           image_path: PropTypes.string.isRequired,
         }).isRequired
-      ).isRequired,
+      ),
       3: PropTypes.arrayOf(
         PropTypes.shape({
           id: PropTypes.number.isRequired,
@@ -78,7 +78,7 @@ const propTypes = {
           types: PropTypes.arrayOf(PropTypes.string).isRequired,
           image_path: PropTypes.string.isRequired,
         }).isRequired
-      ).isRequired,
+      ),
     }).isRequired,
   }),
 }
