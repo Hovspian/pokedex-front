@@ -39,12 +39,12 @@ describe('Tests render output for different types and sizes', () => {
 
   it('should render a small type', () => {
     const wrapper = shallow(<PokemonType isModal={false} isWeakness types={ExampleDetailJSON.forms[0].types} />);
-    expect(wrapper.exists('h3')).toEqual(false);
+    expect(wrapper.exists('h4')).toEqual(false);
   });
 
   it('should render a large type', () => {
     const wrapper = shallow(<PokemonType isModal isWeakness={false} types={ExampleDetailJSON.forms[0].types} />);
-    expect(wrapper.exists('h3')).toEqual(true);
+    expect(wrapper.exists('h4')).toEqual(true);
   })
 
 })

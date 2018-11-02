@@ -33,9 +33,9 @@ ShallowWrapper {
           pill={true}
           tag="span"
 >
-          <h3>
+          <h4>
                     
-          </h3>
+          </h4>
 </Badge>,
         <Badge
           className="type undefined modal-type"
@@ -43,9 +43,9 @@ ShallowWrapper {
           pill={true}
           tag="span"
 >
-          <h3>
+          <h4>
                     
-          </h3>
+          </h4>
 </Badge>,
       ],
     },
@@ -56,9 +56,9 @@ ShallowWrapper {
         "key": "0",
         "nodeType": "function",
         "props": Object {
-          "children": <h3>
+          "children": <h4>
             
-</h3>,
+</h4>,
           "className": "type undefined modal-type",
           "color": "primary",
           "pill": true,
@@ -80,7 +80,7 @@ ShallowWrapper {
             undefined,
             undefined,
           ],
-          "type": "h3",
+          "type": "h4",
         },
         "type": [Function],
       },
@@ -89,9 +89,9 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": <h3>
+          "children": <h4>
             
-</h3>,
+</h4>,
           "className": "type undefined modal-type",
           "color": "primary",
           "pill": true,
@@ -113,7 +113,7 @@ ShallowWrapper {
             undefined,
             undefined,
           ],
-          "type": "h3",
+          "type": "h4",
         },
         "type": [Function],
       },
@@ -133,9 +133,9 @@ ShallowWrapper {
             pill={true}
             tag="span"
 >
-            <h3>
+            <h4>
                         
-            </h3>
+            </h4>
 </Badge>,
           <Badge
             className="type undefined modal-type"
@@ -143,9 +143,9 @@ ShallowWrapper {
             pill={true}
             tag="span"
 >
-            <h3>
+            <h4>
                         
-            </h3>
+            </h4>
 </Badge>,
         ],
       },
@@ -156,9 +156,9 @@ ShallowWrapper {
           "key": "0",
           "nodeType": "function",
           "props": Object {
-            "children": <h3>
+            "children": <h4>
               
-</h3>,
+</h4>,
             "className": "type undefined modal-type",
             "color": "primary",
             "pill": true,
@@ -180,7 +180,7 @@ ShallowWrapper {
               undefined,
               undefined,
             ],
-            "type": "h3",
+            "type": "h4",
           },
           "type": [Function],
         },
@@ -189,9 +189,9 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": <h3>
+            "children": <h4>
               
-</h3>,
+</h4>,
             "className": "type undefined modal-type",
             "color": "primary",
             "pill": true,
@@ -213,7 +213,7 @@ ShallowWrapper {
               undefined,
               undefined,
             ],
-            "type": "h3",
+            "type": "h4",
           },
           "type": [Function],
         },

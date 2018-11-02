@@ -9,8 +9,8 @@ describe('TypeContainer Component', () => {
   let props;
   beforeEach(() => {
     props = {
-      types: ExampleJSON.forms[0].types.types,
-      weaknesses: ExampleJSON.forms[0].types.weaknesses,
+      types: ExampleJSON.forms[0].types,
+      weaknesses: ExampleJSON.forms[0].weaknesses,
     };
   });
 

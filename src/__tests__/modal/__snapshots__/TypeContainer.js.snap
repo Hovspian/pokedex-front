@@ -4,8 +4,36 @@ exports[`TypeContainer Component should match TypeContainer component snapshot 1
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TypeContainer
-    types={undefined}
-    weaknesses={undefined}
+    types={
+        Array [
+            "bug",
+            "flying",
+          ]
+    }
+    weaknesses={
+        Array [
+            Object {
+              "multiplier": "2.000",
+              "type": "fire",
+            },
+            Object {
+              "multiplier": "2.000",
+              "type": "electric",
+            },
+            Object {
+              "multiplier": "2.000",
+              "type": "ice",
+            },
+            Object {
+              "multiplier": "2.000",
+              "type": "flying",
+            },
+            Object {
+              "multiplier": "4.000",
+              "type": "rock",
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -27,7 +55,12 @@ ShallowWrapper {
         <PokemonType
           isModal={true}
           isWeakness={false}
-          types={undefined}
+          types={
+                    Array [
+                              "bug",
+                              "flying",
+                            ]
+          }
 />,
         <h3>
           Weakness
@@ -35,7 +68,30 @@ ShallowWrapper {
         <PokemonType
           isModal={true}
           isWeakness={true}
-          types={undefined}
+          types={
+                    Array [
+                              Object {
+                                "multiplier": "2.000",
+                                "type": "fire",
+                              },
+                              Object {
+                                "multiplier": "2.000",
+                                "type": "electric",
+                              },
+                              Object {
+                                "multiplier": "2.000",
+                                "type": "ice",
+                              },
+                              Object {
+                                "multiplier": "2.000",
+                                "type": "flying",
+                              },
+                              Object {
+                                "multiplier": "4.000",
+                                "type": "rock",
+                              },
+                            ]
+          }
 />,
       ],
       "className": "undefined type-container",
@@ -60,7 +116,10 @@ ShallowWrapper {
         "props": Object {
           "isModal": true,
           "isWeakness": false,
-          "types": undefined,
+          "types": Array [
+            "bug",
+            "flying",
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -84,7 +143,28 @@ ShallowWrapper {
         "props": Object {
           "isModal": true,
           "isWeakness": true,
-          "types": undefined,
+          "types": Array [
+            Object {
+              "multiplier": "2.000",
+              "type": "fire",
+            },
+            Object {
+              "multiplier": "2.000",
+              "type": "electric",
+            },
+            Object {
+              "multiplier": "2.000",
+              "type": "ice",
+            },
+            Object {
+              "multiplier": "2.000",
+              "type": "flying",
+            },
+            Object {
+              "multiplier": "4.000",
+              "type": "rock",
+            },
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -106,7 +186,12 @@ ShallowWrapper {
           <PokemonType
             isModal={true}
             isWeakness={false}
-            types={undefined}
+            types={
+                        Array [
+                                    "bug",
+                                    "flying",
+                                  ]
+            }
 />,
           <h3>
             Weakness
@@ -114,7 +199,30 @@ ShallowWrapper {
           <PokemonType
             isModal={true}
             isWeakness={true}
-            types={undefined}
+            types={
+                        Array [
+                                    Object {
+                                      "multiplier": "2.000",
+                                      "type": "fire",
+                                    },
+                                    Object {
+                                      "multiplier": "2.000",
+                                      "type": "electric",
+                                    },
+                                    Object {
+                                      "multiplier": "2.000",
+                                      "type": "ice",
+                                    },
+                                    Object {
+                                      "multiplier": "2.000",
+                                      "type": "flying",
+                                    },
+                                    Object {
+                                      "multiplier": "4.000",
+                                      "type": "rock",
+                                    },
+                                  ]
+            }
 />,
         ],
         "className": "undefined type-container",
@@ -139,7 +247,10 @@ ShallowWrapper {
           "props": Object {
             "isModal": true,
             "isWeakness": false,
-            "types": undefined,
+            "types": Array [
+              "bug",
+              "flying",
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -163,7 +274,28 @@ ShallowWrapper {
           "props": Object {
             "isModal": true,
             "isWeakness": true,
-            "types": undefined,
+            "types": Array [
+              Object {
+                "multiplier": "2.000",
+                "type": "fire",
+              },
+              Object {
+                "multiplier": "2.000",
+                "type": "electric",
+              },
+              Object {
+                "multiplier": "2.000",
+                "type": "ice",
+              },
+              Object {
+                "multiplier": "2.000",
+                "type": "flying",
+              },
+              Object {
+                "multiplier": "4.000",
+                "type": "rock",
+              },
+            ],
           },
           "ref": null,
           "rendered": null,
