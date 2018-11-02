@@ -35,11 +35,11 @@ class PokemonType extends React.Component {
   renderType(isModal, isWeakness, type) {
     if (isModal && isWeakness) {
       return (
-        <h3>{type.type}{this.shouldRenderHoverOver(type)}</h3>
+        <h4>{type.type}{this.shouldRenderHoverOver(type)}</h4>
       )
     } else if (isModal) {
       return (
-        <h3>{type}</h3>
+        <h4>{type}</h4>
       )
     } else {
       return (

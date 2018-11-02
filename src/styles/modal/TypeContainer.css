@@ -2,8 +2,7 @@
   display: flex;
   margin-left: 20px;
   flex-direction: column;
-  /*width: 50%;*/
+  width: 460px;
   text-align: left;
   justify-content: space-around;
-
 }

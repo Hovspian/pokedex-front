@@ -6,7 +6,7 @@
 
 .primary {
   width: 380px;
-  height:380px;
+  height: 380px;
 }
 
 .secondary {
@@ -16,10 +16,11 @@
 }
 
 .single-type-img {
+  /* Inner border for dual types takes care of translation */
   transform: translateY(12px);
 }
 
 .modal-sprite {
-  max-height: 350px;
-  max-width: 350px;
+  height: 350px;
+  width: 350px;
 }
