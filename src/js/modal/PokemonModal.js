@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 import BasicInfo from './BasicInfo';
+import NavigationBar from './NavigationBar';
 import StatGraph from './StatGraph';
 import TypeContainer from './TypeContainer';
 import CloseButton from './CloseButton';
 import Sprite from './Sprite';
 
-import '../../styles/modal/PokemonModal.css'
+import '../../styles/modal/PokemonModal.css';
 
 const propTypes = {
   handleCloseModal: PropTypes.func.isRequired,
@@ -89,8 +90,15 @@ class PokemonModal extends React.Component {
   render() {
     return this.props.modal && this.props.data ? (
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
-        <ModalHeader>Navigate to other Pokemon</ModalHeader>
+        <ModalHeader>
+
+        </ModalHeader>
         <ModalBody>
+          <NavigationBar
+            getPokemonDetails={this.props.getPokemonDetails}
+            previous={this.props.data.previous}
+            next={this.props.data.next}
+          />
           <div className="stats-types">
               <Sprite className="flex-item"
                       name={this.props.data.forms[0].name}
