@@ -91,7 +91,7 @@ class PokemonModal extends React.Component {
     return this.props.modal && this.props.data ? (
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalBody>
-          <NavigationBar
+        <NavigationBar
             getPokemonDetails={this.props.getPokemonDetails}
             previous={this.props.data.previous}
             next={this.props.data.next}

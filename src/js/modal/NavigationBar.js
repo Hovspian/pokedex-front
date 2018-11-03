@@ -21,27 +21,33 @@ class NaviationBar extends React.Component {
 
   render () {
     return (
-      <Container fluid={false}>
+      <Container className="navigation-bar">
         <Row>
 
           <Col className="navigation">
             <Row>
-              <Col style={{textAlign: 'left'}}>
-                <i className="arrow left"></i>
+              <Col className="left">
+                <i className="arrow point-left"></i>
               </Col>
-              <Col style={{textAlign: 'right'}}>
-                {`${this.props.previous.id}  ${this.props.previous.name}`}
+              <Col>
+                {this.props.previous.name}
+              </Col>
+              <Col className="right">
+                {`#${this.props.previous.id}`}
               </Col>
             </Row>
           </Col>
 
           <Col className="navigation">
             <Row>
-              <Col style={{textAlign: 'left'}}>
-                {`${this.props.next.name}  ${this.props.next.id}`}
+              <Col className="left">
+                {`#${this.props.next.id}`}
               </Col>
-              <Col style={{textAlign: 'right'}}>
-                <i className="arrow right"></i>
+              <Col>
+                {this.props.next.name}
+              </Col>
+              <Col className="right">
+                <i className="arrow point-right"></i>
               </Col>
             </Row>
           </Col>
