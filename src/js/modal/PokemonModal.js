@@ -13,6 +13,7 @@ import '../../styles/modal/PokemonModal.css'
 const propTypes = {
   handleCloseModal: PropTypes.func.isRequired,
   modal: PropTypes.bool.isRequired,
+  getPokemonDetails: PropTypes.func.isRequired,
   data: PropTypes.shape({
     previous: PropTypes.shape({
       id: PropTypes.number.isRequired,

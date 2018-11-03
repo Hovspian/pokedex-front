@@ -4,6 +4,7 @@ exports[`PokemonModal Component should match PokemonModal component snapshot 1`]
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PokemonModal
+    getPokemonDetails={[Function]}
     handleCloseModal={[Function]}
     modal={true}
 />,

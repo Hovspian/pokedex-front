@@ -26,7 +26,7 @@ class Home extends React.Component {
     };
     this.perPage = 20;
 
-    this.handlePokemonCardClick = this.handlePokemonCardClick.bind(this);
+    this.getDetails = this.getDetails.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
@@ -66,7 +66,7 @@ class Home extends React.Component {
 
   displayPokemonCards () {
     return this.state.pokemon.map(pokemon => {
-      return <PokemonCard {...pokemon} key={pokemon.id} handlePokemonCardClick={this.handlePokemonCardClick} />
+      return <PokemonCard {...pokemon} key={pokemon.id} handlePokemonCardClick={this.getDetails} />
     });
   }
 
@@ -88,7 +88,7 @@ class Home extends React.Component {
    * @param  {int} id - the id of the pokemon to fetch
    * @return {void}
    */
-  handlePokemonCardClick (id) {
+  getDetails (id) {
     if (this.state.error ||
       id < 1 ||
       id > 806)
@@ -121,8 +121,12 @@ class Home extends React.Component {
 
     return (
       <div className="main" align="center">
-        <PokemonModal handleCloseModal={this.handleCloseModal}
-          modal={this.state.modal} data={this.state.pokemonDetails} />
+        <PokemonModal
+          handleCloseModal={this.handleCloseModal}
+          modal={this.state.modal}
+          getPokemonDetails={this.getDetails}
+          data={this.state.pokemonDetails}
+        />
         <Header />
         <InfiniteScroll
           initialLoad={true}

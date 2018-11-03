@@ -43,7 +43,7 @@ describe('Home Component', () => {
       PokemonAPI.getPokemonDetails = jest.fn();
       PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON))
 
-      return instance.handlePokemonCardClick(1)
+      return instance.getDetails(1)
         .then(() => {
           expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(1);
           expect(instance.state.modal).toBe(true);

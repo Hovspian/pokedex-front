@@ -6,12 +6,12 @@ import PokemonModal from '../../js/modal/PokemonModal';
 describe('PokemonModal Component', () => {
 
   it('should render PokemonModal component without crashing', () => {
-    shallow(<PokemonModal handleCloseModal={() => {}} modal={true}/>);
+    shallow(<PokemonModal handleCloseModal={() => {}} modal={true} getPokemonDetails={() => {}}/>);
   });
 
   it('should match PokemonModal component snapshot', () => {
-    const wrapper = shallow(<PokemonModal handleCloseModal={() => {}} modal={true}/>);
+    const wrapper = shallow(<PokemonModal handleCloseModal={() => {}} modal={true} getPokemonDetails={() => {}}/>);
     expect(wrapper).toMatchSnapshot();
   });
-  
+
 });
