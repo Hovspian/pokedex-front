@@ -1,0 +1,1435 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar Component should match NavigationBar component snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NaviationBar
+    getPokemonDetails={[Function]}
+    next={
+        Object {
+            "id": 13,
+            "name": "Weedle",
+          }
+    }
+    previous={
+        Object {
+            "id": 11,
+            "name": "Metapod",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <Row
+        tag="div"
+>
+        <Col
+                className="navigation"
+                onClick={[Function]}
+                tag="div"
+                widths={
+                        Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                }
+        >
+                <Row
+                        tag="div"
+                >
+                        <Col
+                                className="left"
+                                tag="div"
+                                widths={
+                                        Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                                }
+                        >
+                                <i
+                                        className="arrow left"
+                                />
+                        </Col>
+                        <Col
+                                tag="div"
+                                widths={
+                                        Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                                }
+                        >
+                                Metapod
+                        </Col>
+                        <Col
+                                className="right"
+                                tag="div"
+                                widths={
+                                        Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                                }
+                        >
+                                #11
+                        </Col>
+                </Row>
+        </Col>
+        <Col
+                className="navigation"
+                onClick={[Function]}
+                tag="div"
+                widths={
+                        Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                }
+        >
+                <Row
+                        className="next"
+                        tag="div"
+                >
+                        <Col
+                                className="right"
+                                tag="div"
+                                widths={
+                                        Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                                }
+                        >
+                                <i
+                                        className="arrow right"
+                                />
+                        </Col>
+                        <Col
+                                tag="div"
+                                widths={
+                                        Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                                }
+                        >
+                                Weedle
+                        </Col>
+                        <Col
+                                className="left"
+                                tag="div"
+                                widths={
+                                        Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                                }
+                        >
+                                #13
+                        </Col>
+                </Row>
+        </Col>
+</Row>,
+      "className": "navigation-bar",
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Col
+            className="navigation"
+            onClick={[Function]}
+            tag="div"
+            widths={
+                        Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+            }
+>
+            <Row
+                        tag="div"
+            >
+                        <Col
+                                    className="left"
+                                    tag="div"
+                                    widths={
+                                                Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                    }
+                        >
+                                    <i
+                                                className="arrow left"
+                                    />
+                        </Col>
+                        <Col
+                                    tag="div"
+                                    widths={
+                                                Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                    }
+                        >
+                                    Metapod
+                        </Col>
+                        <Col
+                                    className="right"
+                                    tag="div"
+                                    widths={
+                                                Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                    }
+                        >
+                                    #11
+                        </Col>
+            </Row>
+</Col>,
+          <Col
+            className="navigation"
+            onClick={[Function]}
+            tag="div"
+            widths={
+                        Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+            }
+>
+            <Row
+                        className="next"
+                        tag="div"
+            >
+                        <Col
+                                    className="right"
+                                    tag="div"
+                                    widths={
+                                                Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                    }
+                        >
+                                    <i
+                                                className="arrow right"
+                                    />
+                        </Col>
+                        <Col
+                                    tag="div"
+                                    widths={
+                                                Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                    }
+                        >
+                                    Weedle
+                        </Col>
+                        <Col
+                                    className="left"
+                                    tag="div"
+                                    widths={
+                                                Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                    }
+                        >
+                                    #13
+                        </Col>
+            </Row>
+</Col>,
+        ],
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Row
+              tag="div"
+>
+              <Col
+                            className="left"
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <i
+                                          className="arrow left"
+                            />
+              </Col>
+              <Col
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            Metapod
+              </Col>
+              <Col
+                            className="right"
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            #11
+              </Col>
+</Row>,
+            "className": "navigation",
+            "onClick": [Function],
+            "tag": "div",
+            "widths": Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Col
+                  className="left"
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <i
+                                    className="arrow left"
+                  />
+</Col>,
+                <Col
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  Metapod
+</Col>,
+                <Col
+                  className="right"
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  #11
+</Col>,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <i
+                    className="arrow left"
+/>,
+                  "className": "left",
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "arrow left",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Metapod",
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": "Metapod",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "#11",
+                  "className": "right",
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": "#11",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Row
+              className="next"
+              tag="div"
+>
+              <Col
+                            className="right"
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <i
+                                          className="arrow right"
+                            />
+              </Col>
+              <Col
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            Weedle
+              </Col>
+              <Col
+                            className="left"
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            #13
+              </Col>
+</Row>,
+            "className": "navigation",
+            "onClick": [Function],
+            "tag": "div",
+            "widths": Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Col
+                  className="right"
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <i
+                                    className="arrow right"
+                  />
+</Col>,
+                <Col
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  Weedle
+</Col>,
+                <Col
+                  className="left"
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  #13
+</Col>,
+              ],
+              "className": "next",
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <i
+                    className="arrow right"
+/>,
+                  "className": "right",
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "arrow right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Weedle",
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": "Weedle",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "#13",
+                  "className": "left",
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": "#13",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Row
+          tag="div"
+>
+          <Col
+                    className="navigation"
+                    onClick={[Function]}
+                    tag="div"
+                    widths={
+                              Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                    }
+          >
+                    <Row
+                              tag="div"
+                    >
+                              <Col
+                                        className="left"
+                                        tag="div"
+                                        widths={
+                                                  Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                        }
+                              >
+                                        <i
+                                                  className="arrow left"
+                                        />
+                              </Col>
+                              <Col
+                                        tag="div"
+                                        widths={
+                                                  Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                        }
+                              >
+                                        Metapod
+                              </Col>
+                              <Col
+                                        className="right"
+                                        tag="div"
+                                        widths={
+                                                  Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                        }
+                              >
+                                        #11
+                              </Col>
+                    </Row>
+          </Col>
+          <Col
+                    className="navigation"
+                    onClick={[Function]}
+                    tag="div"
+                    widths={
+                              Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                    }
+          >
+                    <Row
+                              className="next"
+                              tag="div"
+                    >
+                              <Col
+                                        className="right"
+                                        tag="div"
+                                        widths={
+                                                  Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                        }
+                              >
+                                        <i
+                                                  className="arrow right"
+                                        />
+                              </Col>
+                              <Col
+                                        tag="div"
+                                        widths={
+                                                  Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                        }
+                              >
+                                        Weedle
+                              </Col>
+                              <Col
+                                        className="left"
+                                        tag="div"
+                                        widths={
+                                                  Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                                        }
+                              >
+                                        #13
+                              </Col>
+                    </Row>
+          </Col>
+</Row>,
+        "className": "navigation-bar",
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Col
+              className="navigation"
+              onClick={[Function]}
+              tag="div"
+              widths={
+                            Array [
+                                          "xs",
+                                          "sm",
+                                          "md",
+                                          "lg",
+                                          "xl",
+                                        ]
+              }
+>
+              <Row
+                            tag="div"
+              >
+                            <Col
+                                          className="left"
+                                          tag="div"
+                                          widths={
+                                                        Array [
+                                                                      "xs",
+                                                                      "sm",
+                                                                      "md",
+                                                                      "lg",
+                                                                      "xl",
+                                                                    ]
+                                          }
+                            >
+                                          <i
+                                                        className="arrow left"
+                                          />
+                            </Col>
+                            <Col
+                                          tag="div"
+                                          widths={
+                                                        Array [
+                                                                      "xs",
+                                                                      "sm",
+                                                                      "md",
+                                                                      "lg",
+                                                                      "xl",
+                                                                    ]
+                                          }
+                            >
+                                          Metapod
+                            </Col>
+                            <Col
+                                          className="right"
+                                          tag="div"
+                                          widths={
+                                                        Array [
+                                                                      "xs",
+                                                                      "sm",
+                                                                      "md",
+                                                                      "lg",
+                                                                      "xl",
+                                                                    ]
+                                          }
+                            >
+                                          #11
+                            </Col>
+              </Row>
+</Col>,
+            <Col
+              className="navigation"
+              onClick={[Function]}
+              tag="div"
+              widths={
+                            Array [
+                                          "xs",
+                                          "sm",
+                                          "md",
+                                          "lg",
+                                          "xl",
+                                        ]
+              }
+>
+              <Row
+                            className="next"
+                            tag="div"
+              >
+                            <Col
+                                          className="right"
+                                          tag="div"
+                                          widths={
+                                                        Array [
+                                                                      "xs",
+                                                                      "sm",
+                                                                      "md",
+                                                                      "lg",
+                                                                      "xl",
+                                                                    ]
+                                          }
+                            >
+                                          <i
+                                                        className="arrow right"
+                                          />
+                            </Col>
+                            <Col
+                                          tag="div"
+                                          widths={
+                                                        Array [
+                                                                      "xs",
+                                                                      "sm",
+                                                                      "md",
+                                                                      "lg",
+                                                                      "xl",
+                                                                    ]
+                                          }
+                            >
+                                          Weedle
+                            </Col>
+                            <Col
+                                          className="left"
+                                          tag="div"
+                                          widths={
+                                                        Array [
+                                                                      "xs",
+                                                                      "sm",
+                                                                      "md",
+                                                                      "lg",
+                                                                      "xl",
+                                                                    ]
+                                          }
+                            >
+                                          #13
+                            </Col>
+              </Row>
+</Col>,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Row
+                tag="div"
+>
+                <Col
+                                className="left"
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                <i
+                                                className="arrow left"
+                                />
+                </Col>
+                <Col
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                Metapod
+                </Col>
+                <Col
+                                className="right"
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                #11
+                </Col>
+</Row>,
+              "className": "navigation",
+              "onClick": [Function],
+              "tag": "div",
+              "widths": Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Col
+                    className="left"
+                    tag="div"
+                    widths={
+                                        Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                    }
+>
+                    <i
+                                        className="arrow left"
+                    />
+</Col>,
+                  <Col
+                    tag="div"
+                    widths={
+                                        Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                    }
+>
+                    Metapod
+</Col>,
+                  <Col
+                    className="right"
+                    tag="div"
+                    widths={
+                                        Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                    }
+>
+                    #11
+</Col>,
+                ],
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <i
+                      className="arrow left"
+/>,
+                    "className": "left",
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "arrow left",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Metapod",
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": "Metapod",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "#11",
+                    "className": "right",
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": "#11",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Row
+                className="next"
+                tag="div"
+>
+                <Col
+                                className="right"
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                <i
+                                                className="arrow right"
+                                />
+                </Col>
+                <Col
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                Weedle
+                </Col>
+                <Col
+                                className="left"
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                #13
+                </Col>
+</Row>,
+              "className": "navigation",
+              "onClick": [Function],
+              "tag": "div",
+              "widths": Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Col
+                    className="right"
+                    tag="div"
+                    widths={
+                                        Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                    }
+>
+                    <i
+                                        className="arrow right"
+                    />
+</Col>,
+                  <Col
+                    tag="div"
+                    widths={
+                                        Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                    }
+>
+                    Weedle
+</Col>,
+                  <Col
+                    className="left"
+                    tag="div"
+                    widths={
+                                        Array [
+                                                            "xs",
+                                                            "sm",
+                                                            "md",
+                                                            "lg",
+                                                            "xl",
+                                                          ]
+                    }
+>
+                    #13
+</Col>,
+                ],
+                "className": "next",
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <i
+                      className="arrow right"
+/>,
+                    "className": "right",
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "arrow right",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Weedle",
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": "Weedle",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "#13",
+                    "className": "left",
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": "#13",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
