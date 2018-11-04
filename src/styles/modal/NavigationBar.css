@@ -16,6 +16,10 @@
   text-align: left;
 }
 
+.next {
+  flex-direction: row-reverse;
+}
+
 /* From https://www.w3schools.com/howto/howto_css_arrows.asp */
 .arrow {
   border: solid black;
@@ -24,12 +28,12 @@
   padding: 3px;
 }
 
-.point-right {
+.arrow.right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-.point-left {
+.arrow.left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }

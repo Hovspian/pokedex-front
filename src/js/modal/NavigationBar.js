@@ -18,16 +18,15 @@ const propTypes = {
 };
 
 class NaviationBar extends React.Component {
-
   render () {
     return (
       <Container className="navigation-bar">
         <Row>
-
-          <Col className="navigation">
+          {/* Previous Pokemon */}
+          <Col className="navigation" onClick={() => { this.props.getPokemonDetails(this.props.previous.id) }}>
             <Row>
               <Col className="left">
-                <i className="arrow point-left"></i>
+                <i className="arrow left"></i>
               </Col>
               <Col>
                 {this.props.previous.name}
@@ -37,21 +36,20 @@ class NaviationBar extends React.Component {
               </Col>
             </Row>
           </Col>
-
-          <Col className="navigation">
-            <Row>
-              <Col className="left">
-                {`#${this.props.next.id}`}
+          {/* Next Pokemon */}
+          <Col className="navigation" onClick={() => { this.props.getPokemonDetails(this.props.next.id) }}>
+            <Row className="next">
+              <Col className="right">
+                <i className="arrow right"></i>
               </Col>
               <Col>
                 {this.props.next.name}
               </Col>
-              <Col className="right">
-                <i className="arrow point-right"></i>
+              <Col className="left">
+                {`#${this.props.next.id}`}
               </Col>
             </Row>
           </Col>
-
         </Row>
       </Container>
     );
