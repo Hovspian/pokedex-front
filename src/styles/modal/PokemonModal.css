@@ -1,7 +1,8 @@
 .pokemodal {
   width: 1050px;
   max-width: 90%;
-  min-width: 400px; /* Needs to fit sprite */
+  min-width: 415px; /* Needs to fit sprite */
+  margin-top: 30px;
 }
 
 .stats-types {
