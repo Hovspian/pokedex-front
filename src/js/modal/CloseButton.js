@@ -9,7 +9,7 @@ const propTypes = {
 
 class CloseButton extends React.Component {
   render () {
-    return <button className="close close-button" onClick={this.props.close}>&times;</button>
+    return <button className="close close-button" onClick={ () => { this.props.close() }}>&times;</button>
   }
 }
 

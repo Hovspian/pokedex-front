@@ -11,3 +11,7 @@
   flex-wrap: wrap;
   padding: 20px;
 }
+
+.load-button {
+  margin: 10px;
+}

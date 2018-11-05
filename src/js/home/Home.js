@@ -28,6 +28,7 @@ class Home extends React.Component {
 
     this.getDetails = this.getDetails.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.enableInfiniteScroll = this.enableInfiniteScroll.bind(this);
   }
 
   /**
@@ -73,13 +74,18 @@ class Home extends React.Component {
   renderLoadButton () {
     return (
       <div>
-        <Button color="primary" size="lg" onClick={this.enableInfiniteScroll.bind(this)}> Load more Pokemon </Button>
+        <Button
+          className="load-button"
+          color="primary" size="lg"
+          onClick={() => { this.enableInfiniteScroll() }}
+        >
+          Load more Pokemon
+        </Button>
       </div>
     );
   }
 
-  enableInfiniteScroll (evt) {
-    evt.preventDefault();
+  enableInfiniteScroll () {
     this.setState({ shouldInfiniteScroll: true });
   }
 

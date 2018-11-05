@@ -47,12 +47,13 @@ ShallowWrapper {
 </InfiniteScroll>,
         <div>
           <Button
+                    className="load-button"
                     color="primary"
                     onClick={[Function]}
                     size="lg"
                     tag="button"
           >
-                     Load more Pokemon 
+                    Load more Pokemon
           </Button>
 </div>,
         null,
@@ -127,12 +128,13 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Button
+            className="load-button"
             color="primary"
             onClick={[Function]}
             size="lg"
             tag="button"
 >
-             Load more Pokemon 
+            Load more Pokemon
 </Button>,
         },
         "ref": null,
@@ -141,14 +143,15 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": " Load more Pokemon ",
+            "children": "Load more Pokemon",
+            "className": "load-button",
             "color": "primary",
             "onClick": [Function],
             "size": "lg",
             "tag": "button",
           },
           "ref": null,
-          "rendered": " Load more Pokemon ",
+          "rendered": "Load more Pokemon",
           "type": [Function],
         },
         "type": "div",
@@ -193,12 +196,13 @@ ShallowWrapper {
 </InfiniteScroll>,
           <div>
             <Button
+                        className="load-button"
                         color="primary"
                         onClick={[Function]}
                         size="lg"
                         tag="button"
             >
-                         Load more Pokemon 
+                        Load more Pokemon
             </Button>
 </div>,
           null,
@@ -273,12 +277,13 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Button
+              className="load-button"
               color="primary"
               onClick={[Function]}
               size="lg"
               tag="button"
 >
-               Load more Pokemon 
+              Load more Pokemon
 </Button>,
           },
           "ref": null,
@@ -287,14 +292,15 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": " Load more Pokemon ",
+              "children": "Load more Pokemon",
+              "className": "load-button",
               "color": "primary",
               "onClick": [Function],
               "size": "lg",
               "tag": "button",
             },
             "ref": null,
-            "rendered": " Load more Pokemon ",
+            "rendered": "Load more Pokemon",
             "type": [Function],
           },
           "type": "div",

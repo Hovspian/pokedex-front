@@ -14,8 +14,7 @@ class LoadingError extends React.Component {
     this.showError = this.showError.bind(this);
   }
 
-  showError (evt) {
-    evt.preventDefault();
+  showError () {
     alert(this.props.error);
   }
 
@@ -23,7 +22,7 @@ class LoadingError extends React.Component {
     return (
       <h2>
         {'Oh no! There was an issue loading Pokemon! '}
-        <button className="show-error-button" onClick={this.showError} >
+        <button className="show-error-button" onClick={ () => { this.showError() }} >
           {'See error'}
         </button>
       </h2>
