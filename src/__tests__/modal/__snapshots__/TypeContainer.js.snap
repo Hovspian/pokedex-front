@@ -63,7 +63,7 @@ ShallowWrapper {
           }
 />,
         <h3>
-          Weakness
+          Weaknesses
 </h3>,
         <PokemonType
           isModal={true}
@@ -130,10 +130,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Weakness",
+          "children": "Weaknesses",
         },
         "ref": null,
-        "rendered": "Weakness",
+        "rendered": "Weaknesses",
         "type": "h3",
       },
       Object {
@@ -194,7 +194,7 @@ ShallowWrapper {
             }
 />,
           <h3>
-            Weakness
+            Weaknesses
 </h3>,
           <PokemonType
             isModal={true}
@@ -261,10 +261,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Weakness",
+            "children": "Weaknesses",
           },
           "ref": null,
-          "rendered": "Weakness",
+          "rendered": "Weaknesses",
           "type": "h3",
         },
         Object {
