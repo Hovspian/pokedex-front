@@ -44,7 +44,7 @@ class Home extends React.Component {
     let range;
     if (page === 41) {
       this.setState({ shouldInfiniteScroll: false })
-      range = 6
+      range = 7
     } else {
       range = this.perPage;
     }
@@ -97,7 +97,7 @@ class Home extends React.Component {
   getDetails (id) {
     if (this.state.error ||
       id < 1 ||
-      id > 806)
+      id > 807)
       return;
 
     return getPokemonDetails(id)
