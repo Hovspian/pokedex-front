@@ -9,7 +9,7 @@ const propTypes = {
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       hidden: PropTypes.bool.isRequired,
-    }).isRequired,
+    }).isRequired
   ).isRequired,
 };
 

@@ -67,7 +67,7 @@ ShallowWrapper {
                 }
         />
 </div>,
-      "className": "undefined basic-info",
+      "className": "basic-info",
     },
     "ref": null,
     "rendered": Object {
@@ -223,7 +223,7 @@ ShallowWrapper {
                     }
           />
 </div>,
-        "className": "undefined basic-info",
+        "className": "basic-info",
       },
       "ref": null,
       "rendered": Object {

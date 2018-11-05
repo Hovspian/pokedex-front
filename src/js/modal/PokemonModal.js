@@ -92,28 +92,28 @@ class PokemonModal extends React.Component {
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalBody>
         <NavigationBar
-            getPokemonDetails={this.props.getPokemonDetails}
-            previous={this.props.data.previous}
-            next={this.props.data.next}
+          getPokemonDetails={this.props.getPokemonDetails}
+          previous={this.props.data.previous}
+          next={this.props.data.next}
+        />
+        <div className="stats-types">
+          <Sprite
+                  name={this.props.data.forms[0].name}
+                  image_path={this.props.data.forms[0].image_path}
+                  types={this.props.data.forms[0].types}
           />
-          <div className="stats-types">
-              <Sprite className="flex-item"
-                      name={this.props.data.forms[0].name}
-                      image_path={this.props.data.forms[0].image_path}
-                      types={this.props.data.forms[0].types}
-              />
-              <BasicInfo className="flex-item"
-                         id={this.props.data.id}
-                         name={this.props.data.name}
-                         description={this.props.data.description}
-                         species={this.props.data.species}
-                         abilities={this.props.data.forms[0].abilities}
-              />
+          <BasicInfo
+                     id={this.props.data.id}
+                     name={this.props.data.name}
+                     description={this.props.data.description}
+                     species={this.props.data.species}
+                     abilities={this.props.data.forms[0].abilities}
+          />
 
-              <StatGraph className="flex-item" stats={this.props.data.forms[0].stats} />
-              <TypeContainer className="flex-item" types={this.props.data.forms[0].types} weaknesses={this.props.data.forms[0].weaknesses} />
-          </div>
-          <div>Evolutions</div>
+          <StatGraph stats={this.props.data.forms[0].stats} />
+          <TypeContainer types={this.props.data.forms[0].types} weaknesses={this.props.data.forms[0].weaknesses} />
+        </div>
+        <div>Evolutions</div>
         </ModalBody>
       </Modal>
     ) : null;

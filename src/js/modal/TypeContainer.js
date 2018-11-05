@@ -17,7 +17,7 @@ const propTypes = {
 class TypeContainer extends React.Component {
   render() {
     return (
-      <div className={`${this.props.className} type-container`}>
+      <div className="type-container">
         <h3>Type</h3>
         <PokemonType isModal types={this.props.types} isWeakness={false} />
         <h3>Weakness</h3>

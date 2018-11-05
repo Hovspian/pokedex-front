@@ -94,7 +94,7 @@ ShallowWrapper {
           }
 />,
       ],
-      "className": "undefined type-container",
+      "className": "type-container",
     },
     "ref": null,
     "rendered": Array [
@@ -225,7 +225,7 @@ ShallowWrapper {
             }
 />,
         ],
-        "className": "undefined type-container",
+        "className": "type-container",
       },
       "ref": null,
       "rendered": Array [

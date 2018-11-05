@@ -15,7 +15,7 @@ const propTypes = {
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       hidden: PropTypes.bool.isRequired,
-    }).isRequired,
+    }).isRequired
   ).isRequired,
 };
 
@@ -37,7 +37,7 @@ class BasicInfo extends React.Component {
 
   render () {
     return (
-      <div className={`${this.props.className} basic-info`}>
+      <div className="basic-info">
         <div className="text-container">
           <h1>{`${this.idWithZeros()} ${this.props.name}`}</h1>
           <h3>{`${this.props.species} Pokemon`}</h3>

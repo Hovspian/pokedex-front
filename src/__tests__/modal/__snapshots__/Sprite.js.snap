@@ -46,7 +46,6 @@ ShallowWrapper {
            
 </h2>,
       ],
-      "className": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -145,7 +144,6 @@ ShallowWrapper {
              
 </h2>,
         ],
-        "className": undefined,
       },
       "ref": null,
       "rendered": Array [

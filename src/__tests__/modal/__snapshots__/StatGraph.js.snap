@@ -93,7 +93,7 @@ ShallowWrapper {
           </p>
 </div>,
       ],
-      "className": "undefined statcontainer",
+      "className": "statcontainer",
     },
     "ref": null,
     "rendered": Array [
@@ -411,7 +411,7 @@ ShallowWrapper {
             </p>
 </div>,
         ],
-        "className": "undefined statcontainer",
+        "className": "statcontainer",
       },
       "ref": null,
       "rendered": Array [
