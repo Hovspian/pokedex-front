@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalBody } from 'reactstrap';
 
+import AlternateForms from './AlternateForms';
 import BasicInfo from './BasicInfo';
 import NavigationBar from './NavigationBar';
 import StatGraph from './StatGraph';
@@ -88,22 +89,28 @@ const propTypes = {
 class PokemonModal extends React.Component {
 
   render() {
-    return this.props.modal && this.props.data ? (
+    if (!this.props.modal || !this.props.data)
+      return null;
+
+    const alternateForms = this.props.data.forms.map((form) => { return {
+      name: form.name,
+      image_path: form.image_path,
+    }});
+
+    return (
       <Modal isOpen={this.props.modal} className="pokemodal" align="center" external={<CloseButton close={this.props.handleCloseModal} />}>
         <ModalBody>
-        <NavigationBar
-          getPokemonDetails={this.props.getPokemonDetails}
-          previous={this.props.data.previous}
-          next={this.props.data.next}
+        <NavigationBar getPokemonDetails={this.props.getPokemonDetails}
+                       previous={this.props.data.previous}
+                       next={this.props.data.next}
         />
         <div className="stats-types">
-          <Sprite
-                  name={this.props.data.forms[0].name}
+          <Sprite name={this.props.data.forms[0].name}
                   image_path={this.props.data.forms[0].image_path}
                   types={this.props.data.forms[0].types}
           />
-          <BasicInfo
-                     id={this.props.data.id}
+          <AlternateForms forms={alternateForms} />
+          <BasicInfo id={this.props.data.id}
                      name={this.props.data.name}
                      description={this.props.data.description}
                      species={this.props.data.species}
@@ -116,7 +123,7 @@ class PokemonModal extends React.Component {
         <div>Evolutions</div>
         </ModalBody>
       </Modal>
-    ) : null;
+    );
 
   }
 }
