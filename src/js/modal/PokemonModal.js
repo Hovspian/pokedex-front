@@ -109,7 +109,7 @@ class PokemonModal extends React.Component {
                   image_path={this.props.data.forms[0].image_path}
                   types={this.props.data.forms[0].types}
           />
-          <AlternateForms forms={alternateForms} />
+          {this.props.data.forms.length > 1 ? <AlternateForms forms={alternateForms} selectedForm={0} /> : null}
           <BasicInfo id={this.props.data.id}
                      name={this.props.data.name}
                      description={this.props.data.description}

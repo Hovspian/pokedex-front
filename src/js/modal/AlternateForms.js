@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Form from './Form';
+
 
 const propTypes = {
+  selectedForm: PropTypes.number.isRequired,
   forms: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -22,7 +25,9 @@ class AlternateForms extends React.Component {
 
   render () {
     return (
-      <div>Alternate Forms</div>
+      <div className="form-container">
+        <Form {...this.props.forms[1]} selected={true} onClick={() => {}}/>
+      </div>
     );
   }
 
