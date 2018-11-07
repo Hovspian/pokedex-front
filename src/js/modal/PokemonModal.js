@@ -120,9 +120,9 @@ class PokemonModal extends React.Component {
                        next={this.props.data.next}
         />
         <div className="stats-types">
-          <Sprite name={this.props.data.forms[0].name}
-                  image_path={this.props.data.forms[0].image_path}
-                  types={this.props.data.forms[0].types}
+          <Sprite name={this.props.data.forms[this.state.selectedForm].name}
+                  image_path={this.props.data.forms[this.state.selectedForm].image_path}
+                  types={this.props.data.forms[this.state.selectedForm].types}
           />
           {this.props.data.forms.length > 1 ?
             <AlternateForms forms={alternateForms}
@@ -134,11 +134,11 @@ class PokemonModal extends React.Component {
                      name={this.props.data.name}
                      description={this.props.data.description}
                      species={this.props.data.species}
-                     abilities={this.props.data.forms[0].abilities}
+                     abilities={this.props.data.forms[this.state.selectedForm].abilities}
           />
 
-          <StatGraph stats={this.props.data.forms[0].stats} />
-          <TypeContainer types={this.props.data.forms[0].types} weaknesses={this.props.data.forms[0].weaknesses} />
+          <StatGraph stats={this.props.data.forms[this.state.selectedForm].stats} />
+          <TypeContainer types={this.props.data.forms[this.state.selectedForm].types} weaknesses={this.props.data.forms[0].weaknesses} />
         </div>
         <div>Evolutions</div>
         </ModalBody>
