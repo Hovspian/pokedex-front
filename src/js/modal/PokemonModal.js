@@ -87,8 +87,23 @@ const propTypes = {
 }
 
 class PokemonModal extends React.Component {
+  constructor (props) {
+    super(props);
 
-  render() {
+    this.state = {
+      selectedForm: 0,
+    };
+
+    this.selectForm = this.selectForm.bind(this);
+  }
+
+  selectForm (index) {
+    if (!this.props.data.forms || index >= this.props.data.forms.length || index < 0)
+      return;
+    this.setState({ selectedForm: index });
+  }
+
+  render () {
     if (!this.props.modal || !this.props.data)
       return null;
 
@@ -109,7 +124,12 @@ class PokemonModal extends React.Component {
                   image_path={this.props.data.forms[0].image_path}
                   types={this.props.data.forms[0].types}
           />
-          {this.props.data.forms.length > 1 ? <AlternateForms forms={alternateForms} selectedForm={0} /> : null}
+          {this.props.data.forms.length > 1 ?
+            <AlternateForms forms={alternateForms}
+                            selectedForm={this.state.selectedForm}
+                            selectForm={(index) => { this.selectForm(index) }} />
+            : null
+          }
           <BasicInfo id={this.props.data.id}
                      name={this.props.data.name}
                      description={this.props.data.description}

@@ -16,22 +16,14 @@ const propTypes = {
 };
 
 class AlternateForms extends React.Component {
-  constructor (props) {
-    super(props);
-
-    this.state = {
-      selectedForm: 0,
-    };
-  }
-
   render () {
     const allForms = this.props.forms.map((form, index) => {
       return <Form key={form.name}
                    selected={this.props.selectedForm === index}
-                   onClick={() => {}}
+                   onClick={() => { this.props.selectForm(index) }}
                    {...this.props.forms[index]}
              />
-    });
+    }, this);
 
     return (
       <div className="form-container">
