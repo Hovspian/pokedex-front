@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Form from './Form';
 
+import '../../styles/modal/AlternateForms.css';
 
 const propTypes = {
   selectedForm: PropTypes.number.isRequired,
@@ -24,9 +25,17 @@ class AlternateForms extends React.Component {
   }
 
   render () {
+    const allForms = this.props.forms.map((form, index) => {
+      return <Form key={form.name}
+                   selected={this.props.selectedForm === index}
+                   onClick={() => {}}
+                   {...this.props.forms[index]}
+             />
+    });
+
     return (
       <div className="form-container">
-        <Form {...this.props.forms[1]} selected={true} onClick={() => {}}/>
+        {allForms}
       </div>
     );
   }

@@ -16,7 +16,7 @@ class Form extends React.Component {
   render () {
     return (
       <div>
-        <div className={`form ${this.props.selected ? 'selected' : ''}`} onClick={() => { this.props.onClick }}>
+        <div className={`form ${this.props.selected ? 'selected' : ''}`} onClick={() => { this.props.onClick() }}>
           <img className="sprite" src={getPokemonSprite(this.props.image_path)} alt={`${this.props.name}-alt`}/>
         </div>
       </div>
