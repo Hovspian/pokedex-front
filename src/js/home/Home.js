@@ -25,12 +25,15 @@ class Home extends React.Component {
       initialLoad: true,
       modal: false,
       hasMore: true,
+      selectedForm: 0,
     };
     this.perPage = 20;
 
     this.getDetails = this.getDetails.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.enableInfiniteScroll = this.enableInfiniteScroll.bind(this);
+    this.selectForm = this.selectForm.bind(this);
+
   }
 
   /**
@@ -115,15 +118,22 @@ class Home extends React.Component {
       .then(pokemonDetails => {
         this.setState({
           pokemonDetails,
-          modal: true
+          modal: true,
+          selectedForm: 0,
         });
       })
 
       .catch(error => {
         this.setState({
-            error: error.message,
+          error: error.message,
         });
       });
+  }
+
+  selectForm (index) {
+    if (!this.state.pokemonDetails || index >= this.state.pokemonDetails.forms.length || index < 0)
+      return;
+    this.setState({ selectedForm: index });
   }
 
   handleCloseModal() {
@@ -143,6 +153,8 @@ class Home extends React.Component {
           modal={this.state.modal}
           getPokemonDetails={this.getDetails}
           data={this.state.pokemonDetails}
+          selectForm={(index) => { this.selectForm(index) }}
+          selectedForm={this.state.selectedForm}
         />
         <Header />
         <InfiniteScroll
