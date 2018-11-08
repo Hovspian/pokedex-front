@@ -7,6 +7,7 @@ import '../../styles/modal/AlternateForms.css';
 
 const propTypes = {
   selectedForm: PropTypes.number.isRequired,
+  selectForm: PropTypes.func.isRequired,
   forms: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

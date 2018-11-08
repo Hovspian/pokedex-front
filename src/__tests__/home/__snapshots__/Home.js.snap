@@ -24,6 +24,8 @@ ShallowWrapper {
           getPokemonDetails={[Function]}
           handleCloseModal={[Function]}
           modal={false}
+          selectForm={[Function]}
+          selectedForm={0}
 />,
         <Header />,
         <InfiniteScroll
@@ -71,6 +73,8 @@ ShallowWrapper {
           "getPokemonDetails": [Function],
           "handleCloseModal": [Function],
           "modal": false,
+          "selectForm": [Function],
+          "selectedForm": 0,
         },
         "ref": null,
         "rendered": null,
@@ -173,6 +177,8 @@ ShallowWrapper {
             getPokemonDetails={[Function]}
             handleCloseModal={[Function]}
             modal={false}
+            selectForm={[Function]}
+            selectedForm={0}
 />,
           <Header />,
           <InfiniteScroll
@@ -220,6 +226,8 @@ ShallowWrapper {
             "getPokemonDetails": [Function],
             "handleCloseModal": [Function],
             "modal": false,
+            "selectForm": [Function],
+            "selectedForm": 0,
           },
           "ref": null,
           "rendered": null,

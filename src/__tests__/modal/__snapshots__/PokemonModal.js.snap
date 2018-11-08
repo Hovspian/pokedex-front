@@ -7,6 +7,8 @@ ShallowWrapper {
     getPokemonDetails={[Function]}
     handleCloseModal={[Function]}
     modal={true}
+    selectForm={[Function]}
+    selectedForm={0}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

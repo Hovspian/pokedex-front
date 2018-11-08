@@ -31,7 +31,51 @@ describe('Home Component', () => {
       instance.handleCloseModal();
       expect(wrapper.state('modal')).toBe(false);
     });
-  })
+  });
+
+  describe('selectForm', () => {
+    let wrapper, instance;
+    beforeEach(() => {
+      wrapper = shallow(<Home />);
+      instance = wrapper.instance();
+
+      wrapper.setState({
+        pokemonDetails: ExampleJSON,
+        selectedForm: 0,
+      });
+    });
+
+    it('should set state.selectedForm to the passed index when the index is valid', () => {
+      wrapper.setState({ selectedForm: 3 });
+      expect(wrapper.state('selectedForm')).toBe(3);
+
+      instance.selectForm(0);
+      expect(wrapper.state('selectedForm')).toBe(0);
+    });
+
+    it('should do nothing when the passed index is out of range of the forms', () => {
+      expect(wrapper.state('selectedForm')).toBe(0);
+
+      instance.selectForm(10);
+      expect(wrapper.state('selectedForm')).toBe(0);
+    });
+
+    it('should do nothing when the passed index is negative', () => {
+      expect(wrapper.state('selectedForm')).toBe(0);
+
+      instance.selectForm(-1);
+      expect(wrapper.state('selectedForm')).toBe(0);
+    });
+
+    it('should do nothing when the state does not have pokemonDetails', () => {
+      wrapper.setState({ pokemonDetails: null });
+      expect(wrapper.state('selectedForm')).toBe(0);
+
+      instance.selectForm(1);
+      expect(wrapper.state('selectedForm')).toBe(0);
+    });
+
+  });
 
   describe('Test API is being called', () => {
     let wrapper, instance;
@@ -39,6 +83,7 @@ describe('Home Component', () => {
       wrapper = shallow(<Home />);
       instance = wrapper.instance();
     });
+
     it('should call API if clicked on pokemon card', () => {
       PokemonAPI.getPokemonDetails = jest.fn();
       PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON))
@@ -47,7 +92,8 @@ describe('Home Component', () => {
         .then(() => {
           expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(1);
           expect(instance.state.modal).toBe(true);
-          expect(instance.state.pokemonDetails).toEqual(ExampleJSON)
+          expect(instance.state.pokemonDetails).toEqual(ExampleJSON);
+          expect(instance.state.selectedForm).toBe(0);
         });
 
     });
