@@ -31,5 +31,10 @@
     "eject": "react-scripts eject",
     "test:nowatch": "cross-env CI=true react-scripts test --env=jsdom --outputFile=results.json --json",
     "coverage": "react-scripts test --env=jsdom --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/js/**/*.js"
+    ]
   }
 }
