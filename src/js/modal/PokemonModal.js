@@ -4,6 +4,7 @@ import { Modal, ModalBody } from 'reactstrap';
 
 import AlternateForms from './AlternateForms';
 import BasicInfo from './BasicInfo';
+import EvolutionChain from './EvolutionChain';
 import NavigationBar from './NavigationBar';
 import StatGraph from './StatGraph';
 import TypeContainer from './TypeContainer';
@@ -105,34 +106,34 @@ class PokemonModal extends React.Component {
              external={<CloseButton close={this.props.handleCloseModal} />}
       >
         <ModalBody>
-        <NavigationBar getPokemonDetails={this.props.getPokemonDetails}
-                       previous={this.props.data.previous}
-                       next={this.props.data.next}
-        />
-        <div className="stats-types">
-          <Sprite name={this.props.data.forms[this.props.selectedForm].name}
-                  image_path={this.props.data.forms[this.props.selectedForm].image_path}
-                  types={this.props.data.forms[this.props.selectedForm].types}
+          <NavigationBar getPokemonDetails={this.props.getPokemonDetails}
+                         previous={this.props.data.previous}
+                         next={this.props.data.next}
           />
-          {this.props.data.forms.length > 1 ?
-            <AlternateForms forms={alternateForms}
-                            selectedForm={this.props.selectedForm}
-                            selectForm={(index) => { this.props.selectForm(index) }} />
-            : null
-          }
-          <BasicInfo id={this.props.data.id}
-                     name={this.props.data.name}
-                     description={this.props.data.description}
-                     species={this.props.data.species}
-                     abilities={this.props.data.forms[this.props.selectedForm].abilities}
-          />
+          <div className="stats-types">
+            <Sprite name={this.props.data.forms[this.props.selectedForm].name}
+                    image_path={this.props.data.forms[this.props.selectedForm].image_path}
+                    types={this.props.data.forms[this.props.selectedForm].types}
+            />
+            {this.props.data.forms.length > 1 ?
+              <AlternateForms forms={alternateForms}
+                              selectedForm={this.props.selectedForm}
+                              selectForm={(index) => { this.props.selectForm(index) }} />
+              : null
+            }
+            <BasicInfo id={this.props.data.id}
+                       name={this.props.data.name}
+                       description={this.props.data.description}
+                       species={this.props.data.species}
+                       abilities={this.props.data.forms[this.props.selectedForm].abilities}
+            />
 
-          <StatGraph stats={this.props.data.forms[this.props.selectedForm].stats} />
-          <TypeContainer types={this.props.data.forms[this.props.selectedForm].types}
-                         weaknesses={this.props.data.forms[0].weaknesses}
-          />
-        </div>
-        <div>Evolutions</div>
+            <StatGraph stats={this.props.data.forms[this.props.selectedForm].stats} />
+            <TypeContainer types={this.props.data.forms[this.props.selectedForm].types}
+                           weaknesses={this.props.data.forms[0].weaknesses}
+            />
+          </div>
+          <EvolutionChain evolutions={this.props.data.evolutions}/>
         </ModalBody>
       </Modal>
     );
