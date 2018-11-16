@@ -47,7 +47,7 @@ class Home extends React.Component {
    * @return {void}
    */
   fetchPokemon(options, appendPokemon) {
-    if (this.state.error) {
+    if (this.state.error || !options) {
       return;
     }
 
@@ -55,7 +55,7 @@ class Home extends React.Component {
 
     // pushes index + 1 because Type array starts at 0
     // but first Type in lookup is 1 (Normal)
-    if (options.selectedTypes) {
+    if (options.hasOwnProperty('selectedTypes')) {
       const searchTypes = [];
       options.selectedTypes.forEach((isChecked, index) => {
         if (isChecked) {
@@ -69,7 +69,7 @@ class Home extends React.Component {
 
     // pushes index + 1 because Type array starts at 0
     // but first Type in lookup is 1 (Normal)
-    if (options.selectedWeaknesses) {
+    if (options.hasOwnProperty('selectedWeaknesses')) {
       const searchWeaknesses = [];
       options.selectedWeaknesses.forEach((isChecked, index) => {
         if (isChecked) {
@@ -158,16 +158,16 @@ class Home extends React.Component {
       return;
     }
 
-    const id = this.state.pokemon.length + 1;
-    let range;
-    if (id + this.perPage > MAX_POKEMON) {
+    const rangeStart = this.state.pokemon.length + 1;
+    let rangeEnd;
+    if (rangeStart + this.perPage > MAX_POKEMON) {
       this.setState({ shouldInfiniteScroll: false })
-      range = MAX_POKEMON - id + 1;
+      rangeEnd = MAX_POKEMON;
     } else {
-      range = this.perPage;
+      rangeEnd = rangeStart + this.perPage - 1;
     }
 
-    this.fetchPokemon({ rangeStart: id, rangeEnd: id + range - 1 }, true);
+    this.fetchPokemon({ rangeStart, rangeEnd }, true);
   }
 
   displayPokemonCards() {
