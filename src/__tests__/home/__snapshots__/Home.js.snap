@@ -28,6 +28,7 @@ ShallowWrapper {
           selectedForm={0}
 />,
         <Header />,
+        <Search />,
         <InfiniteScroll
           element="div"
           hasMore={true}
@@ -76,6 +77,15 @@ ShallowWrapper {
           "selectForm": [Function],
           "selectedForm": 0,
         },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -181,6 +191,7 @@ ShallowWrapper {
             selectedForm={0}
 />,
           <Header />,
+          <Search />,
           <InfiniteScroll
             element="div"
             hasMore={true}
@@ -229,6 +240,15 @@ ShallowWrapper {
             "selectForm": [Function],
             "selectedForm": 0,
           },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

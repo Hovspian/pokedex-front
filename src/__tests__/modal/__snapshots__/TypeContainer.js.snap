@@ -53,7 +53,7 @@ ShallowWrapper {
           Type
 </h3>,
         <PokemonType
-          isModal={true}
+          isLarge={true}
           isWeakness={false}
           types={
                     Array [
@@ -66,7 +66,7 @@ ShallowWrapper {
           Weaknesses
 </h3>,
         <PokemonType
-          isModal={true}
+          isLarge={true}
           isWeakness={true}
           types={
                     Array [
@@ -114,7 +114,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "isModal": true,
+          "isLarge": true,
           "isWeakness": false,
           "types": Array [
             "bug",
@@ -141,7 +141,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "isModal": true,
+          "isLarge": true,
           "isWeakness": true,
           "types": Array [
             Object {
@@ -184,7 +184,7 @@ ShallowWrapper {
             Type
 </h3>,
           <PokemonType
-            isModal={true}
+            isLarge={true}
             isWeakness={false}
             types={
                         Array [
@@ -197,7 +197,7 @@ ShallowWrapper {
             Weaknesses
 </h3>,
           <PokemonType
-            isModal={true}
+            isLarge={true}
             isWeakness={true}
             types={
                         Array [
@@ -245,7 +245,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "isModal": true,
+            "isLarge": true,
             "isWeakness": false,
             "types": Array [
               "bug",
@@ -272,7 +272,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "isModal": true,
+            "isLarge": true,
             "isWeakness": true,
             "types": Array [
               Object {

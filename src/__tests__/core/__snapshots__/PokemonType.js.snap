@@ -28,24 +28,26 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Badge
-          className="type undefined modal-type"
+          className="type undefined"
           color="primary"
+          onClick={[Function]}
           pill={true}
           tag="span"
 >
-          <h4>
-                    
-          </h4>
+          <span>
+                    water
+          </span>
 </Badge>,
         <Badge
-          className="type undefined modal-type"
+          className="type undefined"
           color="primary"
+          onClick={[Function]}
           pill={true}
           tag="span"
 >
-          <h4>
-                    
-          </h4>
+          <span>
+                    flying
+          </span>
 </Badge>,
       ],
     },
@@ -53,14 +55,15 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
+        "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": <h4>
-            
-</h4>,
-          "className": "type undefined modal-type",
+          "children": <span>
+            water
+</span>,
+          "className": "type undefined",
           "color": "primary",
+          "onClick": [Function],
           "pill": true,
           "tag": "span",
         },
@@ -70,30 +73,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              undefined,
-              undefined,
-            ],
+            "children": "water",
           },
           "ref": null,
-          "rendered": Array [
-            undefined,
-            undefined,
-          ],
-          "type": "h4",
+          "rendered": "water",
+          "type": "span",
         },
         "type": [Function],
       },
       Object {
         "instance": null,
-        "key": "1",
+        "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": <h4>
-            
-</h4>,
-          "className": "type undefined modal-type",
+          "children": <span>
+            flying
+</span>,
+          "className": "type undefined",
           "color": "primary",
+          "onClick": [Function],
           "pill": true,
           "tag": "span",
         },
@@ -103,17 +101,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              undefined,
-              undefined,
-            ],
+            "children": "flying",
           },
           "ref": null,
-          "rendered": Array [
-            undefined,
-            undefined,
-          ],
-          "type": "h4",
+          "rendered": "flying",
+          "type": "span",
         },
         "type": [Function],
       },
@@ -128,24 +120,26 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Badge
-            className="type undefined modal-type"
+            className="type undefined"
             color="primary"
+            onClick={[Function]}
             pill={true}
             tag="span"
 >
-            <h4>
-                        
-            </h4>
+            <span>
+                        water
+            </span>
 </Badge>,
           <Badge
-            className="type undefined modal-type"
+            className="type undefined"
             color="primary"
+            onClick={[Function]}
             pill={true}
             tag="span"
 >
-            <h4>
-                        
-            </h4>
+            <span>
+                        flying
+            </span>
 </Badge>,
         ],
       },
@@ -153,14 +147,15 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
+          "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": <h4>
-              
-</h4>,
-            "className": "type undefined modal-type",
+            "children": <span>
+              water
+</span>,
+            "className": "type undefined",
             "color": "primary",
+            "onClick": [Function],
             "pill": true,
             "tag": "span",
           },
@@ -170,30 +165,25 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                undefined,
-                undefined,
-              ],
+              "children": "water",
             },
             "ref": null,
-            "rendered": Array [
-              undefined,
-              undefined,
-            ],
-            "type": "h4",
+            "rendered": "water",
+            "type": "span",
           },
           "type": [Function],
         },
         Object {
           "instance": null,
-          "key": "1",
+          "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": <h4>
-              
-</h4>,
-            "className": "type undefined modal-type",
+            "children": <span>
+              flying
+</span>,
+            "className": "type undefined",
             "color": "primary",
+            "onClick": [Function],
             "pill": true,
             "tag": "span",
           },
@@ -203,17 +193,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                undefined,
-                undefined,
-              ],
+              "children": "flying",
             },
             "ref": null,
-            "rendered": Array [
-              undefined,
-              undefined,
-            ],
-            "type": "h4",
+            "rendered": "flying",
+            "type": "span",
           },
           "type": [Function],
         },
