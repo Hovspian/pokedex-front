@@ -9,6 +9,8 @@ import PokemonCard from './PokemonCard';
 import Loader from './Loader';
 import LoadingError from './LoadingError';
 import PokemonModal from '../modal/PokemonModal';
+import Search from './Search';
+import EmptySearch from './EmptySearch';
 
 import '../../styles/home/Home.css';
 
@@ -33,17 +35,128 @@ class Home extends React.Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.enableInfiniteScroll = this.enableInfiniteScroll.bind(this);
     this.selectForm = this.selectForm.bind(this);
-
+    this.fetchPokemon = this.fetchPokemon.bind(this);
   }
 
   /**
-   * Fetches a page of pokemon from the server and adds them to the current state
-   * @param  {int} page - the page to fetch (1 indexed)
+   * Fetches a range of pokemon from the server based on search criteria.
+   * Does some validation and parses Types arrays for checked types
+   * if appendPokemon, then append results to current state, else replace
+   * @param  {Object} options - search options to be fetched
+   * @param  {boolean} appendPokemon - should append results
    * @return {void}
    */
-  fetchPokemon(page) {
-    if (this.state.error || this.state.pokemon.length >= MAX_POKEMON)
-        return;
+  fetchPokemon(options, appendPokemon) {
+    if (this.state.error) {
+      return;
+    }
+
+    const searchOptions = {};
+
+    // pushes index + 1 because Type array starts at 0
+    // but first Type in lookup is 1 (Normal)
+    if (options.selectedTypes) {
+      const searchTypes = [];
+      options.selectedTypes.forEach((isChecked, index) => {
+        if (isChecked) {
+          searchTypes.push(index + 1);
+        }
+      });
+      if (searchTypes.length > 0) {
+        searchOptions.types = searchTypes;
+      }
+    }
+
+    // pushes index + 1 because Type array starts at 0
+    // but first Type in lookup is 1 (Normal)
+    if (options.selectedWeaknesses) {
+      const searchWeaknesses = [];
+      options.selectedWeaknesses.forEach((isChecked, index) => {
+        if (isChecked) {
+          searchWeaknesses.push(index + 1);
+        }
+      });
+      if (searchWeaknesses.length > 0) {
+        searchOptions.weaknesses = searchWeaknesses;
+      }
+    }
+
+    if (options.rangeStart && options.rangeEnd) {
+      searchOptions.id = options.rangeStart;
+      searchOptions.range = options.rangeEnd - options.rangeStart + 1;
+    }
+
+    if (options.abilityName) {
+      searchOptions.ability = options.abilityName;
+    }
+
+    // idOrName can be a string (Name) or number (ID)
+    if (options.idOrName) {
+      if (isNaN(options.idOrName)) {
+        searchOptions.name = options.idOrName;
+      } else {
+        const id = parseInt(options.idOrName, 10);
+
+        // if searching by an ID, but does not fall into the
+        // range, then return empty search result
+        if (id < options.rangeStart || id > options.rangeEnd) {
+          this.setEmptySearch();
+          return;
+        }
+        searchOptions.id = options.idOrName;
+        searchOptions.range = 1;
+      }
+    }
+
+    // if no valid search params, then just return empty search;
+    if (Object.keys(searchOptions).length < 1) {
+      this.setEmptySearch();
+      return;
+    }
+
+    return getRangeOfPokemon(searchOptions)
+      .then(newPokemon => {
+        if (appendPokemon) {
+          const oldPokemon = [...this.state.pokemon];
+          const hasMore = searchOptions.id + searchOptions.range < MAX_POKEMON ? true : false;
+          this.setState({
+            pokemon: [...oldPokemon, ...newPokemon],
+            initialLoad: false,
+            hasMore: hasMore,
+          });
+        } else {
+          this.setState({
+            pokemon: newPokemon,
+            initialLoad: false,
+            hasMore: false,
+            shouldInfiniteScroll: false,
+          });
+        }
+      })
+      .catch(error => {
+        this.setState({
+          error: error.message,
+          shouldInfiniteScroll: false,
+        });
+      });
+  }
+
+  setEmptySearch() {
+    this.setState({
+      pokemon: [],
+      initialLoad: false,
+      hasMore: false,
+      shouldInfiniteScroll: false,
+    });
+  }
+
+  fetchStandardRange() {
+    // returns early if does not have more to fetch
+    // InfiniteScroll wants to pull one last time
+    // if have scroll enabled with an empty search
+    if (!this.state.hasMore) {
+      return;
+    }
 
     const id = this.state.pokemon.length + 1;
     let range;
@@ -53,32 +166,17 @@ class Home extends React.Component {
     } else {
       range = this.perPage;
     }
-    return getRangeOfPokemon(id, range)
-      .then(newPokemon => {
-        const oldPokemon = this.state.pokemon.slice();
-        const hasMore = id + range < MAX_POKEMON ? true : false;
-        this.setState({
-          pokemon: [...oldPokemon, ...newPokemon],
-          initialLoad: false,
-          hasMore: hasMore,
-        });
-      })
 
-      .catch(error => {
-        this.setState({
-            error: error.message,
-            shouldInfiniteScroll: false,
-        });
-      });
+    this.fetchPokemon({ rangeStart: id, rangeEnd: id + range - 1 }, true);
   }
 
-  displayPokemonCards () {
+  displayPokemonCards() {
     return this.state.pokemon.map(pokemon => {
       return <PokemonCard {...pokemon} key={pokemon.id} handlePokemonCardClick={this.getDetails} />
     });
   }
 
-  renderLoadButton () {
+  renderLoadButton() {
     return this.state.hasMore ? (
       <div>
         <Button
@@ -95,20 +193,20 @@ class Home extends React.Component {
     ) : null;
   }
 
-  enableInfiniteScroll () {
+  enableInfiniteScroll() {
     this.setState({ shouldInfiniteScroll: true });
   }
 
-  clearError () {
+  clearError() {
     this.setState({ error: '' });
   }
 
-   /**
-   * Fetches a pokemon details from server and adds them to the current state
-   * @param  {int} id - the id of the pokemon to fetch
-   * @return {void}
-   */
-  getDetails (id) {
+  /**
+  * Fetches a pokemon details from server and adds them to the current state
+  * @param  {int} id - the id of the pokemon to fetch
+  * @return {void}
+  */
+  getDetails(id) {
     if (this.state.error ||
       id < 1 ||
       id > 807)
@@ -130,21 +228,22 @@ class Home extends React.Component {
       });
   }
 
-  selectForm (index) {
+  selectForm(index) {
     if (!this.state.pokemonDetails || index >= this.state.pokemonDetails.forms.length || index < 0)
       return;
     this.setState({ selectedForm: index });
   }
 
   handleCloseModal() {
-    this.setState({modal: false})
+    this.setState({ modal: false })
   }
 
-  render () {
+  render() {
     let cards = this.displayPokemonCards();
     let loadMoreButton = !this.state.shouldInfiniteScroll ?
       this.renderLoadButton() : null;
     let error = this.state.error ? <LoadingError error={this.state.error} /> : null;
+    let emptySearch = (this.state.pokemon.length === 0 && !this.state.initialLoad) ? <EmptySearch /> : null;
 
     return (
       <div className="main" align="center">
@@ -157,10 +256,11 @@ class Home extends React.Component {
           selectedForm={this.state.selectedForm}
         />
         <Header />
+        <Search fetchPokemon={this.fetchPokemon} />
         <InfiniteScroll
-          initialLoad={true}
+          initialLoad={this.state.initialLoad}
           pageStart={0}
-          loadMore={this.fetchPokemon.bind(this)}
+          loadMore={this.fetchStandardRange.bind(this)}
           hasMore={this.state.shouldInfiniteScroll || this.state.initialLoad}
           loader={<Loader key="loader" />}
         >
@@ -169,6 +269,7 @@ class Home extends React.Component {
           </div>
         </InfiniteScroll>
         {loadMoreButton}
+        {emptySearch}
         {error}
       </div>
     )
