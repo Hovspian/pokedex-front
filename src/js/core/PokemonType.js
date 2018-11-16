@@ -69,13 +69,13 @@ class PokemonType extends React.Component {
   render() {
     return (
       <div>
-        {this.props.types.map((type) => {
+        {this.props.types.map((type, index) => {
           const typeName = this.props.isWeakness ? type.type : type;
           const typeClass = this.props.isLarge ? ' large-type' : '';
           const typeCheckbox = this.props.isCheckbox ? ' checkbox' : '';
           const typeChecked = this.shouldRenderChecked(this.props.checkedTypes, typeName);
           return (
-            <Badge className={`type ${typeName}${typeClass}${typeCheckbox}${typeChecked}`} key={typeName} onClick={() => {this.shouldToggle(typeName)}} pill>
+            <Badge className={`type ${typeName}${typeClass}${typeCheckbox}${typeChecked}`} key={typeName + index} onClick={() => {this.shouldToggle(typeName)}} pill>
               {this.renderType(this.props.isLarge, this.props.isWeakness, type)}
             </Badge>
           )
