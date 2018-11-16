@@ -19,9 +19,9 @@ class TypeContainer extends React.Component {
     return (
       <div className="type-container">
         <h3>Type</h3>
-        <PokemonType isModal types={this.props.types} isWeakness={false} />
+        <PokemonType isLarge types={this.props.types} isWeakness={false} />
         <h3>Weaknesses</h3>
-        <PokemonType isModal types={this.props.weaknesses} isWeakness />
+        <PokemonType isLarge types={this.props.weaknesses} isWeakness />
       </div>
     )
   }
