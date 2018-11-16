@@ -28,7 +28,9 @@ ShallowWrapper {
           selectedForm={0}
 />,
         <Header />,
-        <Search />,
+        <Search
+          fetchPokemon={[Function]}
+/>,
         <InfiniteScroll
           element="div"
           hasMore={true}
@@ -59,6 +61,7 @@ ShallowWrapper {
                     Load more Pokemon
           </Button>
 </div>,
+        null,
         null,
       ],
       "className": "main",
@@ -94,7 +97,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "fetchPokemon": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -171,6 +176,7 @@ ShallowWrapper {
         "type": "div",
       },
       null,
+      null,
     ],
     "type": "div",
   },
@@ -191,7 +197,9 @@ ShallowWrapper {
             selectedForm={0}
 />,
           <Header />,
-          <Search />,
+          <Search
+            fetchPokemon={[Function]}
+/>,
           <InfiniteScroll
             element="div"
             hasMore={true}
@@ -222,6 +230,7 @@ ShallowWrapper {
                         Load more Pokemon
             </Button>
 </div>,
+          null,
           null,
         ],
         "className": "main",
@@ -257,7 +266,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "fetchPokemon": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -333,6 +344,7 @@ ShallowWrapper {
           },
           "type": "div",
         },
+        null,
         null,
       ],
       "type": "div",

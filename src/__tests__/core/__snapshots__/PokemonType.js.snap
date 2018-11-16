@@ -4,7 +4,7 @@ exports[`PokemonType render should match Type component snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PokemonType
-    isModal={true}
+    isLarge={true}
     isWeakness={true}
     types={
         Array [
@@ -28,26 +28,26 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Badge
-          className="type undefined"
-          color="primary"
+          className="type undefined large-type"
+          color="secondary"
           onClick={[Function]}
           pill={true}
           tag="span"
 >
-          <span>
-                    water
-          </span>
+          <h4>
+                    
+          </h4>
 </Badge>,
         <Badge
-          className="type undefined"
-          color="primary"
+          className="type undefined large-type"
+          color="secondary"
           onClick={[Function]}
           pill={true}
           tag="span"
 >
-          <span>
-                    flying
-          </span>
+          <h4>
+                    
+          </h4>
 </Badge>,
       ],
     },
@@ -55,14 +55,14 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "NaN",
         "nodeType": "function",
         "props": Object {
-          "children": <span>
-            water
-</span>,
-          "className": "type undefined",
-          "color": "primary",
+          "children": <h4>
+            
+</h4>,
+          "className": "type undefined large-type",
+          "color": "secondary",
           "onClick": [Function],
           "pill": true,
           "tag": "span",
@@ -73,24 +73,30 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "water",
+            "children": Array [
+              undefined,
+              undefined,
+            ],
           },
           "ref": null,
-          "rendered": "water",
-          "type": "span",
+          "rendered": Array [
+            undefined,
+            undefined,
+          ],
+          "type": "h4",
         },
         "type": [Function],
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "NaN",
         "nodeType": "function",
         "props": Object {
-          "children": <span>
-            flying
-</span>,
-          "className": "type undefined",
-          "color": "primary",
+          "children": <h4>
+            
+</h4>,
+          "className": "type undefined large-type",
+          "color": "secondary",
           "onClick": [Function],
           "pill": true,
           "tag": "span",
@@ -101,11 +107,17 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "flying",
+            "children": Array [
+              undefined,
+              undefined,
+            ],
           },
           "ref": null,
-          "rendered": "flying",
-          "type": "span",
+          "rendered": Array [
+            undefined,
+            undefined,
+          ],
+          "type": "h4",
         },
         "type": [Function],
       },
@@ -120,26 +132,26 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Badge
-            className="type undefined"
-            color="primary"
+            className="type undefined large-type"
+            color="secondary"
             onClick={[Function]}
             pill={true}
             tag="span"
 >
-            <span>
-                        water
-            </span>
+            <h4>
+                        
+            </h4>
 </Badge>,
           <Badge
-            className="type undefined"
-            color="primary"
+            className="type undefined large-type"
+            color="secondary"
             onClick={[Function]}
             pill={true}
             tag="span"
 >
-            <span>
-                        flying
-            </span>
+            <h4>
+                        
+            </h4>
 </Badge>,
         ],
       },
@@ -147,14 +159,14 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "NaN",
           "nodeType": "function",
           "props": Object {
-            "children": <span>
-              water
-</span>,
-            "className": "type undefined",
-            "color": "primary",
+            "children": <h4>
+              
+</h4>,
+            "className": "type undefined large-type",
+            "color": "secondary",
             "onClick": [Function],
             "pill": true,
             "tag": "span",
@@ -165,24 +177,30 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "water",
+              "children": Array [
+                undefined,
+                undefined,
+              ],
             },
             "ref": null,
-            "rendered": "water",
-            "type": "span",
+            "rendered": Array [
+              undefined,
+              undefined,
+            ],
+            "type": "h4",
           },
           "type": [Function],
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "NaN",
           "nodeType": "function",
           "props": Object {
-            "children": <span>
-              flying
-</span>,
-            "className": "type undefined",
-            "color": "primary",
+            "children": <h4>
+              
+</h4>,
+            "className": "type undefined large-type",
+            "color": "secondary",
             "onClick": [Function],
             "pill": true,
             "tag": "span",
@@ -193,11 +211,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "flying",
+              "children": Array [
+                undefined,
+                undefined,
+              ],
             },
             "ref": null,
-            "rendered": "flying",
-            "type": "span",
+            "rendered": Array [
+              undefined,
+              undefined,
+            ],
+            "type": "h4",
           },
           "type": [Function],
         },

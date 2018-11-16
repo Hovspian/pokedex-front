@@ -46,7 +46,7 @@ ShallowWrapper {
           </h5>
           <h3>
                     <b>
-                              Gyarados
+                              gyarados
                     </b>
           </h3>
           <PokemonType
@@ -95,7 +95,7 @@ ShallowWrapper {
 </h5>,
             <h3>
               <b>
-                            Gyarados
+                            gyarados
               </b>
 </h3>,
             <PokemonType
@@ -133,7 +133,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <b>
-                Gyarados
+                gyarados
 </b>,
             },
             "ref": null,
@@ -142,10 +142,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gyarados",
+                "children": "gyarados",
               },
               "ref": null,
-              "rendered": "Gyarados",
+              "rendered": "gyarados",
               "type": "b",
             },
             "type": "h3",
@@ -197,7 +197,7 @@ ShallowWrapper {
             </h5>
             <h3>
                         <b>
-                                    Gyarados
+                                    gyarados
                         </b>
             </h3>
             <PokemonType
@@ -246,7 +246,7 @@ ShallowWrapper {
 </h5>,
               <h3>
                 <b>
-                                Gyarados
+                                gyarados
                 </b>
 </h3>,
               <PokemonType
@@ -284,7 +284,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <b>
-                  Gyarados
+                  gyarados
 </b>,
               },
               "ref": null,
@@ -293,10 +293,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Gyarados",
+                  "children": "gyarados",
                 },
                 "ref": null,
-                "rendered": "Gyarados",
+                "rendered": "gyarados",
                 "type": "b",
               },
               "type": "h3",

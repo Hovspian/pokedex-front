@@ -111,8 +111,7 @@ describe('Home Component', () => {
       }]
       ));
 
-
-      return instance.fetchPokemon(1)
+      return instance.fetchPokemon({rangeStart: 1, rangeEnd: 1})
         .then(() => {
           expect(PokemonAPI.getRangeOfPokemon).toHaveBeenCalledTimes(1);
           expect(instance.state.pokemon).toEqual(
