@@ -1,0 +1,7 @@
+.empty-search-container {
+    border: 2px solid red;
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
