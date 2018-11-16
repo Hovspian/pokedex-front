@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Badge } from 'reactstrap';
 
+import { TYPE_LOOKUP } from '../core/Constants';
 import '../../styles/core/PokemonType.css';
 
 const propTypes = {
@@ -13,14 +14,17 @@ const propTypes = {
         multiplier: PropTypes.string
       }))
   ]).isRequired,
-  isWeakness: PropTypes.bool.isRequired,
-  isModal: PropTypes.bool.isRequired,
+  isCheckbox: PropTypes.bool,
+  toggleType: PropTypes.func,
+  isWeakness: PropTypes.bool,
+  isLarge: PropTypes.bool,
+  checkedTypes: PropTypes.arrayOf(PropTypes.bool)
 };
 
 class PokemonType extends React.Component {
 
   shouldRenderHoverOver(weakness) {
-    const multiplier = Number.parseFloat(weakness.multiplier);
+    const multiplier = parseFloat(weakness.multiplier);
     if (multiplier > 2) {
       return (
         <span>
@@ -32,12 +36,26 @@ class PokemonType extends React.Component {
     }
   }
 
-  renderType(isModal, isWeakness, type) {
-    if (isModal && isWeakness) {
+  shouldRenderChecked(checked, typeName) {
+    if (!checked || !checked[TYPE_LOOKUP[typeName] - 1]) {
+      return '';
+    } else {
+      return ' checked';
+    }    
+  }
+
+  shouldToggle(typeName) {
+    if (this.props.isCheckbox) {
+      this.props.toggleType(TYPE_LOOKUP[typeName] - 1, this.props.isWeakness);
+    }
+  }
+
+  renderType(isLarge, isWeakness, type) {
+    if (isLarge && isWeakness) {
       return (
         <h4>{type.type}{this.shouldRenderHoverOver(type)}</h4>
       )
-    } else if (isModal) {
+    } else if (isLarge) {
       return (
         <h4>{type}</h4>
       )
@@ -49,15 +67,16 @@ class PokemonType extends React.Component {
   }
 
   render() {
-    const self = this;
     return (
       <div>
-        {this.props.types.map((type, index) => {
-          const typeName = self.props.isWeakness ? type.type : type;
-          const typeClass = self.props.isModal ? ' modal-type' : '';
+        {this.props.types.map((type) => {
+          const typeName = this.props.isWeakness ? type.type : type;
+          const typeClass = this.props.isLarge ? ' large-type' : '';
+          const typeCheckbox = this.props.isCheckbox ? ' checkbox' : '';
+          const typeChecked = this.shouldRenderChecked(this.props.checkedTypes, typeName);
           return (
-            <Badge className={`type ${typeName}${typeClass}`} key={index} color="primary" pill>
-              {self.renderType(self.props.isModal, self.props.isWeakness, type)}
+            <Badge className={`type ${typeName}${typeClass}${typeCheckbox}${typeChecked}`} key={typeName} onClick={() => {this.shouldToggle(typeName)}} pill>
+              {this.renderType(this.props.isLarge, this.props.isWeakness, type)}
             </Badge>
           )
         })}
