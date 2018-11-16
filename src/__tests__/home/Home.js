@@ -5,6 +5,7 @@ import Home from '../../js/home/Home';
 
 import * as PokemonAPI from '../../js/core/PokemonAPI';
 import ExampleJSON from '../../../local_data/example_detail.json';
+import { TYPES } from '../../js/core/Constants';
 
 describe('Home Component', () => {
 
@@ -111,7 +112,7 @@ describe('Home Component', () => {
       }]
       ));
 
-      return instance.fetchPokemon({rangeStart: 1, rangeEnd: 1})
+      return instance.fetchPokemon({ rangeStart: 1, rangeEnd: 1 }, false)
         .then(() => {
           expect(PokemonAPI.getRangeOfPokemon).toHaveBeenCalledTimes(1);
           expect(instance.state.pokemon).toEqual(
@@ -127,6 +128,51 @@ describe('Home Component', () => {
               })
             ])
           )
+        });
+    });
+
+    it('should not call API if have no search options', () => {
+      PokemonAPI.getRangeOfPokemon = jest.fn();
+
+      instance.fetchPokemon();
+      expect(PokemonAPI.getRangeOfPokemon).toHaveBeenCalledTimes(0);
+      expect(instance.state.pokemon).toEqual([]);
+
+    });
+
+    it('should create a correct search object from given params', () => {
+
+      const validSearchParams = {
+        rangeStart: 1,
+        rangeEnd: 500,
+        selectedTypes: new Array(TYPES.length).fill(true),
+        selectedWeaknesses: new Array(TYPES.length).fill(true)
+      };
+
+      const bulbReturn = [{
+        "id": 1,
+        "name": "Bulbasaur",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "image_path": "/sprites/pokemon/large/1.png"
+      }];
+
+      const expectedSearch = {
+        id: 1,
+        range: 500,
+        types: Array.from(Array(TYPES.length), (_, x) => x + 1),
+        weaknesses: Array.from(Array(TYPES.length), (_, x) => x + 1)
+      }
+
+      PokemonAPI.getRangeOfPokemon = jest.fn();
+      PokemonAPI.getRangeOfPokemon.mockImplementation(() => Promise.resolve(bulbReturn));
+
+      return instance.fetchPokemon(validSearchParams, false)
+        .then(() => {
+          expect(PokemonAPI.getRangeOfPokemon).toHaveBeenCalledWith(expectedSearch);
+          expect(instance.state.pokemon).toEqual(bulbReturn);
         });
     });
   });

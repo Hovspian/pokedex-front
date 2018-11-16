@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptySearch Component should match EmptySearch component snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EmptySearch />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <h4>
+          No Pokemon Matched Your Search!
+</h4>,
+        <p>
+          Try these suggestions to find a Pokemon
+</p>,
+        <ul>
+          <li>
+                    Reduce the number of search parameters
+          </li>
+          <li>
+                    Search for only one or two Pokemon types at a time
+          </li>
+          <li>
+                    Ensure Number search is within the range
+          </li>
+</ul>,
+      ],
+      "className": "empty-search-container",
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "No Pokemon Matched Your Search!",
+        },
+        "ref": null,
+        "rendered": "No Pokemon Matched Your Search!",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Try these suggestions to find a Pokemon",
+        },
+        "ref": null,
+        "rendered": "Try these suggestions to find a Pokemon",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              Reduce the number of search parameters
+</li>,
+            <li>
+              Search for only one or two Pokemon types at a time
+</li>,
+            <li>
+              Ensure Number search is within the range
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Reduce the number of search parameters",
+            },
+            "ref": null,
+            "rendered": "Reduce the number of search parameters",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Search for only one or two Pokemon types at a time",
+            },
+            "ref": null,
+            "rendered": "Search for only one or two Pokemon types at a time",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Ensure Number search is within the range",
+            },
+            "ref": null,
+            "rendered": "Ensure Number search is within the range",
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <h4>
+            No Pokemon Matched Your Search!
+</h4>,
+          <p>
+            Try these suggestions to find a Pokemon
+</p>,
+          <ul>
+            <li>
+                        Reduce the number of search parameters
+            </li>
+            <li>
+                        Search for only one or two Pokemon types at a time
+            </li>
+            <li>
+                        Ensure Number search is within the range
+            </li>
+</ul>,
+        ],
+        "className": "empty-search-container",
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No Pokemon Matched Your Search!",
+          },
+          "ref": null,
+          "rendered": "No Pokemon Matched Your Search!",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Try these suggestions to find a Pokemon",
+          },
+          "ref": null,
+          "rendered": "Try these suggestions to find a Pokemon",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                Reduce the number of search parameters
+</li>,
+              <li>
+                Search for only one or two Pokemon types at a time
+</li>,
+              <li>
+                Ensure Number search is within the range
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Reduce the number of search parameters",
+              },
+              "ref": null,
+              "rendered": "Reduce the number of search parameters",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Search for only one or two Pokemon types at a time",
+              },
+              "ref": null,
+              "rendered": "Search for only one or two Pokemon types at a time",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Ensure Number search is within the range",
+              },
+              "ref": null,
+              "rendered": "Ensure Number search is within the range",
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
