@@ -4,6 +4,7 @@ import { Modal, ModalBody } from 'reactstrap';
 
 import AlternateForms from './AlternateForms';
 import BasicInfo from './BasicInfo';
+import EvolutionChain from './EvolutionChain';
 import NavigationBar from './NavigationBar';
 import StatGraph from './StatGraph';
 import TypeContainer from './TypeContainer';
@@ -132,12 +133,9 @@ class PokemonModal extends React.Component {
                            weaknesses={this.props.data.forms[0].weaknesses}
             />
           </div>
-<<<<<<< HEAD
-=======
           <EvolutionChain evolutions={this.props.data.evolutions}
                           getPokemonDetails={this.props.getPokemonDetails}
           />
->>>>>>> Basic formatting for single evolution
         </ModalBody>
       </Modal>
     );
