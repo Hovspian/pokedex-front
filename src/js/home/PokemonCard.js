@@ -23,7 +23,7 @@ class PokemonCard extends React.Component {
         <div className="textarea" align="center" >
           <h5 className="pokemon-id" align="left">{`#${this.props.id}`}</h5>
           <h3><b>{this.props.name}</b></h3>
-          <PokemonType isModal={false} isWeakness={false} id={this.props.id} types= {this.props.types} />
+          <PokemonType isModal={false} isWeakness={false} id={this.props.id} types={this.props.types} />
         </div>
       </div>
     );
