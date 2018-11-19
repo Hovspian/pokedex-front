@@ -18,10 +18,12 @@ class Evolution extends React.Component {
   render () {
     return (
       <span onClick={() => { this.props.getPokemonDetails(this.props.id) }} >
-        <img className="evolution-sprite"
-             src={getPokemonSprite(this.props.image_path)}
-             alt={this.props.name}
-        />
+        <div className="evolution-container">
+          <img className="evolution-sprite"
+               src={getPokemonSprite(this.props.image_path)}
+               alt={this.props.name}
+          />
+        </div>
         <h5><b>{this.props.name}</b></h5>
         <PokemonType isModal={false} isWeakness={false} types={this.props.types} />
       </span>

@@ -1,4 +1,15 @@
 .evolution-sprite {
+  width: 100%;
+  height: 100%;
+}
+
+.evolution-container {
   width: 150px;
   height: 150px;
+
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 3px 0px;
 }
