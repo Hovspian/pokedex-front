@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import Evolution from './Evolution';
 
+import '../../styles/modal/EvolutionChain.css';
+
 const propTypes = {
   getPokemonDetails: PropTypes.func.isRequired,
   evolutions: PropTypes.shape({
@@ -34,14 +36,33 @@ const propTypes = {
 };
 
 class EvolutionChain extends React.Component {
+  mapArrayToEvolutions(arr) {
+    return arr.map((evolution, index) => {
+      return <Evolution getPokemonDetails={this.props.getPokemonDetails} {...arr[index]} key={index} />;
+    });
+  }
+
+  renderEvolutions() {
+    const firstGroup = this.props.evolutions[1] === null ? null :  this.mapArrayToEvolutions(this.props.evolutions[1]);
+    const secondGroup = this.props.evolutions[2] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[2]);
+    const thirdGroup = this.props.evolutions[3] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[3]);
+    return (
+      <ul>
+        <li className="evolution-chain-item">{firstGroup}</li>
+        <li className="evolution-chain-item">{secondGroup}</li>
+        <li className="evolution-chain-item">{thirdGroup}</li>
+      </ul>
+    );
+  }
+
   render () {
     if (this.props.evolutions[1] === null)
       return <h3>This pokemon doesn't evolve</h3>;
-    const evolution = <Evolution getPokemonDetails={this.props.getPokemonDetails} {...this.props.evolutions[1][0]} />
+
     return (
       <div>
         <h3>Evolutions</h3>
-        {evolution}
+        {this.renderEvolutions()}
       </div>
     );
   }

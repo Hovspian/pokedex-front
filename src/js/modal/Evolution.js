@@ -17,14 +17,14 @@ const propTypes = {
 class Evolution extends React.Component {
   render () {
     return (
-      <div onClick={() => { this.props.getPokemonDetails(this.props.id) }} >
+      <span onClick={() => { this.props.getPokemonDetails(this.props.id) }} >
         <img className="evolution-sprite"
              src={getPokemonSprite(this.props.image_path)}
              alt={this.props.name}
         />
         <h5><b>{this.props.name}</b></h5>
         <PokemonType isModal={false} isWeakness={false} types={this.props.types} />
-      </div>
+      </span>
     );
   }
 }
