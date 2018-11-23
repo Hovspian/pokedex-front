@@ -47,11 +47,11 @@ class EvolutionChain extends React.Component {
     const secondGroup = this.props.evolutions[2] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[2]);
     const thirdGroup = this.props.evolutions[3] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[3]);
     return (
-      <ul>
-        <li className="evolution-chain-item">{firstGroup}</li>
-        <li className="evolution-chain-item">{secondGroup}</li>
-        <li className="evolution-chain-item">{thirdGroup}</li>
-      </ul>
+      <div className="evolution-chain-container">
+        <div className="evolution-chain-item first">{firstGroup}</div>
+        <div className="evolution-chain-item second">{secondGroup}</div>
+        <div className="evolution-chain-item third">{thirdGroup}</div>
+      </div>
     );
   }
 

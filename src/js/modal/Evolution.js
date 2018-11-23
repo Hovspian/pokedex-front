@@ -17,8 +17,8 @@ const propTypes = {
 class Evolution extends React.Component {
   render () {
     return (
-      <span onClick={() => { this.props.getPokemonDetails(this.props.id) }} >
-        <div className="evolution-container">
+      <span className="evolution-container" onClick={() => { this.props.getPokemonDetails(this.props.id) }} >
+        <div className="evolution">
           <img className="evolution-sprite"
                src={getPokemonSprite(this.props.image_path)}
                alt={this.props.name}
