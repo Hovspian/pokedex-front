@@ -87,7 +87,7 @@ describe('Home Component', () => {
 
     it('should call API if clicked on pokemon card', () => {
       PokemonAPI.getPokemonDetails = jest.fn();
-      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON))
+      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON));
 
       return instance.getDetails(1)
         .then(() => {
@@ -98,6 +98,25 @@ describe('Home Component', () => {
         });
 
     });
+
+    it('should not call API if clicked on pokemon card when state already contains details', () => {
+      PokemonAPI.getPokemonDetails = jest.fn();
+      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON));
+
+      wrapper.setState({
+        pokemonDetails: { id: 1 },
+        modal: false,
+        selectedForm: 2,
+      });
+
+      return instance.getDetails(1)
+        .then(() => {
+          expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(0);
+          expect(instance.state.modal).toBe(true);
+          expect(instance.state.pokemonDetails).toEqual({ id: 1 });
+          expect(instance.state.selectedForm).toBe(0);
+        });
+    })
 
     it('should call API when fetching pokemon', () => {
       PokemonAPI.getRangeOfPokemon = jest.fn();

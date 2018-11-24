@@ -208,9 +208,17 @@ class Home extends React.Component {
   */
   getDetails(id) {
     if (this.state.error ||
-      id < 1 ||
-      id > 807)
+       id < 1 ||
+       id > 807)
       return;
+
+    if (this.state.pokemonDetails && this.state.pokemonDetails.id === id) {
+      this.setState({
+        modal: true,
+        selectedForm: 0,
+      });
+      return;
+    }
 
     return getPokemonDetails(id)
       .then(pokemonDetails => {
