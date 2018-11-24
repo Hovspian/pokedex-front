@@ -25,7 +25,7 @@ class Evolution extends React.Component {
           />
         </div>
         <h5><b>{this.props.name}</b></h5>
-        <PokemonType isModal={false} isWeakness={false} types={this.props.types} />
+        <PokemonType isLarge={false} isWeakness={false} types={this.props.types} />
       </span>
     );
   }

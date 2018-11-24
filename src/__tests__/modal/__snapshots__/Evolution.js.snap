@@ -43,7 +43,7 @@ ShallowWrapper {
           </b>
 </h5>,
         <PokemonType
-          isModal={false}
+          isLarge={false}
           isWeakness={false}
           types={
                     Array [
@@ -113,7 +113,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "isModal": false,
+          "isLarge": false,
           "isWeakness": false,
           "types": Array [
             "bug",
@@ -148,7 +148,7 @@ ShallowWrapper {
             </b>
 </h5>,
           <PokemonType
-            isModal={false}
+            isLarge={false}
             isWeakness={false}
             types={
                         Array [
@@ -218,7 +218,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "isModal": false,
+            "isLarge": false,
             "isWeakness": false,
             "types": Array [
               "bug",
