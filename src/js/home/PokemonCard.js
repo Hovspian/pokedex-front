@@ -15,7 +15,6 @@ const propTypes = {
 };
 
 class PokemonCard extends React.Component {
-
   render () {
     return (
       <div className='card' onClick={() => {this.props.handlePokemonCardClick(this.props.id)}} >

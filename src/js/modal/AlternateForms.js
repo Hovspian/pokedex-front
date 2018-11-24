@@ -32,7 +32,6 @@ class AlternateForms extends React.Component {
       </div>
     );
   }
-
 }
 
 AlternateForms.propTypes = propTypes;

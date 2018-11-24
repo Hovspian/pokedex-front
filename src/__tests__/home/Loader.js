@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import Loader from '../../js/home/Loader';
 
 describe('Loader Component', () => {
-
   it('should render Loader component without crashing', () => {
     shallow(<Loader />);
   });

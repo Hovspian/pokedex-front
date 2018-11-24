@@ -22,5 +22,4 @@ describe('TypeContainer Component', () => {
     const wrapper = shallow(<TypeContainer {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
-
 });

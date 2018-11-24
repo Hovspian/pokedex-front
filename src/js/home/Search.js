@@ -12,7 +12,6 @@ const propTypes = {
 };
 
 class Search extends React.Component {
-
   constructor(props) {
     super(props);
     this.handleToggleCollapse = this.handleToggleCollapse.bind(this);
@@ -186,7 +185,7 @@ class Search extends React.Component {
             <Button className={`toggle ${this.state.collapse ? 'toggled-on' : ''}`} onClick={this.handleToggleCollapse}></Button>
           </div>
         </Form>
-      </Container >
+      </Container>
     )
   }
 }

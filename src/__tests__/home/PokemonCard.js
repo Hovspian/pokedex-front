@@ -13,5 +13,4 @@ describe('PokemonCard', () => {
     const wrapper = shallow(<PokemonCard handlePokemonCardClick={() => {}} {...ExampleJSON} />);
     expect(wrapper).toMatchSnapshot();
   });
-  
 });

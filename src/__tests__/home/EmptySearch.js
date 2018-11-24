@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import EmptySearch from '../../js/home/EmptySearch';
 
 describe('EmptySearch Component', () => {
-
   it('should render EmptySearch component without crashing', () => {
     shallow(<EmptySearch />);
   });

@@ -5,7 +5,6 @@ import NavigationBar from '../../js/modal/NavigationBar';
 import ExampleJSON from '../../../local_data/example_detail.json';
 
 describe('NavigationBar Component', () => {
-
   const props = {
     getPokemonDetails: (() => {}),
     previous: ExampleJSON.previous,

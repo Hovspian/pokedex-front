@@ -49,7 +49,6 @@ class BasicInfo extends React.Component {
       </div>
     )
   }
-
 }
 
 BasicInfo.propTypes = propTypes;

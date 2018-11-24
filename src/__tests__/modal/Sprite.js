@@ -23,5 +23,4 @@ describe('Sprite Component', () => {
     const wrapper = shallow(<Sprite {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
-
 });

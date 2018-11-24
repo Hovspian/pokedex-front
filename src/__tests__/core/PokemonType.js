@@ -45,6 +45,6 @@ describe('Tests render output for different types and sizes', () => {
   it('should render a large type', () => {
     const wrapper = shallow(<PokemonType isLarge types={ExampleDetailJSON.forms[0].types} />);
     expect(wrapper.exists('h4')).toEqual(true);
-  })
+  });
 
-})
+});

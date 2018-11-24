@@ -67,5 +67,4 @@ describe('BasicInfo Component', () => {
       expect(instance.idWithZeros()).toBe('100');
     });
   });
-
 });

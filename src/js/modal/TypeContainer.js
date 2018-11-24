@@ -23,7 +23,7 @@ class TypeContainer extends React.Component {
         <h3>Weaknesses</h3>
         <PokemonType isLarge types={this.props.weaknesses} isWeakness />
       </div>
-    )
+    );
   }
 }
 

@@ -8,7 +8,6 @@ import ExampleJSON from '../../../local_data/example_detail.json';
 import { TYPES } from '../../js/core/Constants';
 
 describe('Home Component', () => {
-
   it('should render Home component without crashing', () => {
     shallow(<Home />);
   });
@@ -99,7 +98,6 @@ describe('Home Component', () => {
             expect(instance.state.pokemonDetails).toEqual(ExampleJSON);
             expect(instance.state.selectedForm).toBe(0);
           });
-
       });
 
       it('should not call API when state already contains details', () => {
@@ -120,13 +118,13 @@ describe('Home Component', () => {
     it('should call API when fetching pokemon', () => {
       PokemonAPI.getRangeOfPokemon = jest.fn();
       PokemonAPI.getRangeOfPokemon.mockImplementation(() => Promise.resolve([{
-        "id": 1,
-        "name": "Bulbasaur",
-        "types": [
-          "grass",
-          "poison"
+        'id': 1,
+        'name': 'Bulbasaur',
+        'types': [
+          'grass',
+          'poison'
         ],
-        "image_path": "/sprites/pokemon/large/1.png"
+        'image_path': '/sprites/pokemon/large/1.png',
       }]));
 
       return instance.fetchPokemon({ rangeStart: 1, rangeEnd: 1 }, false)
@@ -135,16 +133,16 @@ describe('Home Component', () => {
           expect(instance.state.pokemon).toEqual(
             expect.arrayContaining([
               expect.objectContaining({
-                "id": 1,
-                "name": "Bulbasaur",
-                "types": [
-                  "grass",
-                  "poison"
+                'id': 1,
+                'name': 'Bulbasaur',
+                'types': [
+                  'grass',
+                  'poison'
                 ],
-                "image_path": "/sprites/pokemon/large/1.png"
+                'image_path': '/sprites/pokemon/large/1.png',
               })
             ])
-          )
+          );
         });
     });
 
@@ -158,7 +156,6 @@ describe('Home Component', () => {
     });
 
     it('should create a correct search object from given params', () => {
-
       const validSearchParams = {
         rangeStart: 1,
         rangeEnd: 500,
@@ -167,20 +164,20 @@ describe('Home Component', () => {
       };
 
       const bulbReturn = [{
-        "id": 1,
-        "name": "Bulbasaur",
-        "types": [
-          "grass",
-          "poison"
+        'id': 1,
+        'name': 'Bulbasaur',
+        'types': [
+          'grass',
+          'poison'
         ],
-        "image_path": "/sprites/pokemon/large/1.png"
+        'image_path': '/sprites/pokemon/large/1.png',
       }];
 
       const expectedSearch = {
         id: 1,
         range: 500,
         types: Array.from(Array(TYPES.length), (_, x) => x + 1),
-        weaknesses: Array.from(Array(TYPES.length), (_, x) => x + 1)
+        weaknesses: Array.from(Array(TYPES.length), (_, x) => x + 1),
       }
 
       PokemonAPI.getRangeOfPokemon = jest.fn();

@@ -16,7 +16,6 @@ const propTypes = {
 };
 
 class StatGraph extends React.Component {
-
   render() {
     return (
       <div className="statcontainer">
@@ -38,7 +37,7 @@ class StatGraph extends React.Component {
           <p className="statname">Speed</p>
         </div>
       </div>
-    )
+    );
   }
 }
 

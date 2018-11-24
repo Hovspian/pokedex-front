@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import Search from '../../js/home/Search';
 
 describe('Search Component', () => {
-
   it('should render Search component without crashing', () => {
     shallow(<Search fetchPokemon={() => {}} />);
   });

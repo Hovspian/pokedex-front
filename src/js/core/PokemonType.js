@@ -22,7 +22,6 @@ const propTypes = {
 };
 
 class PokemonType extends React.Component {
-
   shouldRenderHoverOver(weakness) {
     const multiplier = parseFloat(weakness.multiplier);
     if (multiplier > 2) {
@@ -41,7 +40,7 @@ class PokemonType extends React.Component {
       return '';
     } else {
       return ' checked';
-    }    
+    }
   }
 
   shouldToggle(typeName) {

@@ -24,5 +24,4 @@ describe('Form Component', () => {
     const wrapper = shallow(<Form {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
-
 });

@@ -25,5 +25,4 @@ describe('Evolution Component', () => {
     const wrapper = shallow(<Evolution {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
-
 });

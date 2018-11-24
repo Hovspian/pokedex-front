@@ -21,5 +21,4 @@ describe('Abilities Component', () => {
     const wrapper = shallow(<Abilities {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
-
 });

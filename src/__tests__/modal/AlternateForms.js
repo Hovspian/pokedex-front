@@ -26,5 +26,4 @@ describe('AlternateForms Component', () => {
     const wrapper = shallow(<AlternateForms {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
-
 });

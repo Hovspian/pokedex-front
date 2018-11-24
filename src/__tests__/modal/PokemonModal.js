@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import PokemonModal from '../../js/modal/PokemonModal';
 
 describe('PokemonModal Component', () => {
-
   it('should render PokemonModal component without crashing', () => {
     shallow(<PokemonModal handleCloseModal={() => {}}
                           modal={true}
@@ -23,5 +22,4 @@ describe('PokemonModal Component', () => {
                             />);
     expect(wrapper).toMatchSnapshot();
   });
-
 });

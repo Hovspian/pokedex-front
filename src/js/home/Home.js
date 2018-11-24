@@ -15,7 +15,6 @@ import EmptySearch from './EmptySearch';
 import '../../styles/home/Home.css';
 
 class Home extends React.Component {
-
   constructor(props) {
     super(props);
 

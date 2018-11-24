@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import Header from '../../js/home/Header';
 
 describe('Header Component', () => {
-
   it('should render Header component without crashing', () => {
     shallow(<Header />);
   });

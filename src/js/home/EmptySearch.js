@@ -4,7 +4,6 @@ import { Container } from 'reactstrap';
 import '../../styles/home/EmptySearch.css';
 
 class EmptySearch extends React.Component {
-    
   render () {
     return (
       <Container className="empty-search-container">

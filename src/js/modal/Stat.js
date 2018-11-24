@@ -8,7 +8,6 @@ const propTypes = {
 };
 
 class Stat extends React.Component {
-
   calculateHeight() {
     const minHeight = 30;
     const maxHeight = 200;
@@ -19,7 +18,7 @@ class Stat extends React.Component {
   render() {
     return (
       <div className="stat" style={{ "height": `${this.calculateHeight()}px` }}><span className="amount">{this.props.statAmount}</span></div>
-    )
+    );
   }
 }
 
