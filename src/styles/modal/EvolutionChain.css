@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
-  background-color: #FFFFC6;
+  padding: 20px 0;
 }
 
 .evolution-chain-item {
@@ -23,5 +22,11 @@
 }
 
 .second .evolution-container, .third .evolution-container {
-  margin-top: -120px; /* Offset the `top` from ::before selectors; */
+  margin-top: -120px; /* Offset the `top` from ::before selectors */
+}
+
+.evolution-chain-background {
+  background-color: #FFFFC6;
+  margin-top: 20px;
+  padding-top: 10px;
 }

@@ -38,7 +38,10 @@ const propTypes = {
 class EvolutionChain extends React.Component {
   mapArrayToEvolutions(arr) {
     return arr.map((evolution, index) => {
-      return <Evolution getPokemonDetails={this.props.getPokemonDetails} {...arr[index]} key={index} />;
+      return <Evolution key={index}
+                        getPokemonDetails={this.props.getPokemonDetails}
+                        {...arr[index]}
+             />;
     });
   }
 
@@ -46,6 +49,7 @@ class EvolutionChain extends React.Component {
     const firstGroup = this.props.evolutions[1] === null ? null :  this.mapArrayToEvolutions(this.props.evolutions[1]);
     const secondGroup = this.props.evolutions[2] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[2]);
     const thirdGroup = this.props.evolutions[3] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[3]);
+
     return (
       <div className="evolution-chain-container">
         <div className="evolution-chain-item first">{firstGroup}</div>
@@ -56,13 +60,10 @@ class EvolutionChain extends React.Component {
   }
 
   render () {
-    if (this.props.evolutions[1] === null)
-      return <h3>This pokemon doesn't evolve</h3>;
-
     return (
-      <div>
-        <h3>Evolutions</h3>
-        {this.renderEvolutions()}
+      <div className="evolution-chain-background">
+        <h3>{this.props.evolutions[1] ? 'Evolutions' : 'This pokemon doesn\'t evolve'}</h3>
+        {this.props.evolutions[1] ? this.renderEvolutions() : null}
       </div>
     );
   }
