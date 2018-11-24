@@ -40,21 +40,30 @@ class EvolutionChain extends React.Component {
     return arr.map((evolution, index) => {
       return <Evolution key={index}
                         getPokemonDetails={this.props.getPokemonDetails}
-                        {...arr[index]}
+                        {...evolution}
              />;
     });
   }
 
   renderEvolutions() {
-    const firstGroup = this.props.evolutions[1] === null ? null :  this.mapArrayToEvolutions(this.props.evolutions[1]);
-    const secondGroup = this.props.evolutions[2] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[2]);
-    const thirdGroup = this.props.evolutions[3] === null ? null : this.mapArrayToEvolutions(this.props.evolutions[3]);
+    const firstGroup = this.props.evolutions[1] === null ? null :
+      <div className="evolution-chain-item first">
+        {this.mapArrayToEvolutions(this.props.evolutions[1])}
+      </div>;
+    const secondGroup = this.props.evolutions[2] === null ? null :
+      <div className="evolution-chain-item second">
+        {this.mapArrayToEvolutions(this.props.evolutions[2])}
+      </div>;
+    const thirdGroup = this.props.evolutions[3] === null ? null :
+      <div className="evolution-chain-item third">
+        {this.mapArrayToEvolutions(this.props.evolutions[3])}
+      </div>;
 
     return (
       <div className="evolution-chain-container">
-        <div className="evolution-chain-item first">{firstGroup}</div>
-        <div className="evolution-chain-item second">{secondGroup}</div>
-        <div className="evolution-chain-item third">{thirdGroup}</div>
+        {firstGroup}
+        {secondGroup}
+        {thirdGroup}
       </div>
     );
   }
