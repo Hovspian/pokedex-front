@@ -1,0 +1,124 @@
+{
+  "previous": {
+    "id": 18,
+    "name": "Pidgeot"
+  },
+  "next": {
+    "id": 20,
+    "name": "Raticate"
+  },
+  "id": 19,
+  "name": "Rattata",
+  "description": "Rattata is cautious in the extreme. Even while it is asleep, it constantly listens by moving its ears around. It is not picky about where it lives—it will make its nest anywhere.",
+  "species": "Mouse",
+  "forms": [
+    {
+    "name": "Rattata",
+    "types": [
+      "normal"
+    ],
+    "weaknesses": [
+      {
+        "type": "fighting",
+        "multiplier": "2.000"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Run Away",
+        "description": "Ensures success fleeing from wild battles.",
+        "hidden": false
+      },
+      {
+        "name": "Guts",
+        "description": "Increases attack to 1.5× with a major status ailment.",
+        "hidden": false
+      },
+      {
+        "name": "Hustle",
+        "description": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×.",
+        "hidden": true
+      }
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "special-attack": 25,
+      "special-defense": 35,
+      "speed": 72
+    },
+    "image_path": "/sprites/pokemon/large/19.png"
+    },
+    {
+      "name": "Alola Form",
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "weaknesses": [
+        {
+          "type": "fighting",
+          "multiplier": "4.000"
+        },
+        {
+          "type": "bug",
+          "multiplier": "2.000"
+        },
+        {
+          "type": "fairy",
+          "multiplier": "2.000"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Gluttony",
+          "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP.",
+          "hidden": false
+        },
+        {
+          "name": "Hustle",
+          "description": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×.",
+          "hidden": false
+        },
+        {
+          "name": "Thick Fat",
+          "description": "Halves damage from fire and ice moves.",
+          "hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "special-attack": 25,
+        "special-defense": 35,
+        "speed": 72
+      },
+      "image_path": "/sprites/pokemon/large/10151.png"
+    }
+  ],
+  "evolutions": {
+    "1": [
+      {
+        "id": 19,
+        "name": "Rattata",
+        "types": [
+          "normal"
+        ],
+        "image_path": "/sprites/pokemon/small/19.png"
+      }
+    ],
+    "2": [
+      {
+        "id": 20,
+        "name": "Raticate",
+        "types": [
+          "normal"
+        ],
+        "image_path": "/sprites/pokemon/small/20.png"
+      }
+    ],
+    "3": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "previous": {
+    "id": 267,
+    "name": "Beautifly"
+  },
+  "next": {
+    "id": 269,
+    "name": "Dustox"
+  },
+  "id": 268,
+  "name": "Cascoon",
+  "description": "Cascoon makes its protective cocoon by wrapping its body entirely with a fine silk from its mouth. Once the silk goes around its body, it hardens. This Pokémon prepares for its evolution inside the cocoon.",
+  "species": "Cocoon",
+  "forms": [
+    {
+      "name": "Cascoon",
+      "types": [
+        "bug"
+      ],
+      "weaknesses": [
+        {
+          "type": "fire",
+          "multiplier": "2.000"
+        },
+        {
+          "type": "flying",
+          "multiplier": "2.000"
+        },
+        {
+          "type": "rock",
+          "multiplier": "2.000"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Shed Skin",
+          "description": "Has a 33% chance of curing any major status ailment after each turn.",
+          "hidden": false
+        }
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 35,
+        "defense": 55,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 15
+      },
+      "image_path": "/sprites/pokemon/large/268.png"
+    }
+  ],
+  "evolutions": {
+    "1": [
+      {
+        "id": 265,
+        "name": "Wurmple",
+        "types": [
+          "bug"
+        ],
+        "image_path": "/sprites/pokemon/small/265.png"
+      }
+    ],
+    "2": [
+      {
+        "id": 266,
+        "name": "Silcoon",
+        "types": [
+          "bug"
+        ],
+        "image_path": "/sprites/pokemon/small/266.png"
+      },
+      {
+        "id": 268,
+        "name": "Cascoon",
+        "types": [
+          "bug"
+        ],
+        "image_path": "/sprites/pokemon/small/268.png"
+      }
+    ],
+    "3": [
+      {
+        "id": 267,
+        "name": "Beautifly",
+        "types": [
+        "bug",
+          "flying"
+        ],
+        "image_path": "/sprites/pokemon/small/267.png"
+      },
+      {
+        "id": 269,
+        "name": "Dustox",
+        "types": [
+        "bug",
+          "poison"
+        ],
+        "image_path": "/sprites/pokemon/small/269.png"
+      }
+    ]
+  }
+}
