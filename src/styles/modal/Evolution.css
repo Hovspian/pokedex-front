@@ -1,9 +1,13 @@
+.evolution-container {
+  cursor: pointer;
+}
+
 .evolution-sprite {
   width: 100%;
   height: 100%;
 }
 
-.evolution{
+.evolution {
   width: 150px;
   height: 150px;
 
