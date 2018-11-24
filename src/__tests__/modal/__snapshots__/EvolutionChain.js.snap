@@ -1,0 +1,707 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EvolutionChain Component when there are evolutions should match EvolutionChain component snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EvolutionChain
+    evolutions={
+        Object {
+            "1": Array [
+              Object {
+                "id": 10,
+                "image_path": "/sprites/pokemon/small/10.png",
+                "name": "Caterpie",
+                "types": Array [
+                  "bug",
+                ],
+              },
+            ],
+            "2": Array [
+              Object {
+                "id": 11,
+                "image_path": "/sprites/pokemon/small/11.png",
+                "name": "Metapod",
+                "types": Array [
+                  "bug",
+                ],
+              },
+            ],
+            "3": Array [
+              Object {
+                "id": 12,
+                "image_path": "/sprites/pokemon/small/12.png",
+                "name": "Butterfree",
+                "types": Array [
+                  "bug",
+                  "flying",
+                ],
+              },
+            ],
+          }
+    }
+    getPokemonDetails={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Evolutions
+</h3>,
+        <div
+          className="evolution-chain-container"
+>
+          <div
+                    className="evolution-chain-item first"
+          >
+                    <Evolution
+                              getPokemonDetails={[Function]}
+                              id={10}
+                              image_path="/sprites/pokemon/small/10.png"
+                              name="Caterpie"
+                              types={
+                                        Array [
+                                                  "bug",
+                                                ]
+                              }
+                    />
+          </div>
+          <div
+                    className="evolution-chain-item second"
+          >
+                    <Evolution
+                              getPokemonDetails={[Function]}
+                              id={11}
+                              image_path="/sprites/pokemon/small/11.png"
+                              name="Metapod"
+                              types={
+                                        Array [
+                                                  "bug",
+                                                ]
+                              }
+                    />
+          </div>
+          <div
+                    className="evolution-chain-item third"
+          >
+                    <Evolution
+                              getPokemonDetails={[Function]}
+                              id={12}
+                              image_path="/sprites/pokemon/small/12.png"
+                              name="Butterfree"
+                              types={
+                                        Array [
+                                                  "bug",
+                                                  "flying",
+                                                ]
+                              }
+                    />
+          </div>
+</div>,
+      ],
+      "className": "evolution-chain-background",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Evolutions",
+        },
+        "ref": null,
+        "rendered": "Evolutions",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="evolution-chain-item first"
+>
+              <Evolution
+                            getPokemonDetails={[Function]}
+                            id={10}
+                            image_path="/sprites/pokemon/small/10.png"
+                            name="Caterpie"
+                            types={
+                                          Array [
+                                                        "bug",
+                                                      ]
+                            }
+              />
+</div>,
+            <div
+              className="evolution-chain-item second"
+>
+              <Evolution
+                            getPokemonDetails={[Function]}
+                            id={11}
+                            image_path="/sprites/pokemon/small/11.png"
+                            name="Metapod"
+                            types={
+                                          Array [
+                                                        "bug",
+                                                      ]
+                            }
+              />
+</div>,
+            <div
+              className="evolution-chain-item third"
+>
+              <Evolution
+                            getPokemonDetails={[Function]}
+                            id={12}
+                            image_path="/sprites/pokemon/small/12.png"
+                            name="Butterfree"
+                            types={
+                                          Array [
+                                                        "bug",
+                                                        "flying",
+                                                      ]
+                            }
+              />
+</div>,
+          ],
+          "className": "evolution-chain-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Evolution
+                  getPokemonDetails={[Function]}
+                  id={10}
+                  image_path="/sprites/pokemon/small/10.png"
+                  name="Caterpie"
+                  types={
+                                    Array [
+                                                      "bug",
+                                                    ]
+                  }
+/>,
+              ],
+              "className": "evolution-chain-item first",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "getPokemonDetails": [Function],
+                  "id": 10,
+                  "image_path": "/sprites/pokemon/small/10.png",
+                  "name": "Caterpie",
+                  "types": Array [
+                    "bug",
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Evolution
+                  getPokemonDetails={[Function]}
+                  id={11}
+                  image_path="/sprites/pokemon/small/11.png"
+                  name="Metapod"
+                  types={
+                                    Array [
+                                                      "bug",
+                                                    ]
+                  }
+/>,
+              ],
+              "className": "evolution-chain-item second",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "getPokemonDetails": [Function],
+                  "id": 11,
+                  "image_path": "/sprites/pokemon/small/11.png",
+                  "name": "Metapod",
+                  "types": Array [
+                    "bug",
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Evolution
+                  getPokemonDetails={[Function]}
+                  id={12}
+                  image_path="/sprites/pokemon/small/12.png"
+                  name="Butterfree"
+                  types={
+                                    Array [
+                                                      "bug",
+                                                      "flying",
+                                                    ]
+                  }
+/>,
+              ],
+              "className": "evolution-chain-item third",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "getPokemonDetails": [Function],
+                  "id": 12,
+                  "image_path": "/sprites/pokemon/small/12.png",
+                  "name": "Butterfree",
+                  "types": Array [
+                    "bug",
+                    "flying",
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Evolutions
+</h3>,
+          <div
+            className="evolution-chain-container"
+>
+            <div
+                        className="evolution-chain-item first"
+            >
+                        <Evolution
+                                    getPokemonDetails={[Function]}
+                                    id={10}
+                                    image_path="/sprites/pokemon/small/10.png"
+                                    name="Caterpie"
+                                    types={
+                                                Array [
+                                                            "bug",
+                                                          ]
+                                    }
+                        />
+            </div>
+            <div
+                        className="evolution-chain-item second"
+            >
+                        <Evolution
+                                    getPokemonDetails={[Function]}
+                                    id={11}
+                                    image_path="/sprites/pokemon/small/11.png"
+                                    name="Metapod"
+                                    types={
+                                                Array [
+                                                            "bug",
+                                                          ]
+                                    }
+                        />
+            </div>
+            <div
+                        className="evolution-chain-item third"
+            >
+                        <Evolution
+                                    getPokemonDetails={[Function]}
+                                    id={12}
+                                    image_path="/sprites/pokemon/small/12.png"
+                                    name="Butterfree"
+                                    types={
+                                                Array [
+                                                            "bug",
+                                                            "flying",
+                                                          ]
+                                    }
+                        />
+            </div>
+</div>,
+        ],
+        "className": "evolution-chain-background",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Evolutions",
+          },
+          "ref": null,
+          "rendered": "Evolutions",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="evolution-chain-item first"
+>
+                <Evolution
+                                getPokemonDetails={[Function]}
+                                id={10}
+                                image_path="/sprites/pokemon/small/10.png"
+                                name="Caterpie"
+                                types={
+                                                Array [
+                                                                "bug",
+                                                              ]
+                                }
+                />
+</div>,
+              <div
+                className="evolution-chain-item second"
+>
+                <Evolution
+                                getPokemonDetails={[Function]}
+                                id={11}
+                                image_path="/sprites/pokemon/small/11.png"
+                                name="Metapod"
+                                types={
+                                                Array [
+                                                                "bug",
+                                                              ]
+                                }
+                />
+</div>,
+              <div
+                className="evolution-chain-item third"
+>
+                <Evolution
+                                getPokemonDetails={[Function]}
+                                id={12}
+                                image_path="/sprites/pokemon/small/12.png"
+                                name="Butterfree"
+                                types={
+                                                Array [
+                                                                "bug",
+                                                                "flying",
+                                                              ]
+                                }
+                />
+</div>,
+            ],
+            "className": "evolution-chain-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Evolution
+                    getPokemonDetails={[Function]}
+                    id={10}
+                    image_path="/sprites/pokemon/small/10.png"
+                    name="Caterpie"
+                    types={
+                                        Array [
+                                                            "bug",
+                                                          ]
+                    }
+/>,
+                ],
+                "className": "evolution-chain-item first",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "getPokemonDetails": [Function],
+                    "id": 10,
+                    "image_path": "/sprites/pokemon/small/10.png",
+                    "name": "Caterpie",
+                    "types": Array [
+                      "bug",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Evolution
+                    getPokemonDetails={[Function]}
+                    id={11}
+                    image_path="/sprites/pokemon/small/11.png"
+                    name="Metapod"
+                    types={
+                                        Array [
+                                                            "bug",
+                                                          ]
+                    }
+/>,
+                ],
+                "className": "evolution-chain-item second",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "getPokemonDetails": [Function],
+                    "id": 11,
+                    "image_path": "/sprites/pokemon/small/11.png",
+                    "name": "Metapod",
+                    "types": Array [
+                      "bug",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Evolution
+                    getPokemonDetails={[Function]}
+                    id={12}
+                    image_path="/sprites/pokemon/small/12.png"
+                    name="Butterfree"
+                    types={
+                                        Array [
+                                                            "bug",
+                                                            "flying",
+                                                          ]
+                    }
+/>,
+                ],
+                "className": "evolution-chain-item third",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "getPokemonDetails": [Function],
+                    "id": 12,
+                    "image_path": "/sprites/pokemon/small/12.png",
+                    "name": "Butterfree",
+                    "types": Array [
+                      "bug",
+                      "flying",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`EvolutionChain Component when there are no evolutions should match EvolutionChain component snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EvolutionChain
+    evolutions={
+        Object {
+            "1": null,
+            "2": null,
+            "3": null,
+          }
+    }
+    getPokemonDetails={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          This pokemon doesn't evolve
+</h3>,
+        null,
+      ],
+      "className": "evolution-chain-background",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "This pokemon doesn't evolve",
+        },
+        "ref": null,
+        "rendered": "This pokemon doesn't evolve",
+        "type": "h3",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            This pokemon doesn't evolve
+</h3>,
+          null,
+        ],
+        "className": "evolution-chain-background",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "This pokemon doesn't evolve",
+          },
+          "ref": null,
+          "rendered": "This pokemon doesn't evolve",
+          "type": "h3",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

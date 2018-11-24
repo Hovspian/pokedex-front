@@ -85,38 +85,37 @@ describe('Home Component', () => {
       instance = wrapper.instance();
     });
 
-    it('should call API if clicked on pokemon card', () => {
-      PokemonAPI.getPokemonDetails = jest.fn();
-      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON));
-
-      return instance.getDetails(1)
-        .then(() => {
-          expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(1);
-          expect(instance.state.modal).toBe(true);
-          expect(instance.state.pokemonDetails).toEqual(ExampleJSON);
-          expect(instance.state.selectedForm).toBe(0);
-        });
-
-    });
-
-    it('should not call API if clicked on pokemon card when state already contains details', () => {
-      PokemonAPI.getPokemonDetails = jest.fn();
-      PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON));
-
-      wrapper.setState({
-        pokemonDetails: { id: 1 },
-        modal: false,
-        selectedForm: 2,
+    describe('getPokemonDetails', () => {
+      beforeEach(() => {
+        PokemonAPI.getPokemonDetails = jest.fn();
+        PokemonAPI.getPokemonDetails.mockImplementation(() => Promise.resolve(ExampleJSON));
       });
 
-      return instance.getDetails(1)
-        .then(() => {
-          expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(0);
-          expect(instance.state.modal).toBe(true);
-          expect(instance.state.pokemonDetails).toEqual({ id: 1 });
-          expect(instance.state.selectedForm).toBe(0);
+      it('should call API if clicked on pokemon card', () => {
+        return instance.getDetails(1)
+          .then(() => {
+            expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(1);
+            expect(instance.state.modal).toBe(true);
+            expect(instance.state.pokemonDetails).toEqual(ExampleJSON);
+            expect(instance.state.selectedForm).toBe(0);
+          });
+
+      });
+
+      it('should not call API when state already contains details', () => {
+        wrapper.setState({
+          pokemonDetails: ExampleJSON,
+          modal: false,
+          selectedForm: 2,
         });
-    })
+
+        instance.getDetails(12);
+        expect(PokemonAPI.getPokemonDetails).toHaveBeenCalledTimes(0);
+        expect(instance.state.modal).toBe(true);
+        expect(instance.state.pokemonDetails).toEqual(ExampleJSON);
+        expect(instance.state.selectedForm).toBe(0);
+      });
+    });
 
     it('should call API when fetching pokemon', () => {
       PokemonAPI.getRangeOfPokemon = jest.fn();
@@ -128,8 +127,7 @@ describe('Home Component', () => {
           "poison"
         ],
         "image_path": "/sprites/pokemon/large/1.png"
-      }]
-      ));
+      }]));
 
       return instance.fetchPokemon({ rangeStart: 1, rangeEnd: 1 }, false)
         .then(() => {

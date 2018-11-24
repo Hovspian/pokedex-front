@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Evolution Component should match Evolution component snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Evolution
+    getPokemonDetails={[Function]}
+    id={10}
+    image_path="/sprites/pokemon/small/10.png"
+    name="Caterpie"
+    types={
+        Array [
+            "bug",
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="evolution"
+>
+          <img
+                    alt="Caterpie"
+                    className="evolution-sprite"
+                    src="https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/10.png"
+          />
+</div>,
+        <h5>
+          <b>
+                    Caterpie
+          </b>
+</h5>,
+        <PokemonType
+          isModal={false}
+          isWeakness={false}
+          types={
+                    Array [
+                              "bug",
+                            ]
+          }
+/>,
+      ],
+      "className": "evolution-container",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Caterpie"
+            className="evolution-sprite"
+            src="https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/10.png"
+/>,
+          "className": "evolution",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Caterpie",
+            "className": "evolution-sprite",
+            "src": "https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/10.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <b>
+            Caterpie
+</b>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Caterpie",
+          },
+          "ref": null,
+          "rendered": "Caterpie",
+          "type": "b",
+        },
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isModal": false,
+          "isWeakness": false,
+          "types": Array [
+            "bug",
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "span",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="evolution"
+>
+            <img
+                        alt="Caterpie"
+                        className="evolution-sprite"
+                        src="https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/10.png"
+            />
+</div>,
+          <h5>
+            <b>
+                        Caterpie
+            </b>
+</h5>,
+          <PokemonType
+            isModal={false}
+            isWeakness={false}
+            types={
+                        Array [
+                                    "bug",
+                                  ]
+            }
+/>,
+        ],
+        "className": "evolution-container",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Caterpie"
+              className="evolution-sprite"
+              src="https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/10.png"
+/>,
+            "className": "evolution",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Caterpie",
+              "className": "evolution-sprite",
+              "src": "https://pokedex-backend-server.herokuapp.com/sprites/pokemon/small/10.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <b>
+              Caterpie
+</b>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Caterpie",
+            },
+            "ref": null,
+            "rendered": "Caterpie",
+            "type": "b",
+          },
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isModal": false,
+            "isWeakness": false,
+            "types": Array [
+              "bug",
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "span",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
