@@ -1,5 +1,6 @@
 .evolution-chain-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
@@ -9,8 +10,8 @@
   display: flex;
   flex-direction: column;
   margin: 0 40px;
-  /*flex-wrap: wrap;
-  max-height: 1000px;*/
+  /* flex-wrap: wrap; */
+  /* max-height: 1000px; */
 }
 
 .second .evolution-container::before, .third .evolution-container::before {
