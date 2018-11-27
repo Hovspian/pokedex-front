@@ -103,6 +103,8 @@ class PokemonModal extends React.Component {
       <Modal isOpen={this.props.modal}
              className="pokemodal"
              align="center"
+             backdrop={true}
+             toggle={this.props.handleCloseModal}
              external={<CloseButton close={this.props.handleCloseModal} />}
       >
         <ModalBody>
