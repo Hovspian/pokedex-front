@@ -20,7 +20,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        "Oh no! There was an issue loading Pokemon! ",
+        "Oh no! There was an issue loading Pokémon! ",
         <button
           className="show-error-button"
           onClick={[Function]}
@@ -31,7 +31,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      "Oh no! There was an issue loading Pokemon! ",
+      "Oh no! There was an issue loading Pokémon! ",
       Object {
         "instance": null,
         "key": undefined,
@@ -55,7 +55,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          "Oh no! There was an issue loading Pokemon! ",
+          "Oh no! There was an issue loading Pokémon! ",
           <button
             className="show-error-button"
             onClick={[Function]}
@@ -66,7 +66,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        "Oh no! There was an issue loading Pokemon! ",
+        "Oh no! There was an issue loading Pokémon! ",
         Object {
           "instance": null,
           "key": undefined,

@@ -40,7 +40,7 @@ class BasicInfo extends React.Component {
       <div className="basic-info">
         <div className="text-container">
           <h1>{`${this.idWithZeros()} ${this.props.name}`}</h1>
-          <h3>{`${this.props.species} Pokemon`}</h3>
+          <h3>{`${this.props.species} Pokémon`}</h3>
           <br />
           <h4>{this.props.description}</h4>
           <br />

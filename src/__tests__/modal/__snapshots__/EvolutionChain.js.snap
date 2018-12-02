@@ -631,7 +631,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h3>
-          This pokemon doesn't evolve
+          This pokémon doesn't evolve
 </h3>,
         null,
       ],
@@ -644,10 +644,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "This pokemon doesn't evolve",
+          "children": "This pokémon doesn't evolve",
         },
         "ref": null,
-        "rendered": "This pokemon doesn't evolve",
+        "rendered": "This pokémon doesn't evolve",
         "type": "h3",
       },
       null,
@@ -662,7 +662,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h3>
-            This pokemon doesn't evolve
+            This pokémon doesn't evolve
 </h3>,
           null,
         ],
@@ -675,10 +675,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "This pokemon doesn't evolve",
+            "children": "This pokémon doesn't evolve",
           },
           "ref": null,
-          "rendered": "This pokemon doesn't evolve",
+          "rendered": "This pokémon doesn't evolve",
           "type": "h3",
         },
         null,

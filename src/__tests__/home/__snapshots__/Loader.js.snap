@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "align": "center",
       "children": <img
-        alt="Loading more Pokemon"
+        alt="Loading more Pokémon"
         src="loading_icon.gif"
 />,
     },
@@ -29,7 +29,7 @@ ShallowWrapper {
       "key": "loader",
       "nodeType": "host",
       "props": Object {
-        "alt": "Loading more Pokemon",
+        "alt": "Loading more Pokémon",
         "src": "loading_icon.gif",
       },
       "ref": null,
@@ -46,7 +46,7 @@ ShallowWrapper {
       "props": Object {
         "align": "center",
         "children": <img
-          alt="Loading more Pokemon"
+          alt="Loading more Pokémon"
           src="loading_icon.gif"
 />,
       },
@@ -56,7 +56,7 @@ ShallowWrapper {
         "key": "loader",
         "nodeType": "host",
         "props": Object {
-          "alt": "Loading more Pokemon",
+          "alt": "Loading more Pokémon",
           "src": "loading_icon.gif",
         },
         "ref": null,

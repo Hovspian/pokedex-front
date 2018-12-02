@@ -21,7 +21,7 @@ class LoadingError extends React.Component {
   render () {
     return (
       <h2>
-        {'Oh no! There was an issue loading Pokemon! '}
+        {'Oh no! There was an issue loading Pokémon! '}
         <button className="show-error-button" onClick={ () => { this.showError() }} >
           {'See error'}
         </button>

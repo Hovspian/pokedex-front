@@ -6,7 +6,7 @@ class Loader extends React.Component {
   render () {
     return (
       <div align="center">
-        <img key="loader" src={LoadingGif} alt="Loading more Pokemon" />
+        <img key="loader" src={LoadingGif} alt="Loading more Pokémon" />
       </div>
     );
   }

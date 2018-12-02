@@ -7,12 +7,12 @@ class EmptySearch extends React.Component {
   render () {
     return (
       <Container className="empty-search-container">
-        <h4>No Pokemon Matched Your Search!</h4>
-        <p>Try these suggestions to find a Pokemon</p>
+        <h4>No Pokémon Matched Your Search!</h4>
+        <p>Try these suggestions to find a Pokémon</p>
         <ul>
             <li>Reduce the number of search parameters</li>
-            <li>Search for only one or two Pokemon types at a time</li>
-            <li>Ensure Number search is within the range</li>
+            <li>Search for only one or two Pokémon types at a time</li>
+            <li>Ensure number search is within the range</li>
         </ul>
       </Container>
     );

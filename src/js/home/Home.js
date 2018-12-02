@@ -186,7 +186,7 @@ class Home extends React.Component {
             this.clearError();
           }}
         >
-          Load more Pokemon
+          Load more Pokémon
         </Button>
       </div>
     ) : null;

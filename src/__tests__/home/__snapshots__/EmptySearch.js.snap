@@ -19,20 +19,20 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h4>
-          No Pokemon Matched Your Search!
+          No Pokémon Matched Your Search!
 </h4>,
         <p>
-          Try these suggestions to find a Pokemon
+          Try these suggestions to find a Pokémon
 </p>,
         <ul>
           <li>
                     Reduce the number of search parameters
           </li>
           <li>
-                    Search for only one or two Pokemon types at a time
+                    Search for only one or two Pokémon types at a time
           </li>
           <li>
-                    Ensure Number search is within the range
+                    Ensure number search is within the range
           </li>
 </ul>,
       ],
@@ -46,10 +46,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "No Pokemon Matched Your Search!",
+          "children": "No Pokémon Matched Your Search!",
         },
         "ref": null,
-        "rendered": "No Pokemon Matched Your Search!",
+        "rendered": "No Pokémon Matched Your Search!",
         "type": "h4",
       },
       Object {
@@ -57,10 +57,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Try these suggestions to find a Pokemon",
+          "children": "Try these suggestions to find a Pokémon",
         },
         "ref": null,
-        "rendered": "Try these suggestions to find a Pokemon",
+        "rendered": "Try these suggestions to find a Pokémon",
         "type": "p",
       },
       Object {
@@ -73,10 +73,10 @@ ShallowWrapper {
               Reduce the number of search parameters
 </li>,
             <li>
-              Search for only one or two Pokemon types at a time
+              Search for only one or two Pokémon types at a time
 </li>,
             <li>
-              Ensure Number search is within the range
+              Ensure number search is within the range
 </li>,
           ],
         },
@@ -98,10 +98,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Search for only one or two Pokemon types at a time",
+              "children": "Search for only one or two Pokémon types at a time",
             },
             "ref": null,
-            "rendered": "Search for only one or two Pokemon types at a time",
+            "rendered": "Search for only one or two Pokémon types at a time",
             "type": "li",
           },
           Object {
@@ -109,10 +109,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Ensure Number search is within the range",
+              "children": "Ensure number search is within the range",
             },
             "ref": null,
-            "rendered": "Ensure Number search is within the range",
+            "rendered": "Ensure number search is within the range",
             "type": "li",
           },
         ],
@@ -129,20 +129,20 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h4>
-            No Pokemon Matched Your Search!
+            No Pokémon Matched Your Search!
 </h4>,
           <p>
-            Try these suggestions to find a Pokemon
+            Try these suggestions to find a Pokémon
 </p>,
           <ul>
             <li>
                         Reduce the number of search parameters
             </li>
             <li>
-                        Search for only one or two Pokemon types at a time
+                        Search for only one or two Pokémon types at a time
             </li>
             <li>
-                        Ensure Number search is within the range
+                        Ensure number search is within the range
             </li>
 </ul>,
         ],
@@ -156,10 +156,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "No Pokemon Matched Your Search!",
+            "children": "No Pokémon Matched Your Search!",
           },
           "ref": null,
-          "rendered": "No Pokemon Matched Your Search!",
+          "rendered": "No Pokémon Matched Your Search!",
           "type": "h4",
         },
         Object {
@@ -167,10 +167,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Try these suggestions to find a Pokemon",
+            "children": "Try these suggestions to find a Pokémon",
           },
           "ref": null,
-          "rendered": "Try these suggestions to find a Pokemon",
+          "rendered": "Try these suggestions to find a Pokémon",
           "type": "p",
         },
         Object {
@@ -183,10 +183,10 @@ ShallowWrapper {
                 Reduce the number of search parameters
 </li>,
               <li>
-                Search for only one or two Pokemon types at a time
+                Search for only one or two Pokémon types at a time
 </li>,
               <li>
-                Ensure Number search is within the range
+                Ensure number search is within the range
 </li>,
             ],
           },
@@ -208,10 +208,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Search for only one or two Pokemon types at a time",
+                "children": "Search for only one or two Pokémon types at a time",
               },
               "ref": null,
-              "rendered": "Search for only one or two Pokemon types at a time",
+              "rendered": "Search for only one or two Pokémon types at a time",
               "type": "li",
             },
             Object {
@@ -219,10 +219,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Ensure Number search is within the range",
+                "children": "Ensure number search is within the range",
               },
               "ref": null,
-              "rendered": "Ensure Number search is within the range",
+              "rendered": "Ensure number search is within the range",
               "type": "li",
             },
           ],

@@ -71,7 +71,7 @@ class EvolutionChain extends React.Component {
   render () {
     return (
       <div className="evolution-chain-background">
-        <h3>{this.props.evolutions[1] ? 'Evolutions' : 'This pokemon doesn\'t evolve'}</h3>
+        <h3>{this.props.evolutions[1] ? 'Evolutions' : 'This pokémon doesn\'t evolve'}</h3>
         {this.props.evolutions[1] ? this.renderEvolutions() : null}
       </div>
     );

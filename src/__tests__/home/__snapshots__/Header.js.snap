@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "align": "center",
       "children": <h1>
-         Pokedex 
+         Pokédex 
 </h1>,
       "className": "header",
     },
@@ -29,10 +29,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": " Pokedex ",
+        "children": " Pokédex ",
       },
       "ref": null,
-      "rendered": " Pokedex ",
+      "rendered": " Pokédex ",
       "type": "h1",
     },
     "type": "div",
@@ -45,7 +45,7 @@ ShallowWrapper {
       "props": Object {
         "align": "center",
         "children": <h1>
-           Pokedex 
+           Pokédex 
 </h1>,
         "className": "header",
       },
@@ -55,10 +55,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": " Pokedex ",
+          "children": " Pokédex ",
         },
         "ref": null,
-        "rendered": " Pokedex ",
+        "rendered": " Pokédex ",
         "type": "h1",
       },
       "type": "div",

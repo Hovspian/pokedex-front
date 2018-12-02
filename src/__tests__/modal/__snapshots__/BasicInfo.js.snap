@@ -43,7 +43,7 @@ ShallowWrapper {
                 012 Butterfree
         </h1>
         <h3>
-                Butterfly Pokemon
+                Butterfly Pokémon
         </h3>
         <br />
         <h4>
@@ -80,7 +80,7 @@ ShallowWrapper {
             012 Butterfree
 </h1>,
           <h3>
-            Butterfly Pokemon
+            Butterfly Pokémon
 </h3>,
           <br />,
           <h4>
@@ -124,10 +124,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Butterfly Pokemon",
+            "children": "Butterfly Pokémon",
           },
           "ref": null,
-          "rendered": "Butterfly Pokemon",
+          "rendered": "Butterfly Pokémon",
           "type": "h3",
         },
         Object {
@@ -199,7 +199,7 @@ ShallowWrapper {
                     012 Butterfree
           </h1>
           <h3>
-                    Butterfly Pokemon
+                    Butterfly Pokémon
           </h3>
           <br />
           <h4>
@@ -236,7 +236,7 @@ ShallowWrapper {
               012 Butterfree
 </h1>,
             <h3>
-              Butterfly Pokemon
+              Butterfly Pokémon
 </h3>,
             <br />,
             <h4>
@@ -280,10 +280,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Butterfly Pokemon",
+              "children": "Butterfly Pokémon",
             },
             "ref": null,
-            "rendered": "Butterfly Pokemon",
+            "rendered": "Butterfly Pokémon",
             "type": "h3",
           },
           Object {

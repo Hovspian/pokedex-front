@@ -58,7 +58,7 @@ ShallowWrapper {
                     size="lg"
                     tag="button"
           >
-                    Load more Pokemon
+                    Load more Pokémon
           </Button>
 </div>,
         null,
@@ -153,7 +153,7 @@ ShallowWrapper {
             size="lg"
             tag="button"
 >
-            Load more Pokemon
+            Load more Pokémon
 </Button>,
         },
         "ref": null,
@@ -162,7 +162,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Load more Pokemon",
+            "children": "Load more Pokémon",
             "className": "load-button",
             "color": "primary",
             "onClick": [Function],
@@ -170,7 +170,7 @@ ShallowWrapper {
             "tag": "button",
           },
           "ref": null,
-          "rendered": "Load more Pokemon",
+          "rendered": "Load more Pokémon",
           "type": [Function],
         },
         "type": "div",
@@ -227,7 +227,7 @@ ShallowWrapper {
                         size="lg"
                         tag="button"
             >
-                        Load more Pokemon
+                        Load more Pokémon
             </Button>
 </div>,
           null,
@@ -322,7 +322,7 @@ ShallowWrapper {
               size="lg"
               tag="button"
 >
-              Load more Pokemon
+              Load more Pokémon
 </Button>,
           },
           "ref": null,
@@ -331,7 +331,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Load more Pokemon",
+              "children": "Load more Pokémon",
               "className": "load-button",
               "color": "primary",
               "onClick": [Function],
@@ -339,7 +339,7 @@ ShallowWrapper {
               "tag": "button",
             },
             "ref": null,
-            "rendered": "Load more Pokemon",
+            "rendered": "Load more Pokémon",
             "type": [Function],
           },
           "type": "div",
