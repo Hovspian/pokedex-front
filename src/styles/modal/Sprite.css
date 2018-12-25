@@ -5,22 +5,25 @@
 }
 
 .primary {
-  width: 380px;
-  height: 380px;
+  max-width: 380px;
+  width: 100%;
+  /*height: 380px;*/
 }
 
 .secondary {
-  width: 360px;
-  height: 360px;
-  transform: translateY(7px);
+  width: 97%;
+  height: 97%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 
 .single-type-img {
-  /* Inner border for dual types takes care of translation */
-  transform: translateY(12px);
+  /* Inner border for dual types takes care of margin */
+  margin-top: 2%;
+  margin-bottom: 1.5%;
 }
 
 .modal-sprite {
-  height: 350px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
 }
