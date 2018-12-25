@@ -3,6 +3,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 import { Button } from 'reactstrap';
 
 import { MAX_POKEMON } from '../core/Constants';
+import { isMobile } from '../core/MobileCheck';
 import { getRangeOfPokemon, getPokemonDetails } from '../core/PokemonAPI';
 import Header from './Header';
 import PokemonCard from './PokemonCard';
@@ -27,6 +28,7 @@ class Home extends React.Component {
       modal: false,
       hasMore: true,
       selectedForm: 0,
+      isMobile: false,
     };
     this.perPage = 20;
 
@@ -35,6 +37,12 @@ class Home extends React.Component {
     this.enableInfiniteScroll = this.enableInfiniteScroll.bind(this);
     this.selectForm = this.selectForm.bind(this);
     this.fetchPokemon = this.fetchPokemon.bind(this);
+    this.setMobileState = this.setMobileState.bind(this);
+  }
+
+  componentDidMount() {
+    this.setMobileState();
+    window.addEventListener("resize", this.setMobileState);
   }
 
   /**
@@ -241,6 +249,10 @@ class Home extends React.Component {
     this.setState({ selectedForm: index });
   }
 
+  setMobileState() {
+    this.setState({ isMobile: isMobile() });
+  }
+
   handleCloseModal() {
     this.setState({ modal: false })
   }
@@ -253,7 +265,7 @@ class Home extends React.Component {
     let emptySearch = (this.state.pokemon.length === 0 && !this.state.initialLoad) ? <EmptySearch /> : null;
 
     return (
-      <div className="main" align="center">
+      <div className={`main${this.state.isMobile ? ' mobile' : ''}`} align="center">
         <PokemonModal
           handleCloseModal={this.handleCloseModal}
           modal={this.state.modal}
