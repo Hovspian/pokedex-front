@@ -18,7 +18,7 @@ class Abilities extends React.Component {
     const abilityElements = this.props.abilities.map((ability, index) => { return  ability.hidden ? null : (
       <span key={`container-${ability.name}`}>
         {index > 0 ? ', ' : ''}
-        <SingleAbility {...ability} />
+        <SingleAbility {...ability} index={index}/>
       </span>
     )});
 

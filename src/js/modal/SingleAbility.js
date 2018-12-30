@@ -7,6 +7,7 @@ import '../../styles/modal/SingleAbility.css';
 const propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 class SingleAbility extends React.Component {
@@ -26,7 +27,7 @@ class SingleAbility extends React.Component {
   render() {
     return (
       <span className="ability">
-        <span id={this.props.name}
+        <span id={`ability-${this.props.index}`}
               onMouseOver={this.toggle}
               onMouseOut={this.toggle}
         >
@@ -34,7 +35,7 @@ class SingleAbility extends React.Component {
         </span>
         <Popover placement="top"
                  isOpen={this.state.isOpen}
-                 target={this.props.name}
+                 target={`ability-${this.props.index}`}
                  hideArrow={true}
         >
           <PopoverBody><h5>{this.props.description}</h5></PopoverBody>
