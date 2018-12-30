@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import Home from '../../js/home/Home';
 
 import * as PokemonAPI from '../../js/core/PokemonAPI';
+import * as MobileCheck from '../../js/core/MobileCheck';
 import ExampleJSON from '../../../local_data/example_detail.json';
 import { TYPES } from '../../js/core/Constants';
 
@@ -17,7 +18,25 @@ describe('Home Component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('toggle', () => {
+  describe('mobile', () => {
+    beforeEach(() => {
+      MobileCheck.isMobile = jest.fn();
+    });
+
+    it('should set `state.isMobile` to true when the window is mobile', () => {
+      MobileCheck.isMobile.mockImplementation(() => true);
+      const wrapper = shallow(<Home />);
+      expect(wrapper.state('isMobile')).toBe(true);
+    });
+
+    it('should set `state.isMobile` to false when the window is not mobile', () => {
+      MobileCheck.isMobile.mockImplementation(() => false);
+      const wrapper = shallow(<Home />);
+      expect(wrapper.state('isMobile')).toBe(false);
+    });
+  });
+
+  describe('handleCloseModal', () => {
     let wrapper, instance;
     beforeEach(() => {
       wrapper = shallow(<Home />);
