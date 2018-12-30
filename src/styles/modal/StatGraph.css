@@ -1,7 +1,7 @@
 .statcontainer {
-  /*width: 40%;*/
   display: flex;
   flex-direction: column;
+  max-width: 110%;
 }
 
 .statgraph {
@@ -9,16 +9,20 @@
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-evenly;
+  width: 400px;
+  max-width: 100%;
 }
 
 .statnames {
   display: flex;
   justify-content: space-evenly;
+  width: 400px;
+  max-width: 100%;
 }
 
 .statname {
-  width: 10%;
-  margin: 0px, 5%;
+  width: 11%;
+  font-size: 11px;
 }
 
 .stattitle {

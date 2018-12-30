@@ -1,5 +1,5 @@
 .stat {
-  width: 10%;
+  width: 11%;
   background-color: rgb(3, 128, 253);
   color: white;
   align-self: flex-end;
@@ -7,6 +7,8 @@
   border-width: 1px 1px 0 1px;
   border-style: solid;
   border-color: black;
+  max-height: 100%;
+  min-height: 30px;
 }
 
 .amount {
