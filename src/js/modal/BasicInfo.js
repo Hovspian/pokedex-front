@@ -41,9 +41,7 @@ class BasicInfo extends React.Component {
         <div className="text-container">
           <h1>{`${this.idWithZeros()} ${this.props.name}`}</h1>
           <h3>{`${this.props.species} Pokémon`}</h3>
-          <br />
-          <h4>{this.props.description}</h4>
-          <br />
+          <h4 className="description">{this.props.description}</h4>
           <Abilities abilities={this.props.abilities} />
         </div>
       </div>
