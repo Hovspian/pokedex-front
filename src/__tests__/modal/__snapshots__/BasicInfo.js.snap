@@ -45,11 +45,11 @@ ShallowWrapper {
         <h3>
                 Butterfly Pokémon
         </h3>
-        <br />
-        <h4>
+        <h4
+                className="description"
+        >
                 Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.
         </h4>
-        <br />
         <Abilities
                 abilities={
                         Array [
@@ -82,11 +82,11 @@ ShallowWrapper {
           <h3>
             Butterfly Pokémon
 </h3>,
-          <br />,
-          <h4>
+          <h4
+            className="description"
+>
             Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.
 </h4>,
-          <br />,
           <Abilities
             abilities={
                         Array [
@@ -134,30 +134,13 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "br",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
           "props": Object {
             "children": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
+            "className": "description",
           },
           "ref": null,
           "rendered": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
           "type": "h4",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "br",
         },
         Object {
           "instance": null,
@@ -201,11 +184,11 @@ ShallowWrapper {
           <h3>
                     Butterfly Pokémon
           </h3>
-          <br />
-          <h4>
+          <h4
+                    className="description"
+          >
                     Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.
           </h4>
-          <br />
           <Abilities
                     abilities={
                               Array [
@@ -238,11 +221,11 @@ ShallowWrapper {
             <h3>
               Butterfly Pokémon
 </h3>,
-            <br />,
-            <h4>
+            <h4
+              className="description"
+>
               Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.
 </h4>,
-            <br />,
             <Abilities
               abilities={
                             Array [
@@ -290,30 +273,13 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
             "props": Object {
               "children": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
+              "className": "description",
             },
             "ref": null,
             "rendered": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
             "type": "h4",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
           },
           Object {
             "instance": null,

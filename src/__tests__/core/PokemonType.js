@@ -26,7 +26,7 @@ describe('Tests render output for different types and sizes', () => {
   it('should render a hover over', () => {
     const wrapper = shallow(<PokemonType isLarge isWeakness types={ExampleDetailJSON.forms[0].weaknesses} />);
 
-    expect(wrapper.exists('.extra-damage-tooltip')).toEqual(true);
+    expect(wrapper.exists('.extra-damage')).toEqual(true);
   });
 
   it('should not render a hover over', () => {
@@ -34,7 +34,7 @@ describe('Tests render output for different types and sizes', () => {
     // remove x4 damage multiplier
     example.forms[0].weaknesses.splice(-1, 1);
     const wrapper = shallow(<PokemonType isLarge isWeakness types={example.forms[0].weaknesses} />);
-    expect(wrapper.exists('.extra-damage-tooltip')).toEqual(false);
+    expect(wrapper.exists('.extra-damage')).toEqual(false);
   });
 
   it('should render a small type', () => {
