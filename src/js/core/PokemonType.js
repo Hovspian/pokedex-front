@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Badge } from 'reactstrap';
+import { Badge, Popover, PopoverBody } from 'reactstrap';
 
 import { TYPE_LOOKUP } from '../core/Constants';
 import '../../styles/core/PokemonType.css';
@@ -22,16 +22,51 @@ const propTypes = {
 };
 
 class PokemonType extends React.Component {
-  shouldRenderHoverOver(weakness) {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpen: false,
+    };
+    this.toggleHover = this.toggleHover.bind(this);
+  }
+
+  toggleHover() {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+
+  /**
+   * Returns an element for the weakness with a popover if the multiplier is extra strong.
+   * A multiplier is normally 2x
+   *
+   * @param {Object} weakness - the weakness being rendered
+   * @param {String} weakness.type - the weakness's name
+   * @param {String} weakness.multiplier - the weakness's multiplier
+   */
+  renderWithHover(weakness) {
     const multiplier = parseFloat(weakness.multiplier);
     if (multiplier > 2) {
       return (
         <span>
-          <span className="extra-damage">*
-            <span className="extra-damage-tooltip">Deals {multiplier}x damage</span>
+          {weakness.type}
+          <span className="extra-damage"
+                id={`extra-damage-${weakness.type}`}
+                onMouseOver={this.toggleHover}
+                onMouseOut={this.toggleHover}
+          >
+            *
           </span>
+          <Popover placement="top"
+                   isOpen={this.state.isOpen}
+                   target={`extra-damage-${weakness.type}`}
+                   hideArrow={true}
+          >
+            <PopoverBody>Deals {multiplier}x damage</PopoverBody>
+          </Popover>
         </span>
-      )
+      );
+    } else {
+      return <span>{weakness.type}</span>;
     }
   }
 
@@ -52,16 +87,16 @@ class PokemonType extends React.Component {
   renderType(isLarge, isWeakness, type) {
     if (isLarge && isWeakness) {
       return (
-        <h4>{type.type}{this.shouldRenderHoverOver(type)}</h4>
-      )
+        <h4>{this.renderWithHover(type)}</h4>
+      );
     } else if (isLarge) {
       return (
         <h4>{type}</h4>
-      )
+      );
     } else {
       return (
         <span>{type}</span>
-      )
+      );
     }
   }
 
@@ -74,10 +109,14 @@ class PokemonType extends React.Component {
           const typeCheckbox = this.props.isCheckbox ? ' checkbox' : '';
           const typeChecked = this.shouldRenderChecked(this.props.checkedTypes, typeName);
           return (
-            <Badge className={`type ${typeName}${typeClass}${typeCheckbox}${typeChecked}`} key={typeName + index} onClick={() => {this.shouldToggle(typeName)}} pill>
+            <Badge className={`type ${typeName}${typeClass}${typeCheckbox}${typeChecked}`}
+                   key={typeName + index}
+                   onClick={() => {this.shouldToggle(typeName)}}
+                   pill
+            >
               {this.renderType(this.props.isLarge, this.props.isWeakness, type)}
             </Badge>
-          )
+          );
         })}
       </div>
     );

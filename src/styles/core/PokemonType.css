@@ -161,19 +161,6 @@
   user-select: none;
 }
 
-.extra-damage .extra-damage-tooltip {
-  visibility: hidden;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: grey;
-  position: absolute;
-  bottom: 50px;
-  z-index: 1;
-  display: table-cell;
-  vertical-align: center;
-  margin-left: -115px;
-}
-
 .extra-damage {
   margin-left: 5px;
   padding: 17px 6px 5px 6px;
@@ -184,8 +171,4 @@
   line-height: 0;
   position: relative;
   cursor: pointer;
-}
-
-.extra-damage:hover .extra-damage-tooltip {
-  visibility: visible;
 }
