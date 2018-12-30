@@ -28,7 +28,7 @@ class Home extends React.Component {
       modal: false,
       hasMore: true,
       selectedForm: 0,
-      isMobile: false,
+      isMobile: isMobile(),
     };
     this.perPage = 20;
 
@@ -37,12 +37,6 @@ class Home extends React.Component {
     this.enableInfiniteScroll = this.enableInfiniteScroll.bind(this);
     this.selectForm = this.selectForm.bind(this);
     this.fetchPokemon = this.fetchPokemon.bind(this);
-    this.setMobileState = this.setMobileState.bind(this);
-  }
-
-  componentDidMount() {
-    this.setMobileState();
-    window.addEventListener("resize", this.setMobileState);
   }
 
   /**
@@ -247,10 +241,6 @@ class Home extends React.Component {
     if (!this.state.pokemonDetails || index >= this.state.pokemonDetails.forms.length || index < 0)
       return;
     this.setState({ selectedForm: index });
-  }
-
-  setMobileState() {
-    this.setState({ isMobile: isMobile() });
   }
 
   handleCloseModal() {
