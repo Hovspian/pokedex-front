@@ -16,6 +16,7 @@ describe('PokemonModal Component', () => {
   it('should match PokemonModal component snapshot', () => {
     const wrapper = shallow(<PokemonModal handleCloseModal={() => {}}
                                           modal={true}
+                                          isMobile={false}
                                           getPokemonDetails={() => {}}
                                           selectForm={() => {}}
                                           selectedForm={0}

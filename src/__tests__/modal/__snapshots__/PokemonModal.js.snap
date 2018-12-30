@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <PokemonModal
     getPokemonDetails={[Function]}
     handleCloseModal={[Function]}
+    isMobile={false}
     modal={true}
     selectForm={[Function]}
     selectedForm={0}

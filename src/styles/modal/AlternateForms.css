@@ -1,8 +1,14 @@
 .form-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   width: 100px;
   margin-left: auto;
   margin-right: auto;
+  align-content: start;
+}
+
+.mobile .form-container {
+  width: 100%;
+  justify-content: space-evenly;
 }

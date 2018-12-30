@@ -259,6 +259,7 @@ class Home extends React.Component {
         <PokemonModal
           handleCloseModal={this.handleCloseModal}
           modal={this.state.modal}
+          isMobile={this.state.isMobile}
           getPokemonDetails={this.getDetails}
           data={this.state.pokemonDetails}
           selectForm={(index) => { this.selectForm(index) }}

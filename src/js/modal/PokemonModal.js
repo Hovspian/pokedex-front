@@ -16,6 +16,7 @@ import '../../styles/modal/PokemonModal.css';
 const propTypes = {
   handleCloseModal: PropTypes.func.isRequired,
   modal: PropTypes.bool.isRequired,
+  isMobile: PropTypes.bool.isRequired,
   getPokemonDetails: PropTypes.func.isRequired,
   selectForm: PropTypes.func.isRequired,
   selectedForm: PropTypes.number.isRequired,
@@ -101,7 +102,7 @@ class PokemonModal extends React.Component {
 
     return (
       <Modal isOpen={this.props.modal}
-             className="pokemodal"
+             className={`pokemodal${this.props.isMobile ? ' mobile' : ''}`}
              align="center"
              backdrop={true}
              toggle={this.props.handleCloseModal}
