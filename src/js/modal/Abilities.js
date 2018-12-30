@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '../../styles/modal/Abilities.css';
+import SingleAbility from './SingleAbility';
 
 const propTypes = {
   abilities: PropTypes.arrayOf(
@@ -18,10 +18,7 @@ class Abilities extends React.Component {
     const abilityElements = this.props.abilities.map((ability, index) => { return  ability.hidden ? null : (
       <span key={`container-${ability.name}`}>
         {index > 0 ? ', ' : ''}
-        <span className="ability">
-          {ability.name}
-          <span className="ability-tooltip">{ability.description}</span>
-        </span>
+        <SingleAbility {...ability} />
       </span>
     )});
 

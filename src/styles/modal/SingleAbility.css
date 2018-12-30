@@ -1,6 +1,7 @@
 .ability {
   position: relative;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .ability .ability-tooltip {
@@ -13,7 +14,8 @@
   z-index: 1;
   display: table-cell;
   vertical-align: center;
-  width: 350px;
+  width: 250px;
+  max-width: 200%;
   margin-left: 20%;
   color: white;
 }
