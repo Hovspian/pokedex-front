@@ -7,6 +7,7 @@ describe('PokemonModal Component', () => {
   it('should render PokemonModal component without crashing', () => {
     shallow(<PokemonModal handleCloseModal={() => {}}
                           modal={true}
+                          isMobile={false}
                           getPokemonDetails={() => {}}
                           selectForm={() => {}}
                           selectedForm={0}
